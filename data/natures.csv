@@ -6,6 +6,7 @@ nature,nom
 304,Caisses de pensions et de prévoyance
 305,Assurances accidents et maladie
 306,Indemnités et remboursements de frais
+308,Personnel Intérimaire
 309,Autres charges de personnel
 31,"Biens, services et marchandises"
 310,Imprimés et fournitures de bureau
@@ -19,6 +20,7 @@ nature,nom
 318,Honoraires et prestations de service
 319,"Impôts, taxes, cotisations et divers"
 32,Intérêts passifs
+320,Forêts
 321,Intérêts des dettes à court terme
 322,Intérêts des dettes à moyen et long terme
 329,Autres intérêts
@@ -27,8 +29,10 @@ nature,nom
 331,Amortissements du patrimoine administratif
 332,Autres amortissements du patrimoine administratif
 35,Participations à des collectivités publiques
+350,Bâtiments Scolaires (patrimoine Administratif)
 351,Participations au Canton
 352,Participations aux communes et associations de communes
+359,Autres Bâtiments
 36,Aides et subventions
 365,Aides et subventions à des institutions privées
 366,Aides individuelles
@@ -47,27 +51,34 @@ nature,nom
 409,Impôts récupérés après défalcation
 41,Patentes et concessions
 410,Patentes
-411,Concessions
 42,Revenus du patrimoine
+420,Revenus des capitaux du patrimoine financier
 422,Revenus des capitaux du patrimoine financier
 423,Revenus des immeubles du patrimoine financier
+424,Gains comptables sur les placements
 427,Revenus des immeubles du patrimoine administratif
 43,"Taxes, émoluments et ventes"
 430,Taxes légales de remplacement
 431,Émoluments
+433,Écolages
 434,Taxes de raccordement et d'utilisation
 435,Ventes et prestations de services
 436,Remboursements de tiers
 437,Amendes
 439,Autres recettes
 44,Parts à des recettes cantonales
+440,Espaces Verts
 441,Parts à des recettes cantonales
 45,Participations de collectivités publiques
+450,Ordures Ménagères et Déchets
 451,Participations du Canton
 452,Participations des communes et associations de communes
 46,Autres participations et subventions
+460,Réseau d'Égouts et Épuration
 465,Participations et subventions de tiers
 469,Dons et legs
+47,"Cours d'Eau, Rives"
+470,"Cours d'Eau, Rives"
 48,Prélèvements sur les fonds de réserve
 480,Prélèvements sur les fonds de réserve
 481,Prélèvements sur les financements spéciaux

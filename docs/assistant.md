@@ -9,7 +9,7 @@ Les consignes données à l'IA (`assistant/consignes.md`) lui demandent de reste
 Sur la page GitHub du projet : bouton **Code** → **Download ZIP**, puis décompressez. Ou en ligne de commande :
 
 ```sh
-git clone https://github.com/andant89/budget-prilly.git
+git clone https://github.com/andant89/budget-epalinges.git
 ```
 
 Il faut Python 3.9 ou plus récent (installé d'office sur macOS et la plupart des Linux ; sous Windows, depuis python.org). Aucune autre installation n'est nécessaire.
@@ -25,20 +25,20 @@ MCP (Model Context Protocol) est un standard qui permet à une application d'IA 
 ```json
 {
   "mcpServers": {
-    "budget-prilly": {
+    "budget-epalinges": {
       "command": "python3",
-      "args": ["/chemin/vers/budget-prilly/assistant/mcp_server.py"]
+      "args": ["/chemin/vers/budget-epalinges/assistant/mcp_server.py"]
     }
   }
 }
 ```
 
-Sous Windows, utilisez `"command": "python"` et un chemin du type `"C:\\Users\\vous\\budget-prilly\\assistant\\mcp_server.py"`. Redémarrez l'application : les outils « budget-prilly » apparaissent.
+Sous Windows, utilisez `"command": "python"` et un chemin du type `"C:\\Users\\vous\\budget-epalinges\\assistant\\mcp_server.py"`. Redémarrez l'application : les outils « budget-epalinges » apparaissent.
 
 **Claude Code** :
 
 ```sh
-claude mcp add budget-prilly -- python3 /chemin/vers/budget-prilly/assistant/mcp_server.py
+claude mcp add budget-epalinges -- python3 /chemin/vers/budget-epalinges/assistant/mcp_server.py
 ```
 
 **Autres applications** (Cursor, LM Studio, etc.) : déclarez un serveur MCP de type « stdio » avec la commande `python3` et l'argument `chemin/vers/assistant/mcp_server.py`, selon la documentation de l'application.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Serveur MCP (Model Context Protocol) pour interroger le budget de Prilly avec votre IA.
+"""Serveur MCP (Model Context Protocol) pour interroger le budget d'Épalinges avec votre IA.
 
 Il expose les outils de assistant/outils.py (recherche de lignes, comparaisons,
 budget vs comptes, bénéficiaires…) à tout client MCP : Claude Desktop, Claude Code,
@@ -36,7 +36,7 @@ def traiter(msg):
     if methode == "initialize":
         reponse(id_, {"protocolVersion": params.get("protocolVersion", VERSION_PROTOCOLE),
                       "capabilities": {"tools": {}, "prompts": {}},
-                      "serverInfo": {"name": "budget-prilly", "version": "1.0.0"},
+                      "serverInfo": {"name": "budget-epalinges", "version": "1.0.0"},
                       "instructions": CONSIGNES})
     elif methode == "ping":
         reponse(id_, {})
@@ -48,10 +48,10 @@ def traiter(msg):
         reponse(id_, {"content": [{"type": "text", "text": texte}],
                       "isError": isinstance(res, dict) and "erreur" in res})
     elif methode == "prompts/list":
-        reponse(id_, {"prompts": [{"name": "budget_prilly",
-                                   "description": "Consignes de neutralité et de méthode pour interroger le budget de Prilly"}]})
+        reponse(id_, {"prompts": [{"name": "budget_epalinges",
+                                   "description": "Consignes de neutralité et de méthode pour interroger le budget d'Épalinges"}]})
     elif methode == "prompts/get":
-        reponse(id_, {"description": "Consignes pour interroger le budget de Prilly",
+        reponse(id_, {"description": "Consignes pour interroger le budget d'Épalinges",
                       "messages": [{"role": "user", "content": {"type": "text", "text": CONSIGNES}}]})
     elif methode in ("resources/list", "resources/templates/list"):
         reponse(id_, {"resources": []} if methode == "resources/list" else {"resourceTemplates": []})
@@ -60,7 +60,7 @@ def traiter(msg):
 
 
 def main():
-    print("Serveur MCP budget-prilly prêt (stdio).", file=sys.stderr)
+    print("Serveur MCP budget-epalinges prêt (stdio).", file=sys.stderr)
     for ligne in sys.stdin:
         ligne = ligne.strip()
         if not ligne:

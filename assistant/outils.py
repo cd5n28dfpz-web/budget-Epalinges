@@ -1,4 +1,4 @@
-"""Outils de requête sur les données du budget de la Ville de Prilly.
+"""Outils de requête sur les données du budget de la Commune d'Épalinges.
 
 Ces fonctions lisent uniquement les fichiers CSV du dossier data/ et renvoient des
 résultats compacts (dictionnaires et listes), prêts à être transmis à une IA.

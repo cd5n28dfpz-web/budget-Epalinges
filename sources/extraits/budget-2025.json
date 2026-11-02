@@ -1,343 +1,114 @@
 {
+ "arrondi": false,
  "colonnes": [
-  "projet:2025",
+  "budget:2025",
   "budget:2024",
-  "comptes:2023"
+  "comptes:2023",
+  "comptes:2022",
+  "comptes:2021",
+  "comptes:2020"
  ],
- "directions": {
-  "1": "Administration générale",
-  "2": "Finances",
-  "3": "Domaines",
-  "4": "Travaux",
-  "5": "Instruction publique",
-  "6": "Police",
-  "7": "Cohésion sociales - Enfance - Jeunesse"
- },
+ "directions": {},
  "natures": {
-  "30": "AUTORITES ET PERSONNEL",
-  "300": "AUTORITES ET COMMISSIONS",
-  "301": "PERSONNEL ADMINISTRATIF ET D'EXPLOIT.",
-  "303": "ASSURANCES SOCIALES",
-  "304": "CAISSES DE PENSIONS ET DE PREVOYANCE",
-  "305": "ASSURANCES ACCIDENTS ET MALADIE",
-  "306": "INDEMNISATION ET REMBOURSEMENT DE FRAIS",
-  "309": "AUTRES CHARGES DES AUTORITES ET DU PERS.",
-  "31": "BIENS, SERVICES, MARCHANDISES",
-  "310": "IMPRIMES ET FOURNITURES DE BUREAU",
-  "311": "ACHATS DE MOBILIER, MAT, MACH. ET VEHIC",
-  "312": "ACHATS D'EAU, D'ENERGIE, DE COMBUSTIBLE",
-  "313": "AUTRES FOURNITURES ET MARCHANDISES",
-  "314": "ENTRETIEN DES IMMEUBLES, ROUTES, TERRIT.",
-  "315": "ENTRETIEN D'OBJETS MOBILIERS ET TECHN.",
-  "316": "LOYERS, FERMAGES ET REDEV. D'UTILIS.",
-  "317": "RECEPTIONS ET MANIFESTATIONS",
-  "318": "HONORAIRES ET PRESTATIONS DE SERVICE",
-  "319": "IMPÔTS, TAXES, COTISATIONS ET DIVERS",
-  "32": "INTERETS PASSIFS",
-  "322": "INTERETS DES DETTES A MOYEN-LONG TERME",
-  "329": "AUTRES INTERETS",
-  "33": "AMORTISSEMENTS",
-  "330": "AMORTISSEMENTS DU PATRIMOINE FINANCIER",
-  "331": "AMORTISSEMENTS DU PARTIMOINE ADMINISTR.",
-  "35": "PARTICIP. ET SUBV. A DES COLL. PUBLIQUES",
-  "351": "CANTON",
-  "352": "COMMUNES ET ASSOCIATIONS DE COMMUNES",
-  "36": "AIDES ET SUBVENTIONS",
-  "365": "AIDES, SUBV. A DES INSTITUTIONS PRIVEES",
-  "366": "AIDES INDIVIDUELLES",
-  "38": "ATTRIBUTIONS AUX FONDS DE RESERVE",
-  "380": "ATTRIBUTION AUX FONDS DE RESERVE",
-  "381": "ATTRIBUTION AUX FINANCEMENTS SPECIAUX",
-  "39": "IMPUTATIONS INTERNES",
-  "390": "IMPUTATIONS INTERNES",
-  "40": "IMPOTS",
-  "400": "IMPOTS SUR LE REVENU ET LA FORTUNE",
-  "401": "IMPOTS SUR LE BENEFICE ET LE CAPITAL",
-  "402": "IMPOT FONCIER",
-  "404": "DROITS DE MUTATION",
-  "405": "IMPOTS SUR LES SUCCESSIONS ET DONATIONS",
-  "406": "IMPOTS ET TAXES SUR LA POSSESSION",
-  "409": "IMPOTS RECUPERES APRES DEFALCATION",
-  "41": "PATENTES, CONCESSIONS",
-  "410": "PATENTES",
-  "411": "CONCESSIONS",
-  "42": "REVENUS DU PATRIMOINE",
-  "422": "REVENUS DES CAPITAUX DU PATR. FIN.",
-  "423": "REVENUS DES IMMEUBLES DU PATR. FIN",
-  "427": "REVENUS DES IMMEUBLES DU PATR. ADM.",
-  "43": "TAXES, EMOLUMENTS, PRODUITS DES VENTES",
-  "430": "TAXES LEGALES DE REMPLACEMENT",
-  "431": "EMOLUMENTS",
-  "434": "TAXES DE RACCORDEMENT ET D'UTILISATION",
-  "435": "VENTES ET PRESTATIONS DE SERVICES",
-  "436": "REMBOURSEMENTS DE TIERS",
-  "437": "AMENDES",
-  "439": "AUTRES RECETTES",
-  "44": "PARTS A DES RECETTES CANTONALES",
-  "441": "PARTS A DES RECETTES CANTONALES",
-  "45": "PART. ET REMB. DE COLLECTIV. PUBLIQUES",
-  "451": "CANTON",
-  "452": "COMMUNES ET ASSOCIATIONS DE COMMUNES",
-  "46": "AUTRES PARTICIPATIONS ET SUBVENTIONS",
-  "465": "PARTICIPATIONS ET SUBVENTIONS DE TIERS",
-  "48": "PRELEVEMENTS SUR LES FONDS DE RESERVE",
-  "480": "PRELEVEMENTS SUR LES FONDS DE RESERVE",
-  "481": "PRELEVEMENTS SUR LES FINANCEM. SPECIAUX",
-  "49": "IMPUTATIONS INTERNES",
-  "490": "IMPUTATIONS INTERNES"
- },
- "natures_montants": {
-  "300": [
-   670000.0,
-   655510.0,
-   653844.25
-  ],
-  "301": [
-   19986439.0,
-   17168648.0,
-   15789125.05
-  ],
-  "303": [
-   1991740.0,
-   1609917.0,
-   1479366.75
-  ],
-  "304": [
-   2880218.0,
-   2272303.0,
-   2225852.35
-  ],
-  "305": [
-   232480.0,
-   174407.0,
-   174435.95
-  ],
-  "306": [
-   81260.0,
-   45900.0,
-   55739.56
-  ],
-  "309": [
-   285450.0,
-   167850.0,
-   173147.29
-  ],
-  "310": [
-   246160.0,
-   223540.0,
-   197884.37
-  ],
-  "311": [
-   328200.0,
-   260380.0,
-   287937.7
-  ],
-  "312": [
-   748210.0,
-   846441.0,
-   774016.66
-  ],
-  "313": [
-   956400.0,
-   776250.0,
-   743323.1
-  ],
-  "314": [
-   1043340.0,
-   2007020.0,
-   1158873.62
-  ],
-  "315": [
-   515000.0,
-   533808.0,
-   414100.34
-  ],
-  "316": [
-   644020.0,
-   538570.0,
-   549663.43
-  ],
-  "317": [
-   229350.0,
-   209390.0,
-   143447.27
-  ],
-  "318": [
-   2735348.0,
-   2817958.0,
-   1918554.45
-  ],
-  "319": [
-   183750.0,
-   184710.0,
-   179920.56
-  ],
-  "322": [
-   990000.0,
-   1052000.0,
-   842568.08
-  ],
-  "329": [
-   5000.0,
-   10000.0,
-   2833.08
-  ],
-  "330": [
-   427700.0,
-   461000.0,
-   300480.41
-  ],
-  "331": [
-   4122170.0,
-   3887389.12,
-   4140473.89
-  ],
-  "351": [
-   18282800.0,
-   13946300.0,
-   13690878.7
-  ],
-  "352": [
-   13234700.0,
-   20300300.0,
-   19380283.53
-  ],
-  "365": [
-   1865500.0,
-   2956869.0,
-   2433599.95
-  ],
-  "366": [
-   686100.0,
-   349100.0,
-   638587.62
-  ],
-  "380": [
-   590600.0,
-   658600.0,
-   344669.41
-  ],
-  "381": [
-   1930530.0,
-   3603200.0,
-   1840760.5
-  ],
-  "390": [
-   2210620.0,
-   2115820.0,
-   1935920.0
-  ],
-  "400": [
-   -25310000.0,
-   -23510000.0,
-   -23914796.77
-  ],
-  "401": [
-   -6220000.0,
-   -5970000.0,
-   -5978659.5
-  ],
-  "404": [
-   -1790000.0,
-   -1350000.0,
-   -1790987.9
-  ],
-  "409": [
-   -135000.0,
-   -120000.0,
-   -132294.89
-  ],
-  "422": [
-   -345000.0,
-   -340000.0,
-   -343377.2
-  ],
-  "423": [
-   -249700.0,
-   -233500.0,
-   -87786.1
-  ],
-  "427": [
-   -1052200.0,
-   -1146430.0,
-   -1241284.4
-  ],
-  "431": [
-   -358600.0,
-   -296100.0,
-   -350742.2
-  ],
-  "434": [
-   -5215000.0,
-   -3750000.0,
-   -2751976.63
-  ],
-  "435": [
-   -1022335.0,
-   -931588.0,
-   -879392.15
-  ],
-  "436": [
-   -359240.0,
-   -426640.0,
-   -2615122.44
-  ],
-  "437": [
-   -28000.0,
-   -10000.0,
-   -27717.0
-  ],
-  "439": [
-   -486600.0,
-   -594312.0,
-   -2326179.69
-  ],
-  "441": [
-   -2735000.0,
-   -2560000.0,
-   -2571101.85
-  ],
-  "451": [
-   -2216100.0,
-   -1681600.0,
-   -1893526.32
-  ],
-  "452": [
-   -14554490.0,
-   -17987600.0,
-   -16214010.91
-  ],
-  "465": [
-   -3277200.0,
-   -2178400.0,
-   -2211931.85
-  ],
-  "480": [
-   -699000.0,
-   -486000.0,
-   -448140.11
-  ],
-  "481": [
-   -507000.0,
-   -314834.12,
-   -1361659.76
-  ],
-  "490": [
-   -2210620.0,
-   -2115820.0,
-   -1935920.0
-  ]
+  "30": "Autorités et personnel",
+  "300": "Autorités et commissions",
+  "301": "Personnel administratif et d'exploitation",
+  "303": "Assurances sociales",
+  "304": "Caisses de pensions et de prévoyance",
+  "305": "Assurances accidents et maladie",
+  "306": "Indemnisation et remboursement de frais",
+  "308": "Personnel intérimaire",
+  "309": "Autres charges des autorités et du personnel",
+  "31": "TERRAINS",
+  "310": "TERRAINS, EXPLOITATIONS",
+  "311": "Achats de mobilier, matériel, machines et véhicules",
+  "312": "Achats d'eau, d'énergie, de combustible",
+  "313": "Autres fournitures et marchandises",
+  "314": "Entretien des immeubles, routes et territoire",
+  "315": "Entretien d'objets mobiliers et d'installations techniques",
+  "316": "Loyers, fermages et redevances d'utilisation",
+  "317": "Réceptions et manifestations",
+  "318": "Honoraires et prestations de services",
+  "319": "Impôts, taxes, cotisations et frais divers",
+  "32": "FORÊTS ET PÂTURAGES",
+  "320": "FORÊTS",
+  "321": "Intérêts des dettes a court terme",
+  "322": "Intérêts des dettes à moyen et long termes",
+  "329": "Autres intérêts",
+  "33": "VIGNE",
+  "330": "VIGNE",
+  "331": "Amortissements obligatoires du patrimoine administratif",
+  "35": "BÂTIMENTS",
+  "350": "BÂTIMENTS SCOLAIRES (patrimoine administratif)",
+  "351": "BÂTIMENTS COMMUNAUX (patrimoine administratif)",
+  "352": "IMMEUBLES ET LOCAUX DIVERS (patrimoine financier)",
+  "359": "AUTRES BÂTIMENTS",
+  "36": "Aides et subventions",
+  "365": "Aides, subventions à des institutions privées",
+  "366": "Aides individuelles",
+  "38": "Attributions aux fonds et aux financements spéciaux",
+  "380": "Attributions aux fonds de réserve et de renouvellement",
+  "381": "Attributions aux financements spéciaux",
+  "39": "Imputations internes",
+  "390": "Imputations internes",
+  "40": "SERVICE ADMINISTRATIF",
+  "400": "SERVICE ADMINISTRATIF",
+  "401": "Impôts sur le bénéfice net et le capital des personnes morales",
+  "402": "Impôt foncier",
+  "404": "Droits de mutation",
+  "405": "Impôts sur les successions et donations",
+  "406": "Impôts et taxes sur la possession et la dépense",
+  "409": "Impôts récupérés après défalcation",
+  "41": "SERVICE TRAVAUX ET ENVIRONNEMENT - ADMINISTRATION",
+  "410": "Patentes",
+  "42": "SERVICE DE L'URBANISME, ARCHITECTURE ET ÉNERGIE",
+  "420": "SERVICE DE L'URBANISME, ARCHITECTURE ET ÉNERGIE",
+  "422": "Revenus des capitaux du patrimoine financier",
+  "423": "Revenus des immeubles du patrimoine financier",
+  "424": "Gains comptables sur les placements du patrimoine financier",
+  "427": "Revenus des immeubles du patrimoine administratif",
+  "43": "VOIRIE",
+  "430": "VOIRIE",
+  "431": "ÉCLAIRAGE PUBLIC",
+  "433": "Écolages",
+  "434": "Taxes de raccordement et d'utilisation",
+  "435": "Ventes et prestations de service",
+  "436": "Remboursements de tiers",
+  "437": "Amendes",
+  "439": "Autres recettes",
+  "44": "ESPACES VERTS ET CIMETIÈRES",
+  "440": "ESPACES VERTS",
+  "441": "CIMETIÈRES",
+  "45": "ORDURES MÉNAGÈRES ET DÉCHETS",
+  "450": "ORDURES MÉNAGÈRES ET DÉCHETS",
+  "451": "Participations et remboursements du canton",
+  "46": "RÉSEAU D'ÉGOUTS ET ÉPURATION",
+  "460": "RÉSEAU D'ÉGOUTS ET ÉPURATION",
+  "465": "Participations et subventions de tiers",
+  "47": "COURS D'EAU, RIVES",
+  "470": "COURS D'EAU, RIVES",
+  "48": "Prélèvements sur les fonds et financements spéciaux",
+  "480": "Prélèvements sur les fonds de réserve et de renouvellement",
+  "481": "Prélèvements sur les financements spéciaux",
+  "49": "Imputations internes",
+  "490": "Imputations internes"
  },
  "totaux": {
   "charges": [
-   78103085.0,
-   79833180.12,
-   72470287.87
+   55529820.0,
+   65704100.0,
+   60704570.87,
+   58228732.37,
+   58364908.99,
+   55810116.07
   ],
   "revenus": [
-   73645085.0,
-   73529024.12,
-   74665237.87
+   55209564.0,
+   65580300.0,
+   60753114.41,
+   58237668.57,
+   58224338.56,
+   55813157.68
   ]
  }
 }

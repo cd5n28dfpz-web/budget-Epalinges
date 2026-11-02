@@ -1,10 +1,4 @@
 {
- "reclassements_nature": {
-  "4001.020": "437"
- },
- "notes": {
-  "reclassements_nature": "Les amendes et soustractions fiscales (compte 4001.020) figurent sous la nature 437 « Amendes » dans l'annexe 10 de chaque document, et non sous la nature 400 « Impôts sur le revenu et la fortune »."
- },
  "noms_natures": {
   "30": "Autorités et personnel",
   "300": "Autorités et commissions",
@@ -84,35 +78,5 @@
   "49": "Imputations internes (revenus)",
   "490": "Imputations internes (revenus)"
  },
- "goatcounter": "https://buget-prilly.goatcounter.com/count",
- "passage_numerotation": {
-  "ancien": "comptes-2018",
-  "nouveau": "comptes-2019",
-  "colonnes_ancien": [
-   0,
-   1
-  ],
-  "colonnes_nouveau": [
-   4,
-   5
-  ],
-  "note": "Les comptes 2018 figurent dans les deux numérotations : dans les comptes 2018 (ancienne) et dans la colonne « Comptes 2018 » des comptes 2019 (nouvelle)."
- },
- "ecarts_connus": [
-  {
-   "document": "comptes-2018",
-   "controle": "C2017 total des revenus (annexe 10)",
-   "explication": "Les comptes 2018 indiquent 63'023'528.17 pour les revenus 2017 ; le détail et le budget 2019 donnent 63'023'528.19."
-  },
-  {
-   "document": "comptes-2017",
-   "controle": "C2017 total des revenus (annexe 10)",
-   "explication": "Même écart de 2 centimes que dans les comptes 2018 (total relevé à 63'023'528.17)."
-  },
-  {
-   "document": "comptes-2017",
-   "controle": "C2017 direction 8 revenus",
-   "explication": "Le total de la direction Services industriels (656'270.70) n'inclut pas les recettes du téléréseau (20'089.25) ; les totaux des services et le total général sont cohérents (vérifié sur l'image de la page 54)."
-  }
- ]
+ "notes": {}
 }

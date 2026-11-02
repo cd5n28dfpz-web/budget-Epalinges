@@ -13,18 +13,17 @@ def lire(nom):
         return list(csv.DictReader(f))
 
 
-# Totaux officiels relevés dans les annexes 10 des documents (et des budgets amendés scannés)
+# Totaux officiels (charges, revenus) relevés dans les tableaux récapitulatifs « TOTAUX » des documents,
+# indépendamment du détail ligne par ligne. Les comptes 2025 sont arrondis au franc dans ce tableau.
 OFFICIELS = {
-    "C2015": (63793003.50, 63929502.36), "C2016": (62594855.86, 61545309.20), "C2017": (65398823.94, 63023528.19),
-    "C2018": (64712317.80, 63823900.37), "C2019": (64658373.95, 65675021.15), "C2020": (67110899.21, 67791657.20),
-    "B2016": (60121200.00, 59941700.00), "B2017": (63805200.00, 62556100.00), "B2018": (64746800.00, 63736900.00),
-    "B2019": (61779140.00, 60272080.00), "B2020": (63628600.00, 61251200.00), "B2021": (66563700.00, 62978100.00),
-    "C2021": (68486656.70, 68108660.31), "C2022": (79557204.59, 82608530.05), "C2023": (72470287.87, 74665237.87),
-    "C2024": (75627608.36, 75925158.36), "C2025": (77906130.79, 82691935.79),
-    "B2022": (71409550.55, 66055900.00), "B2023": (74295285.00, 69912759.00), "B2024": (79833180.12, 73529024.12),
-    "B2025": (78218085.00, 73645085.00),
-    "P2023": (74396915.00, 69912759.00), "P2024": (80125955.12, 73559024.12), "P2025": (78103085.00, 73645085.00),
+    "C2018": (61261994.61, 61265241.90), "B2019": (55077400.00, 54629400.00), "C2019": (53154097.57, 53156995.78),
+    "B2020": (55106800.00, 54637000.00), "C2020": (55810116.07, 55813157.68), "B2021": (56255500.00, 56046300.00),
+    "C2021": (58364908.99, 58224338.56), "B2022": (58047100.00, 58038300.00), "C2022": (58228732.37, 58237668.57),
+    "B2023": (62691800.00, 62486100.00), "C2023": (60704570.87, 60753114.41), "B2024": (65704100.00, 65580300.00),
+    "C2024": (63443406.22, 62792729.79), "B2025": (55529820.00, 55209564.00), "P2026": (57345370.55, 55345370.55),
+    "C2025": (55135163.00, 54643801.00),
 }
+ARRONDIS = {"C2025"}
 
 
 class TestRapprochement(unittest.TestCase):
@@ -35,8 +34,9 @@ class TestRapprochement(unittest.TestCase):
                 continue
             c = sum(float(l[s]) for l in lignes if l[s] and l["sens"] == "charge")
             r = sum(float(l[s]) for l in lignes if l[s] and l["sens"] == "revenu")
-            self.assertAlmostEqual(c, ch, delta=0.01, msg=f"{s} charges")
-            self.assertAlmostEqual(r, rv, delta=0.01, msg=f"{s} revenus")
+            d = 1.0 if s in ARRONDIS else 0.01
+            self.assertAlmostEqual(c, ch, delta=d, msg=f"{s} charges")
+            self.assertAlmostEqual(r, rv, delta=d, msg=f"{s} revenus")
 
     def test_resultats_coherents(self):
         for r in lire("resultats.csv"):
@@ -53,12 +53,6 @@ class TestRapprochement(unittest.TestCase):
         for an in {a["annee"] for a in am}:
             d = sum(float(a["difference"]) * (1 if a["sens"] == "revenu" else -1) for a in am if a["annee"] == an)
             self.assertAlmostEqual(float(res["P" + an]["resultat"]) + d, float(res["B" + an]["resultat"]), delta=0.01)
-
-    def test_correspondance_numerotation(self):
-        m = lire("correspondance_numerotation.csv")
-        self.assertGreater(sum(1 for x in m if x["methode"] == "montant 2018 identique"), 900)
-        cibles = [(x["section"], x["compte"]) for x in m]
-        self.assertEqual(len(cibles), len(set(cibles)), "deux anciens comptes reliés au même nouveau compte")
 
     def test_cles_uniques(self):
         cles = [(l["section"], l["compte"]) for l in lire("lignes_large.csv")]

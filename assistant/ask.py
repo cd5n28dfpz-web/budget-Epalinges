@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Interroger le budget de Prilly avec n'importe quel modèle compatible avec l'API OpenAI.
+"""Interroger le budget d'Épalinges avec n'importe quel modèle compatible avec l'API OpenAI.
 
 Fonctionne avec un modèle local (Ollama, LM Studio) ou un service en ligne
 (OpenAI, Mistral, Anthropic, Infomaniak…), à condition que le modèle sache appeler des outils.
@@ -77,7 +77,7 @@ def repondre(question, historique, base, cle, modele, verbeux=False):
 
 
 def main():
-    p = argparse.ArgumentParser(description="Interroger le budget de Prilly avec votre modèle de langage.")
+    p = argparse.ArgumentParser(description="Interroger le budget d'Épalinges avec votre modèle de langage.")
     p.add_argument("question", nargs="*", help="Question (sans question : mode conversation)")
     p.add_argument("--base-url", default=os.environ.get("LLM_BASE_URL", "http://localhost:11434/v1"))
     p.add_argument("--api-key", default=os.environ.get("LLM_API_KEY", ""))
@@ -90,7 +90,7 @@ def main():
     if a.question:
         print(repondre(" ".join(a.question), historique, a.base_url, a.api_key, a.model, a.verbeux))
         return
-    print("Posez vos questions sur le budget de Prilly (Entrée sur une ligne vide pour quitter).")
+    print("Posez vos questions sur le budget d'Épalinges (Entrée sur une ligne vide pour quitter).")
     while True:
         try:
             q = input("\n> ").strip()

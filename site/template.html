@@ -1,4 +1,4 @@
-<title>Budget de Prilly</title>
+<title>Budget d'Épalinges</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
@@ -182,8 +182,8 @@ svg .grid line{stroke:var(--line)}
 <div class="wrap">
 <header class="mast">
   <div>
-    <h1>Budget de <span>Prilly</span></h1>
-    <p>Les budgets et les comptes de la Ville de Prilly, ligne par ligne, tels que publiés par la commune. Projet indépendant, sans lien avec l'administration communale.</p>
+    <h1>Budget d'<span>Épalinges</span></h1>
+    <p>Les budgets et les comptes de la Commune d'Épalinges, ligne par ligne, tels que publiés par la commune. Projet indépendant, sans lien avec l'administration communale.</p>
   </div>
   <div class="stamp" id="stamp"></div>
 </header>
@@ -209,7 +209,7 @@ svg .grid line{stroke:var(--line)}
   <div class="hmchips" id="acChips"></div>
   <div class="sec"><div class="kpis" id="acKpis"></div></div>
   <div class="sec cols2">
-    <div><div class="sec-h"><h2 id="acDepH"></h2></div><div class="card"><div class="hbs" id="acDep"></div><p class="note">Par direction municipale, hors <span class="gl" data-g="imputations">imputations internes</span> ; les <span class="gl" data-g="fonds">attributions aux fonds</span> sont comprises.</p></div></div>
+    <div><div class="sec-h"><h2 id="acDepH"></h2></div><div class="card"><div class="hbs" id="acDep"></div><p class="note">Par dicastère, hors <span class="gl" data-g="imputations">imputations internes</span> ; les <span class="gl" data-g="fonds">attributions aux fonds</span> sont comprises.</p></div></div>
     <div><div class="sec-h"><h2 id="acRecH"></h2></div><div class="card"><div class="hbs" id="acRec"></div><p class="note">Par nature de revenu, hors imputations internes ; les prélèvements sur les fonds sont compris.</p></div></div>
   </div>
   <div class="sec"><div class="sec-h"><h2>Questions fréquentes</h2><p>Cliquez pour voir le détail.</p></div><div class="qgrid" id="acQs"></div></div>
@@ -218,7 +218,7 @@ svg .grid line{stroke:var(--line)}
 
 <!-- EXPLORER -->
 <section class="panel" id="p-ex" role="tabpanel" hidden>
-  <p class="lede">Chaque rectangle est proportionnel au montant. Cliquez pour descendre d'un niveau : direction, groupe de services, service, puis ligne.</p>
+  <p class="lede">Chaque rectangle est proportionnel au montant. Cliquez pour descendre d'un niveau : dicastère, groupe de services, service, puis ligne.</p>
   <div class="controls">
     <label class="ctl">Année <select id="exSer"></select></label>
     <div class="seg" id="exSens"><button data-v="charge" aria-pressed="true">Charges</button><button data-v="revenu" aria-pressed="false">Revenus</button></div>
@@ -233,7 +233,7 @@ svg .grid line{stroke:var(--line)}
 <section class="panel" id="p-re" role="tabpanel" hidden>
   <div class="controls">
     <input type="search" id="reQ" placeholder="Mot, numéro de compte ou de service…" aria-label="Rechercher">
-    <select id="reDir" aria-label="Direction"><option value="">Toutes les directions</option></select>
+    <select id="reDir" aria-label="Dicastère"><option value="">Tous les dicastères</option></select>
     <div class="seg" id="reSens"><button data-v="" aria-pressed="true">Tout</button><button data-v="charge" aria-pressed="false">Charges</button><button data-v="revenu" aria-pressed="false">Revenus</button></div>
     <label class="ctl"><input type="checkbox" id="reCom"> Chercher aussi dans les commentaires</label>
   </div>
@@ -250,7 +250,7 @@ svg .grid line{stroke:var(--line)}
   <div class="sec-h"><h2>Charges, revenus et résultat</h2><p>En millions de francs. Survolez une année pour le détail.</p></div>
   <div class="card"><div class="seg" id="ovWhat" style="margin-bottom:10px"><button data-v="res" aria-pressed="true">Résultat</button><button data-v="charge" aria-pressed="false">Charges</button><button data-v="revenu" aria-pressed="false">Revenus</button></div><div class="chart" id="ovChart"></div><div class="legend" id="ovLeg"></div></div>
   <div class="sec"><div class="sec-h"><h2>Tableau des résultats</h2><p>Totaux officiels, imputations internes comprises.</p></div><div class="tblwrap"><table class="data" id="ovRes"></table></div></div>
-  <div class="sec"><div class="sec-h"><h2>Coût net par direction</h2><p>Charges moins revenus de chaque direction, hors imputations internes. Un montant négatif signifie que la direction encaisse plus qu'elle ne dépense (c'est le cas des Finances, qui reçoivent les impôts).</p></div><div class="tblwrap"><table class="data" id="ovDir"></table></div></div>
+  <div class="sec"><div class="sec-h"><h2>Coût net par dicastère</h2><p>Charges moins revenus de chaque direction, hors imputations internes. Un montant négatif signifie que le dicastère encaisse plus qu'elle ne dépense (c'est le cas des Finances, qui reçoivent les impôts).</p></div><div class="tblwrap"><table class="data" id="ovDir"></table></div></div>
   <div class="sec"><div class="sec-h"><h2>Charges par nature</h2><p>Hors imputations internes.</p></div><div class="tblwrap"><table class="data" id="ovNat"></table></div></div>
 </section>
 
@@ -260,7 +260,7 @@ svg .grid line{stroke:var(--line)}
   <div class="controls">
     <label class="ctl">De <select id="evA"></select></label>
     <label class="ctl">à <select id="evB"></select></label>
-    <label class="ctl">Niveau <select id="evLvl"><option value="dir">Direction</option><option value="grp">Groupe de services</option><option value="sec" selected>Service</option><option value="lig">Ligne</option></select></label>
+    <label class="ctl">Niveau <select id="evLvl"><option value="dir">Dicastère</option><option value="grp">Groupe de services</option><option value="sec" selected>Service</option><option value="lig">Ligne</option></select></label>
     <div class="seg" id="evSens"><button data-v="charge" aria-pressed="true">Charges</button><button data-v="revenu" aria-pressed="false">Revenus</button><button data-v="net" aria-pressed="false">Net</button></div>
   </div>
   <p id="evBadge"></p>
@@ -273,7 +273,7 @@ svg .grid line{stroke:var(--line)}
   <p class="lede">Le budget est une prévision votée avant l'année ; les comptes disent ce qui a réellement été dépensé et encaissé. Cet onglet montre les écarts entre les deux.</p>
   <div class="controls">
     <label class="ctl">Année <select id="bcY"></select></label>
-    <label class="ctl">Niveau <select id="bcLvl"><option value="dir">Direction</option><option value="sec">Service</option><option value="lig" selected>Ligne</option></select></label>
+    <label class="ctl">Niveau <select id="bcLvl"><option value="dir">Dicastère</option><option value="sec">Service</option><option value="lig" selected>Ligne</option></select></label>
     <div class="seg" id="bcSens"><button data-v="charge" aria-pressed="true">Charges</button><button data-v="revenu" aria-pressed="false">Revenus</button></div>
   </div>
   <div class="kpis" id="bcKpis"></div>
@@ -327,7 +327,7 @@ const sensOf=l=>l[1][0]==="3"?"charge":"revenu";
 const isImp=l=>/^(39|49)/.test(l[1]);
 const secName=s=>D.sections[s]||("Service "+s);
 const grpName=g=>D.groupes[g]||("Groupe "+g);
-const dirName=d=>D.directions[d]||("Direction "+d);
+const dirName=d=>D.directions[d]||("Dicastère "+d);
 const COL=["--s1","--s2","--s3","--s4","--s5","--s7","--s8","--s6","--s9"].map(v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim());
 const dirColor=d=>COL[(+d-1)%COL.length];
 
@@ -429,7 +429,7 @@ function renderAccueil(){if(drawn.ac)return;drawn.ac=1;
   hbars($("#acDep"),[...dep].sort((a,b)=>b[1]-a[1]).map(([k,v])=>({n:dirName(k),v:v/td*100,c:dirColor(k),tip:tipRows(dirName(k),[["Charges",chf(v)]])})),{fmt:v=>v.toLocaleString("fr-CH",{maximumFractionDigits:1})+" fr."});
   const rec=agg(LC,l=>l[1].slice(0,2),{sens:"revenu"}), tr=d3.sum([...rec.values()]);
   hbars($("#acRec"),[...rec].sort((a,b)=>b[1]-a[1]).map(([k,v])=>({n:D.natures[k]||k,v:v/tr*100,c:"var(--s3)",tip:tipRows(D.natures[k]||k,[["Revenus",chf(v)]])})),{fmt:v=>v.toLocaleString("fr-CH",{maximumFractionDigits:1})+" %"});
-  const chips=["école","piscine","police","impôts","déchets","accueil de jour","transports publics","subventions","facture sociale","salaires"];
+  const chips=["école","piscine","police","impôts","déchets","jeunesse","transports publics","subventions","facture sociale","salaires"];
   $("#acChips").innerHTML=chips.map(c=>`<button class="hmchip">${c}</button>`).join("");
   $$("#acChips .hmchip").forEach(b=>b.onclick=()=>goSearch(b.textContent));
   $("#acGo").onclick=()=>goSearch($("#acQ").value);$("#acQ").addEventListener("keydown",e=>{if(e.key==="Enter")goSearch($("#acQ").value)});
@@ -439,8 +439,8 @@ function renderAccueil(){if(drawn.ac)return;drawn.ac=1;
   Q.push(["Combien coûte le personnel communal ?",mio(sumOf(l=>l[1].slice(0,2)==="30","charge")),`Nature « Autorités et personnel », comptes ${yC}`,()=>goSearch("traitements")]);
   Q.push(["Combien la commune verse-t-elle au Canton et à d'autres communes ?",mio(sumOf(l=>l[1].slice(0,2)==="35","charge")),`Participations à des collectivités publiques, comptes ${yC}`,()=>goSearch("participation")]);
   const tp=netOf(l=>l[0].slice(0,2)==="18");if(tp)Q.push(["Combien coûtent les transports publics ?",mio(tp),`Coût net du groupe « Transports publics », comptes ${yC}`,()=>{openTab("t-ex");exPath=["1","18"];renderEx()}]);
-  const ec=netOf(l=>l[0][0]==="5");Q.push(["Combien coûte l'instruction publique ?",mio(ec),`Coût net de la direction « ${dirName("5")} » (écoles, santé scolaire, temples et cultes), comptes ${yC}`,()=>{openTab("t-ex");exPath=["5"];renderEx()}]);
-  const en=netOf(l=>l[0][0]==="7");Q.push([`Combien coûte la direction « ${dirName("7")} » ?`,mio(en),`Coût net, comptes ${yC}`,()=>{openTab("t-ex");exPath=["7"];renderEx()}]);
+  const ec=netOf(l=>l[0][0]==="5");Q.push(["Combien coûte l'instruction publique ?",mio(ec),`Coût net du dicastère « ${dirName("5")} » (écoles, santé scolaire, temples et cultes), comptes ${yC}`,()=>{openTab("t-ex");exPath=["5"];renderEx()}]);
+  const en=netOf(l=>l[0][0]==="7");Q.push([`Combien coûte le dicastère « ${dirName("7")} » ?`,mio(en),`Coût net, comptes ${yC}`,()=>{openTab("t-ex");exPath=["7"];renderEx()}]);
   $("#acQs").innerHTML=Q.map((q,i)=>`<button class="qcard" data-i="${i}"><span class="qq">${esc(q[0])}</span><span class="qa">${q[1]}</span><span class="qs">${esc(q[2])}</span></button>`).join("");
   $$("#acQs .qcard").forEach(b=>b.onclick=()=>Q[+b.dataset.i][3]());}
 function goSearch(q){$("#reQ").value=q;openTab("t-re");renderRe()}
@@ -482,7 +482,7 @@ function renderRe(){const q=$("#reQ").value, t=terms(q), dir=$("#reDir").value, 
   $$("#reT tr.clk").forEach(r=>r.onclick=()=>openLine(+r.dataset.i));
   $("#reMore").innerHTML=res.length>reLim?`<button class="btn" id="reMoreB">Afficher plus</button><span>${reLim} sur ${res.length}</span>`:"";
   if(res.length>reLim)$("#reMoreB").onclick=()=>{reLim+=100;renderRe()};}
-function initRe(){fillSel($("#reDir"),[["","Toutes les directions"],...Object.entries(D.directions)]);reSensV=seg("#reSens",()=>{reLim=60;renderRe()});
+function initRe(){fillSel($("#reDir"),[["","Tous les dicastères"],...Object.entries(D.directions)]);reSensV=seg("#reSens",()=>{reLim=60;renderRe()});
   let tm;$("#reQ").addEventListener("input",()=>{clearTimeout(tm);tm=setTimeout(()=>{reLim=60;renderRe()},160)});$("#reDir").onchange=renderRe;$("#reCom").onchange=renderRe}
 
 // ---------- VUE D'ENSEMBLE ----------
@@ -521,7 +521,7 @@ function renderBc(){const y=$("#bcY").value,lv=$("#bcLvl").value,sens=bcSensV();
   const it=[...ks].map(k=>({k,n:nameOf[lv](k),sub:subOf[lv](k),b:B.get(k)||0,c:C.get(k)||0})).map(d=>({...d,d:d.c-d.b})).filter(d=>Math.abs(d.d)>=1).sort((x,y)=>Math.abs(y.d)-Math.abs(x.d));
   const tb=tot(b,sens),tc=tot(c,sens);
   $("#bcKpis").innerHTML=[[`${sens==="charge"?"Charges":"Revenus"} budgétées`,mio(tb),SNAME(b)],[`${sens==="charge"?"Charges":"Revenus"} réalisées`,mio(tc),SNAME(c)],["Écart",sgn(tc-tb),fpct(pct(tc,tb))],["Résultat",sgn(+RES[c].resultat),"prévu : "+sgn(+RES[b].resultat)]].map(k=>`<div class="kpi"><div class="k">${k[0]}</div><div class="v num">${k[1]}</div><div class="s">${esc(k[2])}</div></div>`).join("");
-  $("#bcT").innerHTML=`<thead><tr><th>${lv==="lig"?"Ligne":lv==="sec"?"Service":"Direction"}</th><th class="r">Budget</th><th class="r">Comptes</th><th class="r">Écart</th><th class="r">%</th>${lv==="lig"?"<th>Commentaire de la commune</th>":""}</tr></thead><tbody>`+
+  $("#bcT").innerHTML=`<thead><tr><th>${lv==="lig"?"Ligne":lv==="sec"?"Service":"Dicastère"}</th><th class="r">Budget</th><th class="r">Comptes</th><th class="r">Écart</th><th class="r">%</th>${lv==="lig"?"<th>Commentaire de la commune</th>":""}</tr></thead><tbody>`+
     it.slice(0,bcLim).map((d,i)=>{const li=lv==="lig"?LIDX.get(d.k):null;const cm=li!=null?(D.commentaires[li]||[]).filter(x=>D.documents[x[0]]?.type==="comptes"&&D.documents[x[0]].annee==y).map(x=>x[1]).join(" "):"";
       return `<tr class="clk" data-i="${i}"><td>${esc(d.n)}<div class="code">${esc(d.sub)}</div></td><td class="r">${chf(d.b)}</td><td class="r">${chf(d.c)}</td><td class="r">${sgn(d.d)}</td><td class="r">${fpct(pct(d.c,d.b))}</td>${lv==="lig"?`<td style="min-width:260px;font-size:12.5px;color:var(--fg-2)">${esc(cm)}</td>`:""}</tr>`}).join("")+"</tbody>";
   $$("#bcT tr.clk").forEach(r=>r.onclick=()=>{const d=it[+r.dataset.i];if(lv==="lig")openLine(LIDX.get(d.k));else if(lv==="sec"){$("#fsS").value=d.k;openTab("t-fs")}});
@@ -538,13 +538,14 @@ function renderAm(){const y=$("#amY").value;const A=D.amendements.filter(a=>a.an
   $("#amT").innerHTML=`<thead><tr><th>Ligne</th><th>Service</th><th class="r">Projet</th><th class="r">Voté</th><th class="r">Différence</th></tr></thead><tbody>`+
     A.sort((x,z)=>Math.abs(z.difference)-Math.abs(x.difference)).map(a=>{const i=LIDX.get(a.section+"|"+a.compte);return `<tr class="clk" data-i="${i}"><td>${esc(L[i][2])}<div class="code">${a.section}.${a.compte} · ${a.sens}</div></td><td>${esc(secName(a.section))}</td><td class="r">${chf(+a.projet)}</td><td class="r">${chf(+a.vote)}</td><td class="r">${sgn(+a.difference)}</td></tr>`}).join("")+"</tbody>";
   $$("#amT tr.clk").forEach(r=>r.onclick=()=>openLine(+r.dataset.i))}
-function initAm(){const ys=[...new Set(D.amendements.map(a=>a.annee))].sort().reverse();fillSel($("#amY"),ys.map(y=>[y,y]),ys[0]);$("#amY").onchange=renderAm}
+function initAm(){if(!D.amendements.length){$("#t-am").hidden=true;$("#p-am").hidden=true;return}
+  const ys=[...new Set(D.amendements.map(a=>a.annee))].sort().reverse();fillSel($("#amY"),ys.map(y=>[y,y]),ys[0]);$("#amY").onchange=renderAm}
 
 // ---------- FICHE SERVICE ----------
 function renderFs(){const s=$("#fsS").value;const idx=L.map((l,i)=>i).filter(i=>L[i][0]===s);
   const net=sid=>{let t=0,n=0;for(const i of idx){const v=val(L[i],sid);if(v==null||isImp(L[i]))continue;n++;t+=sensOf(L[i])==="charge"?v:-v}return n?t:null};
   const cs=(sid,sens)=>{let t=0;for(const i of idx){const v=val(L[i],sid);if(v!=null&&sensOf(L[i])===sens&&!isImp(L[i]))t+=v}return t};
-  $("#fsKpis").innerHTML=[["Direction",dirName(s[0]),grpName(s.slice(0,2))],["Coût net "+S[SI[LC]].annee,mio(net(LC)),"charges moins revenus, comptes"],["Charges "+S[SI[LC]].annee,mio(cs(LC,"charge")),"comptes"],["Coût net prévu "+S[SI[LB]].annee,mio(net(LB)),"budget voté"]].map(k=>`<div class="kpi"><div class="k">${k[0]}</div><div class="v num" style="${k[0]==="Direction"?"font-size:19px":""}">${esc(k[1])}</div><div class="s">${esc(k[2])}</div></div>`).join("");
+  $("#fsKpis").innerHTML=[["Dicastère",dirName(s[0]),grpName(s.slice(0,2))],["Coût net "+S[SI[LC]].annee,mio(net(LC)),"charges moins revenus, comptes"],["Charges "+S[SI[LC]].annee,mio(cs(LC,"charge")),"comptes"],["Coût net prévu "+S[SI[LB]].annee,mio(net(LB)),"budget voté"]].map(k=>`<div class="kpi"><div class="k">${k[0]}</div><div class="v num" style="${k[0]==="Dicastère"?"font-size:19px":""}">${esc(k[1])}</div><div class="s">${esc(k[2])}</div></div>`).join("");
   lineChart($("#fsChart"),{C:seriesVals("C",net),B:seriesVals("B",net),P:seriesVals("P",net)});$("#fsLeg").innerHTML=legendHTML()+'<span>Coût net hors imputations internes</span>';
   const cols=[...S].sort((a,b)=>b.annee-a.annee||"CBP".indexOf(a.type)-"CBP".indexOf(b.type)).filter(x=>x.type!=="P"||x.id===LP).slice(0,7);
   $("#fsT").innerHTML=`<thead><tr><th>Ligne</th>${cols.map(c=>`<th class="r">${esc(c.nom)}</th>`).join("")}</tr></thead><tbody>`+idx.map(i=>{const l=L[i];return `<tr class="clk" data-i="${i}"><td>${esc(l[2])}${D.commentaires[i]?'<span class="chip">commenté</span>':""}<div class="code">${l[1]} · ${sensOf(l)}</div></td>${cols.map(c=>`<td class="r">${chf(val(l,c.id))}</td>`).join("")}</tr>`}).join("")+"</tbody>";
@@ -554,7 +555,7 @@ function initFs(){const ks=Object.keys(D.sections).filter(k=>L.some(l=>l[0]===k)
 // ---------- COMMENT LIRE ----------
 function renderGu(){if(drawn.gu)return;drawn.gu=1;const docs=Object.entries(D.documents).sort((a,b)=>a[1].annee-b[1].annee);
   $("#p-gu").innerHTML=`<h2>Comment lire ces chiffres</h2>
-  <p>Ce site reprend les tableaux publiés par la Ville de Prilly : chaque ligne du budget de fonctionnement, avec ses montants pour chaque année disponible. Il ne contient aucune estimation : seulement les chiffres des documents officiels, remis en forme.</p>
+  <p>Ce site reprend les tableaux publiés par la Commune d'Épalinges : chaque ligne du budget de fonctionnement, avec ses montants pour chaque année disponible. Il ne contient aucune estimation : seulement les chiffres des documents officiels, remis en forme.</p>
   <h3>Projet, budget voté et comptes</h3>
   <p>Chaque automne, la Municipalité présente un ${g("projet","projet de budget")}. Le Conseil communal peut l'${g("amendement","amender")} puis le vote : c'est le ${g("budget","budget voté")}. Après la fin de l'année, les ${g("comptes")} indiquent ce qui a réellement été dépensé et encaissé. Le budget est une prévision et une autorisation de dépenser ; les comptes sont la réalité. Comparer les deux montre la précision des prévisions, pas forcément une bonne ou une mauvaise gestion : une économie peut venir d'un poste resté vacant comme d'un projet reporté.</p>
   <h3>D'où viennent les chiffres</h3>
@@ -564,7 +565,7 @@ function renderGu(){if(drawn.gu)return;drawn.gu=1;const docs=Object.entries(D.do
   <h3>Changement de numérotation en 2019</h3>
   <p>Jusqu'aux comptes 2018, les comptes étaient numérotés autrement (« 110.3011 » au lieu de « 1100 / 3011.000 »). Les comptes 2018 existent dans les deux numérotations, ce qui permet de relier les lignes : quand le montant 2018 est identique dans le même service, la ligne est suivie sans interruption de 2015 à aujourd'hui. Les comptes qui n'existent plus dès 2019 gardent leur ancien numéro (marqué d'un « A »). La table de correspondance complète est publiée avec les données.</p>
   <h3>Fiabilité</h3>
-  <p>Chaque document est contrôlé contre ses propres totaux : total des charges et des revenus, sous-totaux de chaque service, groupe et direction, et totaux par nature. ${D.controles.ok} contrôles sur ${D.controles.total} sont exacts au centime${D.controles.total-D.controles.ok?` ; les ${D.controles.total-D.controles.ok} autres sont de petites différences de classement par nature dans les documents eux-mêmes, sans effet sur les totaux`:""}. Les comptes 2017 et 2021 ainsi qu'une page des états financiers 2025 ont été publiés sous forme d'images ; ils ont été lus par reconnaissance de caractères. Quelques erreurs de lecture ont été corrigées à la main après vérification sur l'image, et chaque correction est listée avec les données. Après lecture, ces documents retombent exactement sur leurs totaux officiels. Les rares incohérences des documents eux-mêmes (par exemple un total de direction qui oublie un service) sont signalées sans être corrigées.</p>
+  <p>Chaque document est contrôlé contre ses propres totaux : total des charges et des revenus, sous-totaux de chaque service, groupe et dicastère, et totaux par nature. ${D.controles.ok} contrôles sur ${D.controles.total} sont exacts au centime${D.controles.total-D.controles.ok?` ; les ${D.controles.total-D.controles.ok} autres sont de petites différences de classement par nature dans les documents eux-mêmes, sans effet sur les totaux`:""}. Les comptes 2017 et 2021 ainsi qu'une page des états financiers 2025 ont été publiés sous forme d'images ; ils ont été lus par reconnaissance de caractères. Quelques erreurs de lecture ont été corrigées à la main après vérification sur l'image, et chaque correction est listée avec les données. Après lecture, ces documents retombent exactement sur leurs totaux officiels. Les rares incohérences des documents eux-mêmes (par exemple un total de dicastère qui oublie un service) sont signalées sans être corrigées.</p>
   <h3>Ce que les chiffres ne disent pas</h3>
   <p>Ce site couvre le <b>budget de fonctionnement</b> : les dépenses et recettes courantes. Les investissements (constructions, grands travaux) et la dette figurent dans d'autres parties des documents et ne sont pas encore repris.</p>
   <p>Certaines écritures ne sont pas des dépenses auprès de tiers : les ${g("imputations")}, les ${g("fonds","attributions et prélèvements aux fonds de réserve")} et les ${g("amortissements")}. Les totaux officiels les incluent ; plusieurs graphiques excluent les imputations internes pour éviter les doubles comptes, et l'indiquent.</p>
@@ -574,10 +575,10 @@ function renderGu(){if(drawn.gu)return;drawn.gu=1;const docs=Object.entries(D.do
   <h3>Mesure d'audience</h3><p>La version publique du site peut compter les visites avec un outil sans cookies qui ne collecte aucune donnée personnelle ; il sert uniquement à savoir combien de personnes consultent le site et quels onglets sont utilisés.</p>
   <h3>Neutralité</h3>
   <p>Ce site décrit les chiffres ; il ne dit pas ce qu'il faudrait en conclure, ce qui relève d'un choix politique. Les couleurs signalent un sens (hausse, baisse), pas un jugement. Les données complètes, la méthode et le code sont publics : chacun peut vérifier, réutiliser ou signaler une erreur. En cas de doute, le document officiel fait foi.</p>
-  <p>Page des documents officiels : <a href="${esc(D.page_source)}" target="_blank" rel="noopener">prilly.ch, budgets et comptes</a>.</p>`;}
+  <p>Page des documents officiels : <a href="${esc(D.page_source)}" target="_blank" rel="noopener">epalinges.ch, budgets et comptes</a>.</p>`;}
 
 const RENDER={"t-ac":renderAccueil,"t-ex":()=>renderEx(),"t-re":()=>renderRe(),"t-gu":renderGu,"t-ov":renderOv,"t-ev":renderEv,"t-bc":renderBc,"t-am":renderAm,"t-fs":renderFs};
 initEx();initRe();initEv();initBc();initAm();initFs();ovWhatV=seg("#ovWhat",renderOv);
-$("#foot").innerHTML=`Source : Ville de Prilly, budgets et états financiers (<a href="${esc(D.page_source)}" target="_blank" rel="noopener">prilly.ch</a>). Mise en forme : projet indépendant « Budget de Prilly en données ouvertes ». Données et code : licence ouverte. En cas de doute, le document officiel fait foi.`;
+$("#foot").innerHTML=`Source : Commune d'Épalinges, budgets et comptes (<a href="${esc(D.page_source)}" target="_blank" rel="noopener">epalinges.ch</a>). Mise en forme : projet indépendant « Budget d'Épalinges en données ouvertes ». Données et code : licence ouverte. En cas de doute, le document officiel fait foi.`;
 openTab(load("bp-tab")&&$("#"+load("bp-tab"))?load("bp-tab"):"t-ac");
 </script>

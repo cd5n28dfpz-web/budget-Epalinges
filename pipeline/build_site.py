@@ -17,7 +17,7 @@ gc = cfg.get("goatcounter")
 mesure = (f'<script data-goatcounter="{gc}" async src="https://gc.zgo.at/count.js"></script>\n' if gc else "")
 page = ('<!doctype html>\n<html lang="fr">\n<head>\n<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
-        '<meta name="description" content="Budgets et comptes de la Ville de Prilly, ligne par ligne, en données ouvertes.">\n'
+        '<meta name="description" content="Budgets et comptes de la Commune d&#39;Épalinges, ligne par ligne, en données ouvertes.">\n'
         '<style>body{margin:0;font-size:14px}img{max-width:100%}[hidden]{display:none!important}</style>\n'
         + mesure + '</head>\n<body>\n' + html.replace("/*DATA*/null", data) + "\n</body>\n</html>\n")
 open(os.path.join(RACINE, "site", "index.html"), "w", encoding="utf-8").write(page)

@@ -1,183 +1,43 @@
 {
-  "page_source": "https://www.prilly.ch/ville-administration/finances-impots/budgets-comptes",
+  "page_source": "https://www.epalinges.ch",
   "documents": [
     {
-      "id": "comptes-2016",
-      "fichier": "comptes-2016.pdf",
-      "type": "comptes",
-      "annee": 2016,
-      "titre": "Comptes 2016",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/A_trier/Comptes_Communaux/VilleDePrillyComptes2016.pdf",
+      "id": "budget-2020",
+      "fichier": "budget-2020.pdf",
+      "type": "budget",
+      "annee": 2020,
+      "titre": "Budget 2020",
+      "url": "",
       "colonnes": [
-        "comptes:2016",
-        "budget:2016",
-        "comptes:2015"
-      ],
-      "totaux_officiels": {
-        "comptes:2016": [
-          62594855.86,
-          61545309.2
-        ],
-        "budget:2016": [
-          60121200.0,
-          59941700.0
-        ],
-        "comptes:2015": [
-          63793003.5,
-          63929502.36
-        ]
-      }
-    },
-    {
-      "id": "comptes-2017",
-      "fichier": "comptes-2017.pdf",
-      "type": "comptes",
-      "annee": 2017,
-      "titre": "Comptes 2017",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/A_trier/Comptes_Communaux/VilleDePrillyComptes2017.pdf",
-      "colonnes": [
-        "comptes:2017",
-        "budget:2017",
-        "comptes:2016"
-      ],
-      "totaux_officiels": {
-        "comptes:2017": [
-          65398823.94,
-          63023528.17
-        ],
-        "budget:2017": [
-          63805200.0,
-          62556100.0
-        ],
-        "comptes:2016": [
-          62594855.86,
-          61545309.2
-        ]
-      },
-      "ocr": true,
-      "note": "Document scanné, lu par reconnaissance de caractères."
-    },
-    {
-      "id": "comptes-2018",
-      "fichier": "comptes-2018.pdf",
-      "type": "comptes",
-      "annee": 2018,
-      "titre": "Comptes 2018",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/A_trier/Comptes_Communaux/VilleDePrillyComptes2018.pdf",
-      "colonnes": [
-        "comptes:2018",
-        "budget:2018",
-        "comptes:2017"
-      ],
-      "totaux_officiels": {
-        "comptes:2018": [
-          64712317.8,
-          63823900.37
-        ],
-        "budget:2018": [
-          64746800.0,
-          63736900.0
-        ],
-        "comptes:2017": [
-          65398823.94,
-          63023528.17
-        ]
-      }
-    },
-    {
-      "id": "comptes-2019",
-      "fichier": "comptes-2019.pdf",
-      "type": "comptes",
-      "annee": 2019,
-      "titre": "Comptes 2019",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/A_trier/Comptes_Communaux/VilleDePrillyComptes2019.pdf",
-      "colonnes": [
-        "comptes:2019",
+        "projet:2020",
         "budget:2019",
         "comptes:2018"
-      ],
-      "totaux_officiels": {
-        "comptes:2019": [
-          64658373.95,
-          65675021.15
-        ],
-        "budget:2019": [
-          61779140.0,
-          60272080.0
-        ],
-        "comptes:2018": [
-          64712317.8,
-          63823900.37
-        ]
-      }
+      ]
     },
     {
-      "id": "comptes-2020",
-      "fichier": "comptes-2020.pdf",
-      "type": "comptes",
-      "annee": 2020,
-      "titre": "Comptes 2020",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/A_trier/Comptes_Communaux/VilleDePrillyComptes2020.pdf",
+      "id": "budget-2021",
+      "fichier": "budget-2021.pdf",
+      "type": "budget",
+      "annee": 2021,
+      "titre": "Budget 2021",
+      "url": "",
       "colonnes": [
-        "comptes:2020",
+        "projet:2021",
         "budget:2020",
         "comptes:2019"
-      ],
-      "totaux_officiels": {
-        "comptes:2020": [
-          67110899.21,
-          67791657.2
-        ],
-        "budget:2020": [
-          63628600.0,
-          61251200.0
-        ],
-        "comptes:2019": [
-          64658373.95,
-          65675021.15
-        ]
-      }
+      ]
     },
     {
-      "id": "comptes-2021",
-      "fichier": "comptes-2021.pdf",
-      "type": "comptes",
-      "annee": 2021,
-      "titre": "Comptes 2021",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/A_trier/Comptes_Communaux/VilleDePrillyComptes2021.pdf",
+      "id": "budget-2022",
+      "fichier": "budget-2022.pdf",
+      "type": "budget",
+      "annee": 2022,
+      "titre": "Budget 2022",
+      "url": "",
       "colonnes": [
-        "comptes:2021",
+        "projet:2022",
         "budget:2021",
         "comptes:2020"
-      ],
-      "totaux_officiels": {
-        "comptes:2021": [
-          68486656.7,
-          68108660.31
-        ],
-        "budget:2021": [
-          66563700.0,
-          62978100.0
-        ],
-        "comptes:2020": [
-          67110899.21,
-          67791657.2
-        ]
-      },
-      "ocr": true,
-      "note": "Document scanné, lu par reconnaissance de caractères."
-    },
-    {
-      "id": "budget-2023",
-      "fichier": "budget-2023.pdf",
-      "type": "budget",
-      "annee": 2023,
-      "titre": "Budget 2023 (préavis de la Municipalité)",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/A_trier/Comptes_Communaux/VilleDePrillyBudget2023.pdf",
-      "colonnes": [
-        "projet:2023",
-        "budget:2022",
-        "comptes:2021"
       ]
     },
     {
@@ -185,147 +45,95 @@
       "fichier": "budget-2024.pdf",
       "type": "budget",
       "annee": 2024,
-      "titre": "Budget 2024 (préavis 20-2023 de la Municipalité)",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/A_trier/Comptes_Communaux/VilleDePrillyBudget2024.pdf",
+      "titre": "Budget 2024",
+      "url": "",
       "colonnes": [
         "projet:2024",
         "budget:2023",
         "comptes:2022"
-      ],
-      "planches": true
+      ]
     },
     {
       "id": "budget-2025",
       "fichier": "budget-2025.pdf",
       "type": "budget",
       "annee": 2025,
-      "titre": "Budget 2025, version 2 (préavis 02-2025 de la Municipalité)",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/A_trier/Comptes_Communaux/VilleDePrillyBudget2025.pdf",
+      "titre": "Budget 2025 (version amendée)",
+      "url": "",
       "colonnes": [
-        "projet:2025",
+        "budget:2025",
         "budget:2024",
-        "comptes:2023"
+        "comptes:2023",
+        "comptes:2022",
+        "comptes:2021",
+        "comptes:2020"
       ],
-      "note": "Deuxième version du budget 2025, présentée après les amendements du Conseil communal du 9 décembre 2024 sur la première version."
+      "note": "Version publiée par la commune, qui intègre les amendements du Conseil communal : la colonne « Budget 2025 » est le budget voté."
+    },
+    {
+      "id": "budget-2026",
+      "fichier": "budget-2026.pdf",
+      "type": "budget",
+      "annee": 2026,
+      "titre": "Budget 2026",
+      "url": "https://www.epalinges.ch/wp-content/uploads/2025/03/Brochure_BUDGET_2026-1.pdf",
+      "colonnes": [
+        "projet:2026",
+        "budget:2025",
+        "comptes:2024",
+        "comptes:2023",
+        "comptes:2022",
+        "comptes:2021"
+      ],
+      "note": "Projet de budget de la Municipalité."
+    },
+    {
+      "id": "comptes-2022",
+      "fichier": "comptes-2022.pdf",
+      "type": "comptes",
+      "annee": 2022,
+      "titre": "Comptes 2022",
+      "url": "",
+      "colonnes": [
+        "comptes:2022",
+        "budget:2022",
+        "comptes:2021"
+      ]
+    },
+    {
+      "id": "comptes-2023",
+      "fichier": "comptes-2023.pdf",
+      "type": "comptes",
+      "annee": 2023,
+      "titre": "Comptes 2023",
+      "url": "",
+      "colonnes": [
+        "comptes:2023",
+        "budget:2023",
+        "comptes:2022"
+      ]
     },
     {
       "id": "comptes-2025",
       "fichier": "comptes-2025.pdf",
       "type": "comptes",
       "annee": 2025,
-      "titre": "États financiers 2025 (préavis 17-2026)",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/%C3%89tats_financiers/2025/Ville_de_Prilly_-_Etats_financiers_2025_-_Pr%C3%A9avis_17-2026_sign%C3%A9.pdf",
+      "titre": "Comptes 2025",
+      "url": "",
       "colonnes": [
         "comptes:2025",
         "budget:2025",
         "comptes:2024"
-      ]
-    }
-  ],
-  "documents_de_controle": [
-    {
-      "id": "budget-2024-amende",
-      "fichier": "budget-2024-amende.pdf",
-      "titre": "Budget 2024 amendé par le Conseil communal le 11 décembre 2023, annexes 10 et 11 (document scanné)",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/A_trier/Comptes_Communaux/Budget_communal_2024_ammende_annexes_10_et_11.pdf",
-      "controles": {
-        "budget:2024": {
-          "charges": 79833180.12,
-          "revenus": 73529024.12,
-          "resultat": 6304156.0
-        }
-      }
-    },
-    {
-      "id": "budget-2025-amende",
-      "fichier": "budget-2025-amende.pdf",
-      "titre": "Budget 2025 amendé par le Conseil communal, annexes 10, 11 et 12 (document scanné)",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/A_trier/Comptes_Communaux/Budget_communal_2025-_amende_annexes_10_11_12.pdf",
-      "controles": {
-        "budget:2025": {
-          "charges": 78218085.0,
-          "revenus": 73645085.0,
-          "resultat": 4573000.0
-        }
-      }
-    },
-    {
-      "id": "budget-2016-amende",
-      "fichier": "budget-2016-amende.pdf",
-      "titre": "Budget 2016 amendé par le Conseil communal (récapitulatifs)",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/A_trier/Comptes_Communaux/Fascicule_budget_amend%C3%A9_2016.pdf",
-      "controles": {
-        "budget:2016": {
-          "charges": 60121200.0,
-          "revenus": 59941700.0,
-          "resultat": 179500.0
-        }
-      }
-    },
-    {
-      "id": "budget-2017-amende",
-      "fichier": "budget-2017-amende.pdf",
-      "titre": "Budget 2017 amendé par le Conseil communal (récapitulatifs)",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/A_trier/Comptes_Communaux/Budget_2017_amend%C3%A9.pdf",
-      "controles": {
-        "budget:2017": {
-          "charges": 63805200.0,
-          "revenus": 62556100.0,
-          "resultat": 1249100.0
-        }
-      }
-    },
-    {
-      "id": "budget-2018-amende",
-      "fichier": "budget-2018-amende.pdf",
-      "titre": "Budget 2018 amendé par le Conseil communal (récapitulatifs)",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/A_trier/Comptes_Communaux/Ville_de_Prilly_Budget_2018_Amend%C3%A9_sign%C3%A9.pdf",
-      "controles": {
-        "budget:2018": {
-          "charges": 64746800.0,
-          "revenus": 63736900.0,
-          "resultat": 1009900.0
-        }
-      }
-    },
-    {
-      "id": "budget-2019-amende",
-      "fichier": "budget-2019-amende.pdf",
-      "titre": "Budget 2019 amendé par le Conseil communal (récapitulatifs)",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/A_trier/Comptes_Communaux/B2019_Amend%C3%A9.pdf",
-      "controles": {
-        "budget:2019": {
-          "charges": 61779140.0,
-          "revenus": 60272080.0,
-          "resultat": 1507060.0
-        }
-      }
-    },
-    {
-      "id": "budget-2020",
-      "fichier": "budget-2020.pdf",
-      "titre": "Budget 2020 (récapitulatifs)",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/A_trier/Comptes_Communaux/VilleDePrillyBudget2020.pdf",
-      "controles": {
-        "budget:2020": {
-          "charges": 63628600.0,
-          "revenus": 61251200.0,
-          "resultat": 2377400.0
-        }
-      }
-    },
-    {
-      "id": "budget-2021",
-      "fichier": "budget-2021.pdf",
-      "titre": "Budget 2021 (récapitulatifs)",
-      "url": "https://www.prilly.ch/fileadmin/ville_de_prilly/FIN/A_trier/Comptes_Communaux/VilleDePrillyBudget2021.pdf",
-      "controles": {
-        "budget:2021": {
-          "charges": 66563700.0,
-          "revenus": 62978100.0,
-          "resultat": 3585600.0
-        }
-      }
+      ],
+      "pages_ocr": [
+        43,
+        101
+      ],
+      "pages_detail": [
+        43,
+        101
+      ],
+      "note": "Pages de détail sans texte (images) : lues par reconnaissance de caractères ; 3 valeurs corrigées à la main (sources/corrections.csv)."
     }
   ]
 }

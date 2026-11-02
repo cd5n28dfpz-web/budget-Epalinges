@@ -1,96 +1,89 @@
 section,nom,groupe,groupe_nom,direction,direction_nom
 1000,Conseil communal,10,Autorités,1,Administration générale
 1010,Municipalité,10,Autorités,1,Administration générale
-1100,Administration générale,11,Administration,1,Administration générale
-1110,État civil,11,Administration,1,Administration générale
-1120,Énergie et environnement,11,Administration,1,Administration générale
-1300,Service des ressources,13,Ressources humaines,1,Administration générale
-1500,Sociétés récréatives,15,Affaires culturelles et de loisirs,1,Administration générale
-1510,Culture et intégration,15,Affaires culturelles et de loisirs,1,Administration générale
-1520,Théâtres,15,Affaires culturelles et de loisirs,1,Administration générale
-1530,Bibliothèque,15,Affaires culturelles et de loisirs,1,Administration générale
-1540,Marché - four à pain,15,Affaires culturelles et de loisirs,1,Administration générale
-1550,Ludothèque,15,Affaires culturelles et de loisirs,1,Administration générale
-1700,Sports,17,Sports,1,Administration générale
-1710,Piscine de la Fleur-de-Lys,17,Sports,1,Administration générale
-1720,Piscine de Fontadel,17,Sports,1,Administration générale
-1730,Centre sportif de Malley,17,Sports,1,Administration générale
-1740,Restaurant de la piscine,17,Sports,1,Administration générale
-1800,Transports régionaux,18,Transports publics,1,Administration générale
-1900,Informatique,19,Informatique,1,Administration générale
-2000,Comptabilité générale,20,Compt. générale - caisse - contentieux,2,Finances
+1100,"Secrétariat municipal, communication et archives",11,Administration,1,Administration générale
+1300,Ressources humaines et assurances,13,Ressources humaines et assurances,1,Administration générale
+1500,Affaires culturelles et manifestations,15,"Affaires culturelles, manifestations et loisirs",1,Administration générale
+1510,Animation socioculturelle,15,"Affaires culturelles, manifestations et loisirs",1,Administration générale
+1520,Subventions aux sociétés,15,"Affaires culturelles, manifestations et loisirs",1,Administration générale
+1600,Taxe communale de séjour,16,Tourisme,1,Administration générale
+1700,Terrains de sport au bois-de-la-chapelle,17,Sports,1,Administration générale
+1710,Centre sportif de la croix-blanche,17,Sports,1,Administration générale
+1760,Participations à des installations sportives,17,Sports,1,Administration générale
+1770,Subventions aux sociétés sportives,17,Sports,1,Administration générale
+1800,Participations aux transports publics,18,Transports publics,1,Administration générale
+1900,Service informatique,19,Service informatique,1,Administration générale
+2010,Service des finances,20,Service des finances,2,Finances
 2100,Impôts,21,Impôts,2,Finances
-2200,Service de la dette,22,Service financier,2,Finances
-2210,Rendement des titres et,22,Service financier,2,Finances
-2300,Postes non ventilés,23,Amortissements et réserves non ventilés,2,Finances
-3000,Domaines et bâtiments,30,Service administratif et technique,3,Domaines
-3100,Terrains et biens,31,Terrains et biens communaux,3,Domaines
-3200,Forêt,32,Forêt,3,Domaines
-3300,Vigne,33,Vigne,3,Domaines
-3500,Bâtiments locatifs,35,Bâtiments,3,Domaines
-3510,Bâtiments administratifs,35,Bâtiments,3,Domaines
-3520,Édicules publics,35,Bâtiments,3,Domaines
-3530,Propriété de Plan-Sepey,35,Bâtiments,3,Domaines
-4100,Infrastructure et espace,41,Service des travaux,4,Travaux
-4200,Urbanisme et,42,Urbanisme et constructions,4,Travaux
-4290,La fabrique de Malley,42,Urbanisme et constructions,4,Travaux
-4300,"Routes, exploitation et",43,Routes,4,Travaux
-4305,Quartier de Malley,43,Routes,4,Travaux
-4310,Éclairage public,43,Routes,4,Travaux
-4320,Décorations de Noël,43,Routes,4,Travaux
-4400,"Parcs, promenades,",44,"Parcs, promenades, cimetières",4,Travaux
-4410,Entretien tombes,44,"Parcs, promenades, cimetières",4,Travaux
-4500,Ordures ménagères et,45,Ordures ménagères et déchets,4,Travaux
-4600,"PGEE (réseaux), épuration",46,"Réseau d'égouts, épuration",4,Travaux
-5000,Administration écoles,50,Administration des écoles,5,Instruction publique
-5010,Administration écoles,50,Administration des écoles,5,Instruction publique
-5020,"Écoles primaires,",50,Administration des écoles,5,Instruction publique
-5100,Classes primaires (1 à 6p),51,Enseignement primaire,5,Instruction publique
-5110,Activités parascolaires,51,Enseignement primaire,5,Instruction publique
-5120,Bâtiments primaires (1 à 6p),51,Enseignement primaire,5,Instruction publique
-5200,Classes secondaires (7-8;,52,Enseignement secondaire,5,Instruction publique
-5210,Bâtiments secondaires,52,Enseignement secondaire,5,Instruction publique
-5220,Refectoire de ST-Étienne,52,Enseignement secondaire,5,Instruction publique
-5310,Classe de langage,53,Enseignement spécialisé,5,Instruction publique
-5330,Classes d'intégration,53,Enseignement spécialisé,5,Instruction publique
-5340,CRENOL,53,Enseignement spécialisé,5,Instruction publique
-5400,Office régional d'orientation prof.,54,Office d'orientation scolaire et professionnelle,5,Instruction publique
-5600,Service médical et,56,Service médical et dentaire,5,Instruction publique
-5710,Colonie de vacances,57,"Camps scolaires, colonies",5,Instruction publique
-5720,Camps - école à la montagne - primaire,57,"Camps scolaires, colonies",5,Instruction publique
-5730,Camps - école ala,57,"Camps scolaires, colonies",5,Instruction publique
-5800,Temples et cultes,58,Temples et cultes,5,Instruction publique
-6100,Corps de police,61,Corps de police - signalisation,6,Police
-6110,Signalisation routière,61,Corps de police - signalisation,6,Police
-6200,Contrôle des habitants,62,Contrôle des habitants,6,Police
+2200,Service financier,22,Service financier,2,Finances
+2300,Amortissements,23,Amortissements et réserves non-ventilés,2,Finances
+3100,"Terrains, exploitations",31,Terrains,3,Domaines et bâtiments
+3200,"Forêts, exploitation",32,Forêts et pâturages,3,Domaines et bâtiments
+3201,"Forêts, sentiers et places d'accueil",32,Forêts et pâturages,3,Domaines et bâtiments
+3202,"Forêts, travaux pour des tiers",32,Forêts et pâturages,3,Domaines et bâtiments
+3203,Forêts de protection,32,Forêts et pâturages,3,Domaines et bâtiments
+3300,Vigne,33,Vigne,3,Domaines et bâtiments
+3500,Collège de la croix-blanche et centre de vie enfantine,35,Bâtiments,3,Domaines et bâtiments
+3501,Collège du village,35,Bâtiments,3,Domaines et bâtiments
+3502,Pavillon scolaire du Chaugand,35,Bâtiments,3,Domaines et bâtiments
+3503,Pavillon scolaire du grand-chemin,35,Bâtiments,3,Domaines et bâtiments
+3504,"Collèges de bois-Murat à, b, c, d",35,Bâtiments,3,Domaines et bâtiments
+3505,Collège de bois-Murat f,35,Bâtiments,3,Domaines et bâtiments
+3506,Salle de gym et piscine de bois-Murat e,35,Bâtiments,3,Domaines et bâtiments
+3507,Salle de gym de la croix-blanche,35,Bâtiments,3,Domaines et bâtiments
+3508,Collège de l'Ofréquaz et unité d'accueil de la petite enfance,35,Bâtiments,3,Domaines et bâtiments
+3510,Maison de commune,35,Bâtiments,3,Domaines et bâtiments
+3511,Maison palinzarde,35,Bâtiments,3,Domaines et bâtiments
+3512,Salle des spectacles,35,Bâtiments,3,Domaines et bâtiments
+3513,Auberge communale,35,Bâtiments,3,Domaines et bâtiments
+3514,Locaux de la voirie du Giziaux,35,Bâtiments,3,Domaines et bâtiments
+3515,Abri p.c. de l'Ofréquaz,35,Bâtiments,3,Domaines et bâtiments
+3516,Poste d'attente p.c. de bois-Murat,35,Bâtiments,3,Domaines et bâtiments
+3517,Église des Croisettes,35,Bâtiments,3,Domaines et bâtiments
+3518,Caserne des pompiers,35,Bâtiments,3,Domaines et bâtiments
+3520,Refuge du Chaugand,35,Bâtiments,3,Domaines et bâtiments
+3521,Ferme de la girarde,35,Bâtiments,3,Domaines et bâtiments
+3522,Maison rochat,35,Bâtiments,3,Domaines et bâtiments
+3523,Chalet l'espérance,35,Bâtiments,3,Domaines et bâtiments
+3524,Maison des jeunes et four à pain,35,Bâtiments,3,Domaines et bâtiments
+3525,Maison forestière,35,Bâtiments,3,Domaines et bâtiments
+3526,Propriété à la Cabolétaz,35,Bâtiments,3,Domaines et bâtiments
+3527,Club-house au bois-de-ban,35,Bâtiments,3,Domaines et bâtiments
+3528,Bâtiment route croix-blanche 9,35,Bâtiments,3,Domaines et bâtiments
+3590,Salles communautaires - épalogements protégés RF 501,35,Bâtiments,3,Domaines et bâtiments
+3591,Immeuble route de la croix-blanche 1 - état de Vaud,35,Bâtiments,3,Domaines et bâtiments
+3592,Locaux girarde - CLÉ,35,Bâtiments,3,Domaines et bâtiments
+3593,Garderie locaux ch. des Croisettes 9b - swisslife,35,Bâtiments,3,Domaines et bâtiments
+3594,UAPE village - chemin du polny 14,35,Bâtiments,3,Domaines et bâtiments
+4000,Service administratif - développement durable,40,Service administratif,4,Travaux
+4100,Service travaux et environnement - administration,41,Service travaux et environnement - administration,4,Travaux
+4200,"Service de l'urbanisme, architecture et énergie",42,"Service de l'urbanisme, architecture et énergie",4,Travaux
+4300,Voirie,43,Voirie,4,Travaux
+4310,Éclairage public,43,Voirie,4,Travaux
+4400,Espaces verts,44,Espaces verts et cimetières,4,Travaux
+4410,Cimetières,44,Espaces verts et cimetières,4,Travaux
+4500,"Déchèterie, ordures ménagères et déchets",45,Ordures ménagères et déchets,4,Travaux
+4501,Déchets - frais couverts par l'impôt,45,Ordures ménagères et déchets,4,Travaux
+4600,Réseau d'égouts et épuration,46,Réseau d'égouts et épuration,4,Travaux
+4700,"Cours d'eau, rives",47,"Cours d'eau, rives",4,Travaux
+5000,Direction des écoles,50,Administration,5,Instruction publique et cultes
+5100,Enseignement primaire et secondaire,51,Enseignement et bibliothèque,5,Instruction publique et cultes
+5110,Bibliothèque,51,Enseignement et bibliothèque,5,Instruction publique et cultes
+5210,Réfectoire scolaire,52,Réfectoire scolaire,5,Instruction publique et cultes
+5300,Enseignement spécialisé,53,Enseignement spécialisé,5,Instruction publique et cultes
+5400,Orientation professionnelle,54,Orientation professionnelle,5,Instruction publique et cultes
+5600,Service médical et dentaire,56,Service médical et dentaire,5,Instruction publique et cultes
+5700,Camps de ski et sportifs,57,Camps scolaires et colonies,5,Instruction publique et cultes
+5710,Camps de découverte,57,Camps scolaires et colonies,5,Instruction publique et cultes
+5800,Temples et cultes,58,Temples et cultes,5,Instruction publique et cultes
+6100,Sécurité publique et police administrative,61,Sécurité publique et police administrative,6,Police
+6110,Police cantonale,61,Sécurité publique et police administrative,6,Police
+6200,Office de la population,62,Office de la population,6,Police
+6300,Police sanitaire,63,Police sanitaire,6,Police
 6400,Service des inhumations,64,Service des inhumations,6,Police
-6500,Défense contre l'incendie,65,Service de défense incendie,6,Police
+6500,Service du feu,65,Défense contre l'incendie,6,Police
 6600,Protection civile,66,Protection civile,6,Police
-6800,Affaires militaires,68,Affaires militaires,6,Police
-7100,ARASPE,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7110,Centre de loisirs,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7120,Fondation les Acacias,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7130,Accueil préscolaire,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7132,CVE les Acacias,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7137,CVE les Sorbiers,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7138,CVE le Tilleul,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7140,Service de l'enfance,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7141,Accueil familial de jour,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7150,Accueil parascolaire,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7151,APEMS confrérie,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7152,APEMS Corminjoz,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7153,APEMS Jolimont,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7154,APEMS Mont-Goulin,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7155,UAPE le Tilleul,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7156,APEMS vieux-collège,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7160,Services sociaux,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7170,Réseau AJENOL,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7180,Activités parascolaires,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7184,Activités parascolaires,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7186,Activités à Plan-Sepey,71,Service social,7,Cohésion sociale - enfance - jeunesse
-7190,"Service jeunesse, sport et",71,Service social,7,Cohésion sociale - enfance - jeunesse
-7200,Prévoyance sociale,72,Prévoyance sociale,7,Cohésion sociale - enfance - jeunesse
-7300,Santé publique,73,Santé publique,7,Cohésion sociale - enfance - jeunesse
-7400,Aide à l'économie,74,Office du logement,7,Cohésion sociale - enfance - jeunesse
-8200,Service de l'électricité,82,Service de l'électricité,8,Services industriels
-8500,Telereseau,85,Telereseau,8,Services industriels
+6800,Stand de tir,68,Militaires,6,Police
+7100,Service social,71,Service social,7,Sécurité sociale
+7110,Réseau d'accueil de jour,71,Service social,7,Sécurité sociale
+7200,Prévoyance sociale,72,Prévoyance sociale,7,Sécurité sociale

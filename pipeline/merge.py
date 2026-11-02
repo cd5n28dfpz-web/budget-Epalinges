@@ -26,7 +26,7 @@ SRC = os.path.join(RACINE, "sources")
 DATA = os.path.join(RACINE, "data")
 TOL = 0.005
 CONFIG = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.json"), encoding="utf-8"))
-RECLASSE = CONFIG["reclassements_nature"]
+RECLASSE = CONFIG.get("reclassements_nature", {})
 
 
 def nature_de(code):
@@ -72,7 +72,7 @@ def charger():
 
 def priorite(doc, serie):
     """Source préférée d'une série : texte > document scanné ; comptes > budget ; puis le plus récent."""
-    return (0 if doc.get("ocr") else 1, 1 if doc["type"] == "comptes" else 0, doc["annee"])
+    return (0 if doc.get("ocr") or doc.get("pages_ocr") else 1, 1 if doc["type"] == "comptes" else 0, doc["annee"])
 
 
 def preparer(docs):
@@ -83,7 +83,13 @@ def preparer(docs):
         if any(num.ancien(r["code"]) for r in comptes):
             garde = {id(r) for r in num.sans_sous_totaux(comptes)}
             rows[:] = [r for r in rows if r["type"] != "compte" or id(r) in garde]
-    p = CONFIG["passage_numerotation"]
+    p = CONFIG.get("passage_numerotation")
+    if not p:
+        for d, rows, _ in docs:
+            for r in rows:
+                if r["type"] == "compte":
+                    r["cle"] = f"{r['section']}|{r['code']}"
+        return {}
     vieux = [r for r in par_id.get(p["ancien"], []) if r["type"] == "compte"]
     neufs = [r for r in par_id.get(p["nouveau"], []) if r["type"] == "compte"]
     res, nv, pris = num.correspondance(vieux, neufs, p["colonnes_ancien"], p["colonnes_nouveau"])
@@ -103,12 +109,12 @@ def main():
     controles = []
     connus = {(e["document"], e["controle"]) for e in CONFIG.get("ecarts_connus", [])}
 
-    def ctrl(doc, objet, attendu, obtenu, bloquant=True):
+    def ctrl(doc, objet, attendu, obtenu, bloquant=True, tol=TOL):
         if attendu is None:
             return True
         if (doc, objet) in connus:
             bloquant = False
-        ok = abs((attendu or 0) - (obtenu or 0)) < TOL
+        ok = abs((attendu or 0) - (obtenu or 0)) < tol
         controles.append({"document": doc, "controle": objet, "attendu": f"{attendu:.2f}",
                           "obtenu": f"{obtenu:.2f}", "ecart": f"{(obtenu or 0) - (attendu or 0):.2f}",
                           "ok": "oui" if ok else "non", "bloquant": "oui" if bloquant else "non"})
@@ -133,7 +139,8 @@ def main():
         for i, s in enumerate(cols):
             for j, sens in enumerate(("charges", "revenus")):
                 tot = sum(f(r[f"v{2 * i + j}"]) or 0 for r in rows if r["type"] == "compte")
-                ctrl(doc["id"], f"{s} total des {sens} (annexe 10)", ann["totaux"][sens][i], tot)
+                ctrl(doc["id"], f"{s} total des {sens} (tableau récapitulatif)", ann["totaux"][sens][i], tot,
+                     tol=1.0 if ann.get("arrondi") else TOL)
         # Natures (annexe 10, niveau à trois chiffres)
         for nat, vals in ann.get("natures_montants", {}).items():
             for i, s in enumerate(cols):
@@ -141,10 +148,11 @@ def main():
                           for r in rows if r["type"] == "compte" and nature_de(r["code"]) == nat)
                 ctrl(doc["id"], f"{s} nature {nat}", vals[i] if nat[0] == "3" else -vals[i], tot, bloquant=False)
         # Sous-totaux par section, groupe, direction
-        cumul = defaultdict(lambda: [0.0] * 6)
+        nv = 2 * len(cols)
+        cumul = defaultdict(lambda: [0.0] * nv)
         entetes = {}
         for r in rows:
-            if r["type"] in ("section", "groupe", "direction"):
+            if r["type"] in ("section", "fonction", "groupe", "direction"):
                 if r["type"] == "section":
                     lib = sans_initiales(r["libelle"])
                     if lib:
@@ -154,14 +162,15 @@ def main():
                 elif r["type"] == "direction" and r["code"] != "0" and r["code"] not in directions:
                     directions[r["code"]] = lisible(sans_initiales(r["libelle"]))
                 if r["code"] != "0":
-                    entetes[(r["type"], r["code"])] = [f(r[f"v{j}"]) or 0 for j in range(6)]
+                    entetes[(r["type"], r["code"])] = [f(r[f"v{j}"]) or 0 for j in range(nv)]
                 continue
             section = r["section"]
             if not section:
                 raise SystemExit(f"{doc['id']} : compte {r['code']} avant toute section")
-            vals = [f(r[f"v{j}"]) for j in range(6)]
-            for niveau, code in (("section", section), ("groupe", section[:2]), ("direction", section[0])):
-                for j in range(6):
+            vals = [f(r[f"v{j}"]) for j in range(nv)]
+            for niveau, code in (("section", section), ("fonction", section[:3]),
+                                 ("groupe", section[:2]), ("direction", section[0])):
+                for j in range(nv):
                     cumul[(niveau, code)][j] += vals[j] or 0
             cle = r["cle"]
             if cle in libelles and libelles[cle][0] == rang:
@@ -184,7 +193,7 @@ def main():
                 if not old or pr >= old[0]:
                     sources[s][cle] = (pr, m, doc["id"])
         for (niveau, code), vals in entetes.items():
-            got = cumul.get((niveau, code), [0.0] * 6)
+            got = cumul.get((niveau, code), [0.0] * nv)
             for i, s in enumerate(cols):
                 for j, sens in enumerate(("charges", "revenus")):
                     ctrl(doc["id"], f"{s} {niveau} {code} {sens}", vals[2 * i + j], got[2 * i + j])
@@ -263,10 +272,6 @@ def main():
     ecrire("commentaires.csv", [{"section": x["cle"].split("|")[0], "compte": x["cle"].split("|")[1],
                                  "document": x["document"], "texte": x["texte"], "source": x["source"]}
                                 for x in commentaires], ["section", "compte", "document", "texte", "source"])
-    ecrire("correspondance_numerotation.csv",
-           [{"section_ancienne": k[0], "compte_ancien": k[1], "section": v[0], "compte": v[1], "methode": v[2]}
-            for k, v in sorted(passage.items())],
-           ["section_ancienne", "compte_ancien", "section", "compte", "methode"])
     ecrire("controles.csv", controles, ["document", "controle", "attendu", "obtenu", "ecart", "ok", "bloquant"])
 
     # Données du site

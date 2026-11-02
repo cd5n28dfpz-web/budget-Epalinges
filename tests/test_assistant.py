@@ -21,11 +21,11 @@ class TestOutils(unittest.TestCase):
     def test_recherche_mots_courants(self):
         r = outils.rechercher_lignes("piscine", limite=5)
         self.assertGreater(r["nombre"], 0)
-        self.assertTrue(any(l["section"] == "1710" for l in r["lignes"]))
+        self.assertTrue(any(l["section"] == "3506" for l in r["lignes"]))
 
     def test_budget_vs_comptes(self):
         r = outils.budget_vs_comptes(2025, limite=3)
-        self.assertEqual(r["total_budget"], 78218085.0)
+        self.assertEqual(r["total_budget"], 55529820.0)
 
     def test_erreur_lisible(self):
         self.assertIn("erreur", outils.appeler("totaux", {"annee": 1990}))
@@ -44,7 +44,7 @@ class TestServeurMCP(unittest.TestCase):
             {"jsonrpc": "2.0", "method": "notifications/initialized"},
             {"jsonrpc": "2.0", "id": 2, "method": "tools/list"},
             {"jsonrpc": "2.0", "id": 3, "method": "tools/call", "params": {"name": "fiche_service", "arguments": {"section": "7200"}}},
-            {"jsonrpc": "2.0", "id": 4, "method": "prompts/get", "params": {"name": "budget_prilly"}},
+            {"jsonrpc": "2.0", "id": 4, "method": "prompts/get", "params": {"name": "budget_epalinges"}},
             {"jsonrpc": "2.0", "id": 5, "method": "inconnue"},
         ]
         p = subprocess.run([sys.executable, os.path.join(RACINE, "assistant", "mcp_server.py")],

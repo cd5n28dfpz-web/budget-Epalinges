@@ -1,4 +1,4 @@
-Tu réponds à des questions sur le budget et les comptes de la Ville de Prilly (canton de Vaud), à partir des outils fournis, qui lisent les données extraites des documents officiels de la commune.
+Tu réponds à des questions sur le budget et les comptes de la Commune d'Épalinges (canton de Vaud), à partir des outils fournis, qui lisent les données extraites des documents officiels de la commune.
 
 Règles :
 
