@@ -8,7 +8,7 @@ La liste des documents et la signification de leurs colonnes se trouvent dans `s
 |---|---|
 | Budgets 2020, 2021, 2022, 2024 | projet N, budget voté N-1, comptes N-2 |
 | Budget 2025 (version amendée) | budget voté 2025, budget 2024, comptes 2023, 2022, 2021, 2020 |
-| Budget 2026 | projet 2026, budget voté 2025, comptes 2024, 2023, 2022, 2021 |
+| Budget 2026 | budget voté 2026, budget voté 2025, comptes 2024, 2023, 2022, 2021 |
 | Comptes 2022, 2023, 2025 | comptes N, budget voté N, comptes N-1 |
 
 Trois types de séries : **comptes** (`C`), **budget voté** (`B`) et **projet de budget** de la Municipalité (`P`). Quand une série figure dans plusieurs documents, le document avec texte est préféré à un document lu par OCR, puis les comptes aux budgets, puis le plus récent ; toute différence est signalée dans `data/controles.csv`.

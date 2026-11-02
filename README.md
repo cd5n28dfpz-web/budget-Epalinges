@@ -2,7 +2,7 @@
 
 Les budgets et les comptes de la Commune d'Épalinges, ligne par ligne, extraits des documents officiels de la commune et rendus lisibles : un tableau de bord interactif et des fichiers CSV réutilisables.
 
-**Couverture actuelle** : comptes 2018 à 2025, budgets votés 2019 à 2025, projets de budget 2020 à 2022, 2024 et 2026, soit plus de 2'000 lignes du budget de fonctionnement dans 7 dicastères.
+**Couverture actuelle** : comptes 2018 à 2025, budgets votés 2019 à 2026, projets de budget 2020 à 2022 et 2024, soit plus de 2'000 lignes du budget de fonctionnement dans 7 dicastères.
 
 > Projet indépendant, sans lien avec l'administration communale. Les chiffres proviennent des documents publiés par la Commune d'Épalinges ; en cas de doute, le document officiel fait foi.
 > Ce projet est une adaptation pour Épalinges du projet [Budget de Prilly en données ouvertes](https://github.com/andant89/budget-Prilly) (licence MIT).
@@ -23,7 +23,7 @@ L'outil décrit ce que montrent les chiffres. Il ne dit pas ce qu'il faudrait en
 | `docs/` | Méthodologie, ajout d'un document, mode d'emploi de l'assistant |
 | `assistant/` | Outils pour interroger les données avec votre propre IA (serveur MCP et script) |
 
-Séries : `C2025` = comptes 2025, `B2025` = budget 2025 voté par le Conseil communal, `P2026` = projet de budget 2026 de la Municipalité. Les montants sont en francs, positifs pour les charges comme pour les revenus (la colonne `sens` indique lequel). Les codes suivent le plan comptable des communes vaudoises : 3xxx pour les charges, 4xxx pour les revenus.
+Séries : `C2025` = comptes 2025, `B2025` = budget 2025 voté par le Conseil communal, `P2024` = projet de budget 2024 de la Municipalité. Les montants sont en francs, positifs pour les charges comme pour les revenus (la colonne `sens` indique lequel). Les codes suivent le plan comptable des communes vaudoises : 3xxx pour les charges, 4xxx pour les revenus.
 
 ## Reconstruire les données
 
