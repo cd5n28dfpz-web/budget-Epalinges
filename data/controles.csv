@@ -10841,3 +10841,91 @@ budget-2026,C2022 section 7200 charges,10034145.95,10034145.95,0.00,oui,oui
 budget-2026,C2022 section 7200 revenus,2593977.95,2593977.95,-0.00,oui,oui
 budget-2026,C2021 section 7200 charges,9952536.70,9952536.70,0.00,oui,oui
 budget-2026,C2021 section 7200 revenus,2295822.35,2295822.35,0.00,oui,oui
+budget-2026,B2026 emprunts : court + long = total,101890323.00,101890323.00,0.00,oui,oui
+budget-2026,B2025 emprunts : court + long = total,99791661.00,99791661.00,0.00,oui,oui
+budget-2026,C2024 emprunts : court + long = total,87958329.00,87958329.00,0.00,oui,oui
+budget-2026,C2023 emprunts : court + long = total,83124997.00,83124997.00,0.00,oui,oui
+budget-2026,C2022 emprunts : court + long = total,63291665.00,63291665.00,0.00,oui,oui
+budget-2026,C2021 emprunts : court + long = total,52958333.00,52958333.00,0.00,oui,oui
+budget-2026,C2020 emprunts : court + long = total,40000000.00,40000000.00,0.00,oui,oui
+budget-2026,C2019 emprunts : court + long = total,36900000.00,36900000.00,0.00,oui,oui
+budget-2026,C2018 emprunts : court + long = total,36900000.00,36900000.00,0.00,oui,oui
+comptes-2024,C2020 dette brute = court terme + moyen/long terme,40000000.00,40000000.00,0.00,oui,oui
+comptes-2024,C2020 dette brute D2 = D1 + engagements propres,40031224.60,40031224.60,0.00,oui,oui
+comptes-2024,C2020 endettement net = engagements bruts - patrimoine financier,27367979.76,27367979.76,-0.00,oui,oui
+comptes-2024,"C2020 taux d'endettement net (arrondi 0,1 %)",82.60,82.60,0.00,oui,non
+comptes-2025,C2021 dette brute = court terme + moyen/long terme,52958333.00,52958333.00,0.00,oui,oui
+comptes-2025,C2021 dette brute D2 = D1 + engagements propres,52989557.60,52989557.60,0.00,oui,oui
+comptes-2025,C2021 endettement net = engagements bruts - patrimoine financier,40345942.56,40345942.56,0.00,oui,oui
+comptes-2025,"C2021 taux d'endettement net (arrondi 0,1 %)",120.10,120.10,0.00,oui,oui
+comptes-2025,C2021 degré d'autofinancement = marge / investissements nets,31.10,31.10,0.00,oui,oui
+comptes-2025,C2022 dette brute = court terme + moyen/long terme,63291665.00,63291665.00,0.00,oui,oui
+comptes-2025,C2022 dette brute D2 = D1 + engagements propres,63323323.55,63323323.55,0.00,oui,oui
+comptes-2025,C2022 endettement net = engagements bruts - patrimoine financier,53183165.48,53183165.48,0.00,oui,oui
+comptes-2025,"C2022 taux d'endettement net (arrondi 0,1 %)",158.50,158.50,0.00,oui,oui
+comptes-2025,C2022 degré d'autofinancement = marge / investissements nets,21.30,21.30,0.00,oui,oui
+comptes-2025,C2023 dette brute = court terme + moyen/long terme,83124997.00,83124997.00,0.00,oui,oui
+comptes-2025,C2023 dette brute D2 = D1 + engagements propres,83156779.90,83156779.90,0.00,oui,oui
+comptes-2025,C2023 endettement net = engagements bruts - patrimoine financier,61456884.76,61456884.76,0.00,oui,oui
+comptes-2025,"C2023 taux d'endettement net (arrondi 0,1 %)",182.80,182.80,0.00,oui,oui
+comptes-2025,C2023 degré d'autofinancement = marge / investissements nets,36.80,36.80,0.00,oui,oui
+comptes-2025,C2024 dette brute = court terme + moyen/long terme,87958329.00,87958329.00,0.00,oui,oui
+comptes-2025,C2024 dette brute D2 = D1 + engagements propres,87990111.90,87990111.90,0.00,oui,oui
+comptes-2025,C2024 endettement net = engagements bruts - patrimoine financier,74148094.86,74148094.86,0.00,oui,oui
+comptes-2025,"C2024 taux d'endettement net (arrondi 0,1 %)",217.10,217.10,0.00,oui,oui
+comptes-2025,C2024 degré d'autofinancement = marge / investissements nets,18.20,18.20,0.00,oui,oui
+comptes-2025,C2025 dette brute = court terme + moyen/long terme,93791661.00,93791661.00,0.00,oui,oui
+comptes-2025,C2025 dette brute D2 = D1 + engagements propres,93823443.90,93823443.90,0.00,oui,oui
+comptes-2025,C2025 endettement net = engagements bruts - patrimoine financier,73573895.23,73573895.23,-0.00,oui,oui
+comptes-2025,"C2025 taux d'endettement net (arrondi 0,1 %)",195.00,195.00,0.00,oui,oui
+comptes-2025,C2025 degré d'autofinancement = marge / investissements nets,113.70,113.70,0.00,oui,oui
+budget-2026,C2024 emprunts réels = dette brute des comptes 2025,87958329.00,87958329.00,0.00,oui,non
+budget-2026,C2023 emprunts réels = dette brute des comptes 2025,83124997.00,83124997.00,0.00,oui,non
+budget-2026,C2022 emprunts réels = dette brute des comptes 2025,63291665.00,63291665.00,0.00,oui,non
+budget-2026,C2021 emprunts réels = dette brute des comptes 2025,52958333.00,52958333.00,0.00,oui,non
+comptes-2025,C2024 intérêts passifs (comptes 2025 = budget 2026),1164106.00,1164105.57,-0.43,oui,non
+comptes-2025,C2023 intérêts passifs (comptes 2025 = budget 2026),1029568.00,1029568.31,0.31,oui,non
+comptes-2025,C2022 intérêts passifs (comptes 2025 = budget 2026),600105.00,600105.30,0.30,oui,non
+comptes-2025,C2021 intérêts passifs (comptes 2025 = budget 2026),577274.00,577273.55,-0.45,oui,non
+comptes-2025,Échéancier : somme des emprunts = dette brute D1 au 31.12.2025,93791661.00,93791661.00,0.00,oui,oui
+comptes-2025,Échéancier : total du tableau = somme des emprunts,93791661.00,93791661.00,0.00,oui,oui
+comptes-2025,Échéancier 07.10.2011 AXA-Winterthur : remboursements = montant,2500000.00,2500000.00,0.00,oui,oui
+comptes-2025,Échéancier 10.02.2012 AXA Leben : remboursements = montant,2500000.00,2500000.00,0.00,oui,oui
+comptes-2025,Échéancier 28.03.2013 Vaudoise Vie : remboursements = montant,2500000.00,2500000.00,0.00,oui,oui
+comptes-2025,Échéancier 01.10.2014 POSTFINANCE : remboursements = montant,2500000.00,2500000.00,0.00,oui,oui
+comptes-2025,Échéancier 05.06.2015 Pensionskasse POST : remboursements = montant,5000000.00,5000000.00,0.00,oui,oui
+comptes-2025,Échéancier 20.06.2017 AXA Vie SA : remboursements = montant,5000000.00,5000000.00,0.00,oui,oui
+comptes-2025,Échéancier 03.05.2018 MIGROS-Pensionskasse : remboursements = montant,5000000.00,5000000.00,0.00,oui,oui
+comptes-2025,Échéancier 19.06.2020 C.I.P. : remboursements = montant,5000000.00,5000000.00,0.00,oui,oui
+comptes-2025,Échéancier 10.02.2021 POSTFINANCE : remboursements = montant,5000000.00,5000000.00,0.00,oui,oui
+comptes-2025,Échéancier 15.06.2021 B.C.V. : remboursements = montant,4291661.00,4291661.00,0.00,oui,oui
+comptes-2025,Échéancier 18.02.2022 SUVA : remboursements = montant,5000000.00,5000000.00,0.00,oui,oui
+comptes-2025,Échéancier 11.04.2022 SUVA : remboursements = montant,5000000.00,5000000.00,0.00,oui,oui
+comptes-2025,Échéancier 20.01.2023 SUVA : remboursements = montant,2500000.00,2500000.00,0.00,oui,oui
+comptes-2025,Échéancier 20.01.2023 SUVA : remboursements = montant,2500000.00,2500000.00,0.00,oui,oui
+comptes-2025,Échéancier 08.05.2023 POSTFINANCE : remboursements = montant,5000000.00,5000000.00,0.00,oui,oui
+comptes-2025,Échéancier 20.10.2023 FONDATION SUPPL. LPP : remboursements = montant,5000000.00,5000000.00,0.00,oui,oui
+comptes-2025,Échéancier 20.10.2023 SUVA : remboursements = montant,5000000.00,5000000.00,0.00,oui,oui
+comptes-2025,Échéancier 28.11.2024 FONDATION SUPPL. LPP : remboursements = montant,2000000.00,2000000.00,0.00,oui,oui
+comptes-2025,Échéancier 28.11.2024 SWISSQUOTE BANK : remboursements = montant,2000000.00,2000000.00,0.00,oui,oui
+comptes-2025,Échéancier 18.11.2024 SWISSQUOTE BANK : remboursements = montant,3000000.00,3000000.00,0.00,oui,oui
+comptes-2025,Échéancier 04.08.2025 COMMUNE DE BOUDRY : remboursements = montant,3000000.00,3000000.00,0.00,oui,oui
+comptes-2025,Échéancier 03.09.2025 FONDATION SUPPL. LPP : remboursements = montant,1500000.00,1500000.00,0.00,oui,oui
+comptes-2025,Échéancier 30.09.2025 COMMUNE DE BOUDRY : remboursements = montant,2000000.00,2000000.00,0.00,oui,oui
+comptes-2025,Échéancier 01.10.2025 FONDATION SUPPL. LPP : remboursements = montant,6000000.00,6000000.00,0.00,oui,oui
+comptes-2025,Échéancier 20.10.2025 BANQUE CANTONALE NEUCHÂTELOISE : remboursements = montant,5000000.00,5000000.00,0.00,oui,oui
+comptes-2025,Échéancier : total 2026,17666668.00,17666668.00,0.00,oui,oui
+comptes-2025,Échéancier : total 2027,18166668.00,18166668.00,0.00,oui,oui
+comptes-2025,Échéancier : total 2028,6666668.00,6666668.00,0.00,oui,oui
+comptes-2025,Échéancier : total 2029,7666668.00,7666668.00,0.00,oui,oui
+comptes-2025,Échéancier : total 2030,10166668.00,10166668.00,0.00,oui,oui
+comptes-2025,Échéancier : total 2031,5166668.00,5166668.00,0.00,oui,oui
+comptes-2025,Échéancier : total 2032,3291653.00,3291653.00,0.00,oui,oui
+comptes-2025,Échéancier : total 2033,5000000.00,5000000.00,0.00,oui,oui
+comptes-2025,Échéancier : total 2034,5000000.00,5000000.00,0.00,oui,oui
+comptes-2025,Échéancier : total 2035,0.00,0.00,0.00,oui,oui
+comptes-2025,Échéancier : total 2036,5000000.00,5000000.00,0.00,oui,oui
+comptes-2025,Échéancier : total 2037,0.00,0.00,0.00,oui,oui
+comptes-2025,Échéancier : total 2038,5000000.00,5000000.00,0.00,oui,oui
+comptes-2025,Échéancier : total 2039,0.00,0.00,0.00,oui,oui
+comptes-2025,Échéancier : total 2040,5000000.00,5000000.00,0.00,oui,oui

@@ -197,6 +197,7 @@ svg .grid line{stroke:var(--line)}
   <button class="tab" role="tab" id="t-ov" aria-controls="p-ov">Vue d'ensemble</button>
   <button class="tab" role="tab" id="t-ev" aria-controls="p-ev">Évolutions</button>
   <button class="tab" role="tab" id="t-bc" aria-controls="p-bc">Budget et comptes</button>
+  <button class="tab" role="tab" id="t-de" aria-controls="p-de">Dette</button>
   <button class="tab" role="tab" id="t-am" aria-controls="p-am">Amendements</button>
   <button class="tab" role="tab" id="t-fs" aria-controls="p-fs">Fiche service</button>
 </nav>
@@ -278,6 +279,16 @@ svg .grid line{stroke:var(--line)}
   </div>
   <div class="kpis" id="bcKpis"></div>
   <div class="sec"><div class="sec-h"><h2>Plus grands écarts</h2><p>Positif : réalisé supérieur au budget.</p></div><div class="tblwrap"><table class="data" id="bcT"></table></div><div class="more" id="bcMore"></div></div>
+</section>
+
+<!-- DETTE -->
+<section class="panel" id="p-de" role="tabpanel" hidden>
+  <p class="lede">Le compte de fonctionnement (les autres onglets) ne dit pas tout : la commune emprunte pour financer ses investissements. Cet onglet reprend, tels que publiés dans les comptes et le budget, les emprunts, les intérêts, l'endettement et les ratios financiers.</p>
+  <div class="kpis" id="deKpis"></div>
+  <div class="sec card"><div class="sec-h"><h2>Emprunts réels</h2><p>Dette brute au 31 décembre, en millions de francs (sans les préavis non encore financés).</p></div><div class="chart" id="deChart"></div><div class="legend" id="deLeg"></div></div>
+  <div class="sec"><div class="sec-h"><h2>Indicateurs par année</h2><p>Montants en francs. Survolez une valeur pour voir le document et la page.</p></div><div class="tblwrap"><table class="data" id="deT"></table></div><p class="note" id="deNote"></p></div>
+  <div class="sec"><div class="sec-h"><h2>Échéancier des emprunts</h2><p id="deEchSub"></p></div><div class="tblwrap"><table class="data" id="deEch"></table></div></div>
+  <div class="sec"><div class="sec-h"><h2>Emprunts en cours</h2><p id="deEmpSub"></p></div><div class="tblwrap"><table class="data" id="deEmp"></table></div></div>
 </section>
 
 <!-- AMENDEMENTS -->
@@ -577,8 +588,37 @@ function renderGu(){if(drawn.gu)return;drawn.gu=1;const docs=Object.entries(D.do
   <p>Ce site décrit les chiffres ; il ne dit pas ce qu'il faudrait en conclure, ce qui relève d'un choix politique. Les couleurs signalent un sens (hausse, baisse), pas un jugement. Les données complètes, la méthode et le code sont publics : chacun peut vérifier, réutiliser ou signaler une erreur. En cas de doute, le document officiel fait foi.</p>
   <p>Page des documents officiels : <a href="${esc(D.page_source)}" target="_blank" rel="noopener">epalinges.ch, budgets et comptes</a>.</p>`;}
 
-const RENDER={"t-ac":renderAccueil,"t-ex":()=>renderEx(),"t-re":()=>renderRe(),"t-gu":renderGu,"t-ov":renderOv,"t-ev":renderEv,"t-bc":renderBc,"t-am":renderAm,"t-fs":renderFs};
-initEx();initRe();initEv();initBc();initAm();initFs();ovWhatV=seg("#ovWhat",renderOv);
+
+// ---------- DETTE ----------
+function renderDe(){const T=D.dette;if(!T)return;
+  const I={};T.indicateurs.forEach(x=>I[x.cle]=x);
+  const yrs=Object.keys(I.dette_brute.valeurs).map(Number).sort((a,b)=>a-b);const Y=String(yrs[yrs.length-1]);
+  const fm=(x,v)=>v==null?"–":x.unite==="%"?v.toLocaleString("fr-CH",{minimumFractionDigits:1,maximumFractionDigits:1})+" %":chf(v).replace(" fr.","");
+  const g=(k,y)=>I[k]&&I[k].valeurs[y]!=null?I[k].valeurs[y]:null;
+  const kp=[["Dette brute "+Y,mio(g("dette_brute",Y)),"emprunts à court, moyen et long terme"],["Taux d'endettement net "+Y,g("taux_net",Y).toLocaleString("fr-CH",{minimumFractionDigits:1})+" %","endettement net / revenus fiscaux"],["Intérêts passifs "+Y,mio(T.interets["C"+Y]),"charge d'intérêts des comptes"],["Marge d'autofinancement "+Y,mio(g("marge_autofinancement",Y)),"part des recettes disponible pour investir"]];
+  $("#deKpis").innerHTML=kp.map(k=>`<div class="kpi"><div class="k">${esc(k[0])}</div><div class="v num">${esc(k[1])}</div><div class="s">${esc(k[2])}</div></div>`).join("");
+  const er=T.emprunts_reels;const pts=Object.keys(er).map(s=>[+s.slice(1),er[s].total,s[0]]);
+  lineChart($("#deChart"),{C:pts.filter(p=>p[2]==="C").map(p=>[p[0],p[1]]),B:pts.filter(p=>p[2]==="B").map(p=>[p[0],p[1]])});
+  $("#deLeg").innerHTML=legendHTML()+'<span>Les points « budget » sont des prévisions, y compris les emprunts à renouveler et les nouveaux emprunts envisagés.</span>';
+  const cols=[2025,2024,2023,2022,2021,2020];
+  const rows=[["dette_court","Emprunts à court terme"],["dette_longue","Emprunts à moyen et long terme"],["dette_brute","Dette brute"],["patrimoine_financier","Patrimoine financier"],["endettement_net","Endettement net (statistiques cantonales)"],["endettement_net_mmfc","Endettement net (méthode cantonale MMFC)"],["revenus_fiscaux","Revenus fiscaux (MMFC)"],["taux_net","Taux d'endettement net"],["taux_brut","Taux d'endettement brut"],["marge_autofinancement","Marge d'autofinancement"],["investissements_nets","Dépenses nettes d'investissement"],["degre_autofinancement","Degré d'autofinancement"],["plafond","Plafond d'endettement (législature 2021-2026)"]];
+  const ti=Object.fromEntries(rows.filter(r=>I[r[0]]).map(r=>[r[0],I[r[0]]]));
+  let h=`<thead><tr><th>Indicateur</th>${cols.map(c=>`<th class="r">${c}</th>`).join("")}</tr></thead><tbody>`;
+  rows.forEach(r=>{const x=I[r[0]];if(!x)return;h+=`<tr><td>${esc(r[1])}</td>${cols.map(c=>{const v=x.valeurs[c],sc=x.sources[c];return `<td class="r" ${sc?`title="${esc(D.documents[sc[0]]?D.documents[sc[0]].titre:sc[0])}, page ${sc[1]} du PDF"`:""}>${fm(x,v)}</td>`}).join("")}</tr>`});
+  h+=`<tr><td>Intérêts passifs</td>${cols.map(c=>`<td class="r" title="${c===2025?"Comptes 2025":"Budget 2026"}">${chf(T.interets["C"+c]).replace(" fr.","")}</td>`).join("")}</tr></tbody>`;
+  $("#deT").innerHTML=h;
+  const rev=T.revisions.filter(r=>r.indicateur==="taux_net").sort((a,b)=>b.annee-a.annee);
+  $("#deNote").innerHTML="Comptes 2018 et 2019 : emprunts "+[2018,2019].map(a=>chf(er["C"+a].total)).join(" et ")+", intérêts passifs "+[2018,2019].map(a=>chf(T.interets["C"+a])).join(" et ")+". Les ratios de 2020 viennent des comptes 2024, ceux de 2021 à 2025 des comptes 2025."+(rev.length?" Le taux d'endettement net des années précédentes diffère entre les comptes 2024 et les comptes 2025 ("+rev.map(r=>r.annee+" : "+r.ancien.toLocaleString("fr-CH",{minimumFractionDigits:1})+" % dans les comptes 2024, "+r.nouveau.toLocaleString("fr-CH",{minimumFractionDigits:1})+" % dans les comptes 2025").join(" ; ")+") ; le site retient la valeur la plus récente.":"")+" Échelle du taux d'endettement net citée dans les comptes (méthode cantonale) : moins de 100 % bon, 100 à 150 % acceptable, 150 à 200 % mauvais, plus de 200 % problématique.";
+  const ech=Object.entries(T.echeancier_total).filter(e=>e[1]>0),mx=d3.max(ech,e=>e[1]),tot=d3.sum(ech,e=>e[1]);
+  $("#deEchSub").textContent=`Montants à rembourser chaque année, au ${T.date_echeancier}. Taux moyen indiqué : ${T.taux_moyen.toLocaleString("fr-CH",{minimumFractionDigits:2})} %.`;
+  $("#deEch").innerHTML=`<thead><tr><th>Année</th><th class="r">À rembourser</th><th class="r">Part</th><th style="width:40%"></th></tr></thead><tbody>`+ech.map(e=>`<tr><td>${e[0]}</td><td class="r">${chf(e[1]).replace(" fr.","")}</td><td class="r">${(e[1]/tot*100).toLocaleString("fr-CH",{maximumFractionDigits:1})} %</td><td><div style="height:10px;border-radius:2px;background:${cssv("--cC")};width:${e[1]/mx*100}%"></div></td></tr>`).join("")+"</tbody>";
+  $("#deEmpSub").textContent=`${T.emprunts.length} emprunts au ${T.date_echeancier}, triés par échéance. Source : ${D.documents["comptes-2025"].titre}.`;
+  const em=[...T.emprunts].sort((a,b)=>(a.echeance.split(".").reverse().join("")||"9")<(b.echeance.split(".").reverse().join("")||"9")?-1:1);
+  $("#deEmp").innerHTML=`<thead><tr><th>Prêteur</th><th>Conclu le</th><th>Échéance</th><th class="r">Taux</th><th class="r">Montant</th></tr></thead><tbody>`+em.map(e=>`<tr><td>${esc(e.preteur)}</td><td>${esc(e.debut)}</td><td>${esc(e.echeance||"échelonné jusqu'en 2032")}</td><td class="r">${e.taux.toLocaleString("fr-CH",{minimumFractionDigits:2})} %</td><td class="r">${chf(e.montant).replace(" fr.","")}</td></tr>`).join("")+"</tbody>";}
+function initDe(){if(!D.dette){$("#t-de").hidden=true;$("#p-de").hidden=true}}
+
+const RENDER={"t-de":renderDe,"t-ac":renderAccueil,"t-ex":()=>renderEx(),"t-re":()=>renderRe(),"t-gu":renderGu,"t-ov":renderOv,"t-ev":renderEv,"t-bc":renderBc,"t-am":renderAm,"t-fs":renderFs};
+initEx();initRe();initEv();initBc();initAm();initDe();initFs();ovWhatV=seg("#ovWhat",renderOv);
 $("#foot").innerHTML=`Source : Commune d'Épalinges, budgets et comptes (<a href="${esc(D.page_source)}" target="_blank" rel="noopener">epalinges.ch</a>). Mise en forme : projet indépendant « Budget d'Épalinges en données ouvertes ». Données et code : licence ouverte. En cas de doute, le document officiel fait foi.`;
 openTab(load("bp-tab")&&$("#"+load("bp-tab"))?load("bp-tab"):"t-ac");
 </script>

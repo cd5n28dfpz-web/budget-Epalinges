@@ -1,0 +1,1231 @@
+{
+ "indicateurs": {
+  "dette_court": [
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2024,
+    "valeur": 5000000.0
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2023,
+    "valeur": 5000000.0
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2022,
+    "valeur": 8000000.0
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2021,
+    "valeur": 5000000.0
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2020,
+    "valeur": 0.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2025,
+    "valeur": 10000000.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2024,
+    "valeur": 5000000.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2023,
+    "valeur": 5000000.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2022,
+    "valeur": 8000000.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2021,
+    "valeur": 5000000.0
+   }
+  ],
+  "dette_longue": [
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2024,
+    "valeur": 82958329.0
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2023,
+    "valeur": 78124997.0
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2022,
+    "valeur": 55291665.0
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2021,
+    "valeur": 47958333.0
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2020,
+    "valeur": 40000000.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2025,
+    "valeur": 83791661.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2024,
+    "valeur": 82958329.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2023,
+    "valeur": 78124997.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2022,
+    "valeur": 55291665.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2021,
+    "valeur": 47958333.0
+   }
+  ],
+  "dette_brute": [
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2024,
+    "valeur": 87958329.0
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2023,
+    "valeur": 83124997.0
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2022,
+    "valeur": 63291665.0
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2021,
+    "valeur": 52958333.0
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2020,
+    "valeur": 40000000.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2025,
+    "valeur": 93791661.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2024,
+    "valeur": 87958329.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2023,
+    "valeur": 83124997.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2022,
+    "valeur": 63291665.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2021,
+    "valeur": 52958333.0
+   }
+  ],
+  "engagements_propres": [
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2024,
+    "valeur": 31782.9
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2023,
+    "valeur": 31782.9
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2022,
+    "valeur": 31658.55
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2021,
+    "valeur": 31224.6
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2020,
+    "valeur": 31224.6
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2025,
+    "valeur": 31782.9
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2024,
+    "valeur": 31782.9
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2023,
+    "valeur": 31782.9
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2022,
+    "valeur": 31658.55
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2021,
+    "valeur": 31224.6
+   }
+  ],
+  "dette_brute_d2": [
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2024,
+    "valeur": 87990111.9
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2023,
+    "valeur": 83156779.9
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2022,
+    "valeur": 63323323.55
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2021,
+    "valeur": 52989557.6
+   },
+   {
+    "document": "comptes-2024",
+    "page": 30,
+    "annee": 2020,
+    "valeur": 40031224.6
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2025,
+    "valeur": 93823443.9
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2024,
+    "valeur": 87990111.9
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2023,
+    "valeur": 83156779.9
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2022,
+    "valeur": 63323323.55
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2021,
+    "valeur": 52989557.6
+   }
+  ],
+  "engagements_bruts": [
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2024,
+    "valeur": 96196431.54
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2023,
+    "valeur": 89559101.03
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2022,
+    "valeur": 69680392.27
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2021,
+    "valeur": 57846424.29
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2020,
+    "valeur": 43618753.43
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2025,
+    "valeur": 98762891.96
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2024,
+    "valeur": 96196431.54
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2023,
+    "valeur": 89559101.03
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2022,
+    "valeur": 69680392.27
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2021,
+    "valeur": 57846424.29
+   }
+  ],
+  "patrimoine_financier": [
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2024,
+    "valeur": 22048336.68
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2023,
+    "valeur": 28102216.27
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2022,
+    "valeur": 16497226.79
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2021,
+    "valeur": 17500481.73
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2020,
+    "valeur": 16250773.67
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2025,
+    "valeur": 25188996.73
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2024,
+    "valeur": 22048336.68
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2023,
+    "valeur": 28102216.27
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2022,
+    "valeur": 16497226.79
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2021,
+    "valeur": 17500481.73
+   }
+  ],
+  "endettement_net": [
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2024,
+    "valeur": 74148094.86
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2023,
+    "valeur": 61456884.76
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2022,
+    "valeur": 53183165.48
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2021,
+    "valeur": 40345942.56
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2020,
+    "valeur": 27367979.76
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2025,
+    "valeur": 73573895.23
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2024,
+    "valeur": 74148094.86
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2023,
+    "valeur": 61456884.76
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2022,
+    "valeur": 53183165.48
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2021,
+    "valeur": 40345942.56
+   }
+  ],
+  "revenus_fiscaux": [
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2024,
+    "valeur": 35976677.56
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2023,
+    "valeur": 38651003.47
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2022,
+    "valeur": 36157329.57
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2021,
+    "valeur": 36718191.14
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2020,
+    "valeur": 33116610.18
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2025,
+    "valeur": 37636338.63
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2024,
+    "valeur": 34083579.83
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2023,
+    "valeur": 33570362.47
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2022,
+    "valeur": 33474245.57
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2021,
+    "valeur": 33491949.14
+   }
+  ],
+  "taux_net": [
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2024,
+    "valeur": 206.1
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2023,
+    "valeur": 159.0
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2022,
+    "valeur": 147.1
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2021,
+    "valeur": 109.9
+   },
+   {
+    "document": "comptes-2024",
+    "page": 31,
+    "annee": 2020,
+    "valeur": 82.6
+   },
+   {
+    "document": "comptes-2025",
+    "page": 32,
+    "annee": 2025,
+    "valeur": 195.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 32,
+    "annee": 2024,
+    "valeur": 217.1
+   },
+   {
+    "document": "comptes-2025",
+    "page": 32,
+    "annee": 2023,
+    "valeur": 182.8
+   },
+   {
+    "document": "comptes-2025",
+    "page": 32,
+    "annee": 2022,
+    "valeur": 158.5
+   },
+   {
+    "document": "comptes-2025",
+    "page": 32,
+    "annee": 2021,
+    "valeur": 120.1
+   }
+  ],
+  "degre_autofinancement": [
+   {
+    "document": "comptes-2024",
+    "page": 28,
+    "annee": 2024,
+    "valeur": 18.2
+   },
+   {
+    "document": "comptes-2024",
+    "page": 28,
+    "annee": 2023,
+    "valeur": 36.8
+   },
+   {
+    "document": "comptes-2024",
+    "page": 28,
+    "annee": 2022,
+    "valeur": 21.3
+   },
+   {
+    "document": "comptes-2024",
+    "page": 28,
+    "annee": 2021,
+    "valeur": 31.1
+   },
+   {
+    "document": "comptes-2024",
+    "page": 28,
+    "annee": 2020,
+    "valeur": 24.1
+   },
+   {
+    "document": "comptes-2025",
+    "page": 29,
+    "annee": 2025,
+    "valeur": 113.7
+   },
+   {
+    "document": "comptes-2025",
+    "page": 29,
+    "annee": 2024,
+    "valeur": 18.2
+   },
+   {
+    "document": "comptes-2025",
+    "page": 29,
+    "annee": 2023,
+    "valeur": 36.8
+   },
+   {
+    "document": "comptes-2025",
+    "page": 29,
+    "annee": 2022,
+    "valeur": 21.3
+   },
+   {
+    "document": "comptes-2025",
+    "page": 29,
+    "annee": 2021,
+    "valeur": 31.1
+   }
+  ],
+  "endettement_net_mmfc": [
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2025,
+    "valeur": 73400570.23
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2024,
+    "valeur": 74005200.86
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2023,
+    "valeur": 61350200.76
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2022,
+    "valeur": 53064881.48
+   },
+   {
+    "document": "comptes-2025",
+    "page": 159,
+    "annee": 2021,
+    "valeur": 40230943.56
+   }
+  ],
+  "taux_brut": [
+   {
+    "document": "comptes-2025",
+    "page": 161,
+    "annee": 2025,
+    "valeur": 199.6
+   },
+   {
+    "document": "comptes-2025",
+    "page": 161,
+    "annee": 2024,
+    "valeur": 150.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 161,
+    "annee": 2023,
+    "valeur": 142.9
+   },
+   {
+    "document": "comptes-2025",
+    "page": 161,
+    "annee": 2022,
+    "valeur": 116.2
+   },
+   {
+    "document": "comptes-2025",
+    "page": 161,
+    "annee": 2021,
+    "valeur": 96.6
+   }
+  ],
+  "marge_autofinancement": [
+   {
+    "document": "comptes-2025",
+    "page": 160,
+    "annee": 2025,
+    "valeur": 2359375.69
+   },
+   {
+    "document": "comptes-2025",
+    "page": 160,
+    "annee": 2024,
+    "valeur": 2833575.54
+   },
+   {
+    "document": "comptes-2025",
+    "page": 160,
+    "annee": 2023,
+    "valeur": 4827583.34
+   },
+   {
+    "document": "comptes-2025",
+    "page": 160,
+    "annee": 2022,
+    "valeur": 3514026.05
+   },
+   {
+    "document": "comptes-2025",
+    "page": 160,
+    "annee": 2021,
+    "valeur": 5837780.83
+   }
+  ],
+  "investissements_nets": [
+   {
+    "document": "comptes-2025",
+    "page": 160,
+    "annee": 2025,
+    "valeur": 2074308.54
+   },
+   {
+    "document": "comptes-2025",
+    "page": 160,
+    "annee": 2024,
+    "valeur": 15534553.53
+   },
+   {
+    "document": "comptes-2025",
+    "page": 160,
+    "annee": 2023,
+    "valeur": 13103910.59
+   },
+   {
+    "document": "comptes-2025",
+    "page": 160,
+    "annee": 2022,
+    "valeur": 16506389.71
+   },
+   {
+    "document": "comptes-2025",
+    "page": 160,
+    "annee": 2021,
+    "valeur": 18752657.04
+   }
+  ],
+  "plafond": [
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2025,
+    "valeur": 140000000.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2024,
+    "valeur": 140000000.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2023,
+    "valeur": 140000000.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2022,
+    "valeur": 140000000.0
+   },
+   {
+    "document": "comptes-2025",
+    "page": 31,
+    "annee": 2021,
+    "valeur": 140000000.0
+   }
+  ]
+ },
+ "emprunts_reels": {
+  "court": {
+   "document": "budget-2026",
+   "page": 96,
+   "valeurs": {
+    "B2026": 10000000.0,
+    "B2025": 9000000.0,
+    "C2024": 5000000.0,
+    "C2023": 5000000.0,
+    "C2022": 8000000.0,
+    "C2021": 5000000.0,
+    "C2020": 0.0,
+    "C2019": 36900000.0,
+    "C2018": 36900000.0
+   }
+  },
+  "long": {
+   "document": "budget-2026",
+   "page": 96,
+   "valeurs": {
+    "B2026": 91890323.0,
+    "B2025": 90791661.0,
+    "C2024": 82958329.0,
+    "C2023": 78124997.0,
+    "C2022": 55291665.0,
+    "C2021": 47958333.0,
+    "C2020": 40000000.0,
+    "C2019": 0.0,
+    "C2018": 0.0
+   }
+  },
+  "total": {
+   "document": "budget-2026",
+   "page": 96,
+   "valeurs": {
+    "B2026": 101890323.0,
+    "B2025": 99791661.0,
+    "C2024": 87958329.0,
+    "C2023": 83124997.0,
+    "C2022": 63291665.0,
+    "C2021": 52958333.0,
+    "C2020": 40000000.0,
+    "C2019": 36900000.0,
+    "C2018": 36900000.0
+   }
+  }
+ },
+ "interets": {
+  "budget-2026": {
+   "document": "budget-2026",
+   "page": 96,
+   "valeurs": {
+    "B2026": 1159230.0,
+    "B2025": 1443070.0,
+    "C2024": 1164106.0,
+    "C2023": 1029568.0,
+    "C2022": 600105.0,
+    "C2021": 577274.0,
+    "C2020": 538718.0,
+    "C2019": 559269.0,
+    "C2018": 556232.0
+   }
+  },
+  "comptes-2025": {
+   "document": "comptes-2025",
+   "page": 18,
+   "valeurs": {
+    "C2025": 1196316.78,
+    "B2025": 1443070.0,
+    "C2024": 1164105.57,
+    "C2023": 1029568.31,
+    "C2022": 600105.3,
+    "C2021": 577273.55
+   }
+  }
+ },
+ "echeancier": {
+  "document": "comptes-2025",
+  "page": 151,
+  "date": "2025-12-31",
+  "emprunts": [
+   {
+    "debut": "07.10.2011",
+    "preteur": "AXA-Winterthur",
+    "compte": "9221.00.054",
+    "taux": 1.85,
+    "montant": 2500000.0,
+    "echeance": "07.10.2026",
+    "repartition": {
+     "2026": 2500000.0
+    }
+   },
+   {
+    "debut": "10.02.2012",
+    "preteur": "AXA Leben",
+    "compte": "9221.00.056",
+    "taux": 1.75,
+    "montant": 2500000.0,
+    "echeance": "10.02.2027",
+    "repartition": {
+     "2027": 2500000.0
+    }
+   },
+   {
+    "debut": "28.03.2013",
+    "preteur": "Vaudoise Vie",
+    "compte": "9221.00.058",
+    "taux": 1.9,
+    "montant": 2500000.0,
+    "echeance": "28.03.2028",
+    "repartition": {
+     "2028": 2500000.0
+    }
+   },
+   {
+    "debut": "01.10.2014",
+    "preteur": "POSTFINANCE",
+    "compte": "9221.00.061",
+    "taux": 1.69,
+    "montant": 2500000.0,
+    "echeance": "01.10.2029",
+    "repartition": {
+     "2029": 2500000.0
+    }
+   },
+   {
+    "debut": "05.06.2015",
+    "preteur": "Pensionskasse POST",
+    "compte": "9221.00.062",
+    "taux": 0.98,
+    "montant": 5000000.0,
+    "echeance": "05.06.2030",
+    "repartition": {
+     "2030": 5000000.0
+    }
+   },
+   {
+    "debut": "20.06.2017",
+    "preteur": "AXA Vie SA",
+    "compte": "9221.00.063",
+    "taux": 0.9,
+    "montant": 5000000.0,
+    "echeance": "20.06.2034",
+    "repartition": {
+     "2034": 5000000.0
+    }
+   },
+   {
+    "debut": "03.05.2018",
+    "preteur": "MIGROS-Pensionskasse",
+    "compte": "9221.00.064",
+    "taux": 1.25,
+    "montant": 5000000.0,
+    "echeance": "03.05.2033",
+    "repartition": {
+     "2033": 5000000.0
+    }
+   },
+   {
+    "debut": "19.06.2020",
+    "preteur": "C.I.P.",
+    "compte": "9221.00.065",
+    "taux": 0.45,
+    "montant": 5000000.0,
+    "echeance": "19.06.2030",
+    "repartition": {
+     "2030": 5000000.0
+    }
+   },
+   {
+    "debut": "10.02.2021",
+    "preteur": "POSTFINANCE",
+    "compte": "9221.00.066",
+    "taux": 0.74,
+    "montant": 5000000.0,
+    "echeance": "10.02.2040",
+    "repartition": {
+     "2040": 5000000.0
+    }
+   },
+   {
+    "debut": "15.06.2021",
+    "preteur": "B.C.V.",
+    "compte": "9221.00.067",
+    "taux": 0.62,
+    "montant": 4291661.0,
+    "echeance": "15.06.2032",
+    "repartition": {
+     "2026": 166668.0,
+     "2027": 166668.0,
+     "2028": 166668.0,
+     "2029": 166668.0,
+     "2030": 166668.0,
+     "2031": 166668.0,
+     "2032": 3291653.0
+    }
+   },
+   {
+    "debut": "18.02.2022",
+    "preteur": "SUVA",
+    "compte": "9221.00.068",
+    "taux": 0.89,
+    "montant": 5000000.0,
+    "echeance": "18.02.2036",
+    "repartition": {
+     "2036": 5000000.0
+    }
+   },
+   {
+    "debut": "11.04.2022",
+    "preteur": "SUVA",
+    "compte": "9221.00.069",
+    "taux": 0.98,
+    "montant": 5000000.0,
+    "echeance": "11.04.2029",
+    "repartition": {
+     "2029": 5000000.0
+    }
+   },
+   {
+    "debut": "20.01.2023",
+    "preteur": "SUVA",
+    "compte": "9221.00.070",
+    "taux": 1.88,
+    "montant": 2500000.0,
+    "echeance": "20.01.2027",
+    "repartition": {
+     "2027": 2500000.0
+    }
+   },
+   {
+    "debut": "20.01.2023",
+    "preteur": "SUVA",
+    "compte": "9221.00.071",
+    "taux": 1.89,
+    "montant": 2500000.0,
+    "echeance": "20.01.2028",
+    "repartition": {
+     "2028": 2500000.0
+    }
+   },
+   {
+    "debut": "08.05.2023",
+    "preteur": "POSTFINANCE",
+    "compte": "9221.00.072",
+    "taux": 2.5,
+    "montant": 5000000.0,
+    "echeance": "08.05.2038",
+    "repartition": {
+     "2038": 5000000.0
+    }
+   },
+   {
+    "debut": "20.10.2023",
+    "preteur": "FONDATION SUPPL. LPP",
+    "compte": "9221.00.074",
+    "taux": 1.93,
+    "montant": 5000000.0,
+    "echeance": "20.10.2026",
+    "repartition": {
+     "2026": 5000000.0
+    }
+   },
+   {
+    "debut": "20.10.2023",
+    "preteur": "SUVA",
+    "compte": "9221.00.075",
+    "taux": 2.02,
+    "montant": 5000000.0,
+    "echeance": "20.10.2031",
+    "repartition": {
+     "2031": 5000000.0
+    }
+   },
+   {
+    "debut": "28.11.2024",
+    "preteur": "FONDATION SUPPL. LPP",
+    "compte": "9221.00.077",
+    "taux": 1.05,
+    "montant": 2000000.0,
+    "echeance": "29.11.2027",
+    "repartition": {
+     "2027": 2000000.0
+    }
+   },
+   {
+    "debut": "28.11.2024",
+    "preteur": "SWISSQUOTE BANK",
+    "compte": "9221.00.076",
+    "taux": 0.95,
+    "montant": 2000000.0,
+    "echeance": "29.11.2027",
+    "repartition": {
+     "2027": 2000000.0
+    }
+   },
+   {
+    "debut": "18.11.2024",
+    "preteur": "SWISSQUOTE BANK",
+    "compte": "9221.00.076",
+    "taux": 0.95,
+    "montant": 3000000.0,
+    "echeance": "18.11.2027",
+    "repartition": {
+     "2027": 3000000.0
+    }
+   },
+   {
+    "debut": "04.08.2025",
+    "preteur": "COMMUNE DE BOUDRY",
+    "compte": "9210.00.001",
+    "taux": 0.5,
+    "montant": 3000000.0,
+    "echeance": "04.05.2026",
+    "repartition": {
+     "2026": 3000000.0
+    }
+   },
+   {
+    "debut": "03.09.2025",
+    "preteur": "FONDATION SUPPL. LPP",
+    "compte": "9221.00.078",
+    "taux": 0.62,
+    "montant": 1500000.0,
+    "echeance": "04.09.2028",
+    "repartition": {
+     "2028": 1500000.0
+    }
+   },
+   {
+    "debut": "30.09.2025",
+    "preteur": "COMMUNE DE BOUDRY",
+    "compte": "9210.00.001",
+    "taux": 0.45,
+    "montant": 2000000.0,
+    "echeance": "30.09.2026",
+    "repartition": {
+     "2026": 2000000.0
+    }
+   },
+   {
+    "debut": "01.10.2025",
+    "preteur": "FONDATION SUPPL. LPP",
+    "compte": "9221.00.079",
+    "taux": 0.58,
+    "montant": 6000000.0,
+    "echeance": "01.10.2027",
+    "repartition": {
+     "2027": 6000000.0
+    }
+   },
+   {
+    "debut": "20.10.2025",
+    "preteur": "BANQUE CANTONALE NEUCHÂTELOISE",
+    "compte": "9210.00.001",
+    "taux": 0.42,
+    "montant": 5000000.0,
+    "echeance": "20.10.2026",
+    "repartition": {
+     "2026": 5000000.0
+    }
+   }
+  ],
+  "total": {
+   "taux": 1.19,
+   "montant": 93791661.0,
+   "annees": {
+    "2026": 17666668.0,
+    "2027": 18166668.0,
+    "2028": 6666668.0,
+    "2029": 7666668.0,
+    "2030": 10166668.0,
+    "2031": 5166668.0,
+    "2032": 3291653.0,
+    "2033": 5000000.0,
+    "2034": 5000000.0,
+    "2035": 0.0,
+    "2036": 5000000.0,
+    "2037": 0.0,
+    "2038": 5000000.0,
+    "2039": 0.0,
+    "2040": 5000000.0
+   }
+  }
+ }
+}

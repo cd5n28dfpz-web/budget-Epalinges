@@ -54,6 +54,15 @@ class TestRapprochement(unittest.TestCase):
             d = sum(float(a["difference"]) * (1 if a["sens"] == "revenu" else -1) for a in am if a["annee"] == an)
             self.assertAlmostEqual(float(res["P" + an]["resultat"]) + d, float(res["B" + an]["resultat"]), delta=0.01)
 
+    def test_dette(self):
+        d = {(r["indicateur"], r["annee"]): float(r["valeur"]) for r in lire("dette.csv")}
+        self.assertEqual(d[("dette_brute", "2025")], 93791661.0)
+        self.assertEqual(d[("emprunts_total", "2026")], 101890323.0)
+        self.assertEqual(d[("taux_net", "2025")], 195.0)
+        emp = lire("emprunts.csv")
+        self.assertEqual(len(emp), 25)
+        self.assertEqual(sum(float(e["montant_31_12_2025"]) for e in emp), d[("dette_brute", "2025")])
+
     def test_cles_uniques(self):
         cles = [(l["section"], l["compte"]) for l in lire("lignes_large.csv")]
         self.assertEqual(len(cles), len(set(cles)))

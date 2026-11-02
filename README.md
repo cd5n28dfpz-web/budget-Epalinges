@@ -2,7 +2,7 @@
 
 Les budgets et les comptes de la Commune d'Épalinges, ligne par ligne, extraits des documents officiels de la commune et rendus lisibles : un tableau de bord interactif et des fichiers CSV réutilisables.
 
-**Couverture actuelle** : comptes 2018 à 2025, budgets votés 2019 à 2026, projets de budget 2020 à 2022 et 2024, soit plus de 2'000 lignes du budget de fonctionnement dans 7 dicastères.
+**Couverture actuelle** : comptes 2018 à 2025, budgets votés 2019 à 2026, projets de budget 2020 à 2022 et 2024, soit plus de 2'000 lignes du budget de fonctionnement dans 7 dicastères, plus un onglet « Dette » (emprunts, intérêts, endettement, ratios financiers et échéancier des emprunts, 2018 à 2026).
 
 > Projet indépendant, sans lien avec l'administration communale. Les chiffres proviennent des documents publiés par la Commune d'Épalinges ; en cas de doute, le document officiel fait foi.
 > Ce projet est une adaptation pour Épalinges du projet [Budget de Prilly en données ouvertes](https://github.com/andant89/budget-Prilly) (licence MIT).
@@ -16,7 +16,7 @@ L'outil décrit ce que montrent les chiffres. Il ne dit pas ce qu'il faudrait en
 | Dossier | Contenu |
 |---|---|
 | `site/index.html` | Tableau de bord autonome, à ouvrir dans un navigateur (aussi publié via GitHub Pages) |
-| `data/` | Données ouvertes au format CSV (UTF-8) : `lignes_large.csv`, `lignes.csv`, `sections.csv`, `natures.csv`, `resultats.csv`, `amendements.csv`, `commentaires.csv`, `controles.csv` |
+| `data/` | Données ouvertes au format CSV (UTF-8) : `lignes_large.csv`, `lignes.csv`, `sections.csv`, `natures.csv`, `resultats.csv`, `amendements.csv`, `commentaires.csv`, `controles.csv`, `dette.csv` (emprunts, intérêts, endettement et ratios par année), `emprunts.csv` (emprunts en cours au 31.12.2025) |
 | `pipeline/` | Scripts d'extraction et de fusion (Python ; `pdftotext` pour lire les PDF ; `tesseract` et `opencv` pour les pages-images) |
 | `sources/` | Liste des documents, extractions brutes, résultats de l'OCR, corrections manuelles |
 | `tests/` | Contrôles automatiques de cohérence |

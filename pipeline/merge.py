@@ -18,6 +18,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from libelles import lisible  # noqa: E402
+import dette as dette_mod  # noqa: E402
 import numerotation as num  # noqa: E402
 from collections import defaultdict
 
@@ -272,6 +273,10 @@ def main():
     ecrire("commentaires.csv", [{"section": x["cle"].split("|")[0], "compte": x["cle"].split("|")[1],
                                  "document": x["document"], "texte": x["texte"], "source": x["source"]}
                                 for x in commentaires], ["section", "compte", "document", "texte", "source"])
+    dette_rows, emprunts_rows, dette_site = dette_mod.fusionner(ctrl, None)
+    ecrire("dette.csv", dette_rows, ["indicateur", "serie", "type", "annee", "valeur", "unite", "document", "page"])
+    ecrire("emprunts.csv", emprunts_rows, ["debut", "preteur", "compte", "taux", "montant_31_12_2025", "echeance",
+                                           "remboursements"])
     ecrire("controles.csv", controles, ["document", "controle", "attendu", "obtenu", "ecart", "ok", "bloquant"])
 
     # Données du site
@@ -291,7 +296,7 @@ def main():
         "resultats": resultats, "amendements": amendements, "documents": docs_info,
         "controles": {"total": len(controles), "ok": sum(1 for c in controles if c["ok"] == "oui"),
                       "bloquants_ko": sum(1 for c in controles if c["ok"] == "non" and c["bloquant"] == "oui")},
-        "page_source": cfg["page_source"],
+        "page_source": cfg["page_source"], "dette": dette_site,
     }
     with open(os.path.join(RACINE, "site", "data.json"), "w", encoding="utf-8") as fh:
         json.dump(site, fh, ensure_ascii=False, separators=(",", ":"))

@@ -30,6 +30,16 @@ Les pages de détail des comptes 2025 sont des images. Elles sont lues par recon
 
 Au dernier passage, les contrôles (plus de 10'000) passent tous. Le résultat 2025 (excédent de charges de 491'361.51 francs, après prélèvement de 2,5 millions sur des fonds de réserve) correspond à celui que la commune annonce dans ses comptes.
 
+## Dette et ratios financiers
+
+L'onglet « Dette » ne vient pas du compte de fonctionnement mais des chapitres « endettement », des ratios financiers et de l'échéancier des emprunts, lus dans le texte des PDF (`pipeline/dette.py`) :
+
+- **comptes 2025** (ratios 2021 à 2025, échéancier des emprunts au 31.12.2025, intérêts passifs 2021 à 2025) ;
+- **comptes 2024** (ratios 2020, et 2021 à 2024 avant recalcul) ;
+- **budget 2026** (emprunts réels et intérêts passifs 2018 à 2026).
+
+Pour chaque année, la valeur du document le plus récent est retenue ; les écarts entre documents (par exemple le taux d'endettement net 2024 : 206,1 % dans les comptes 2024, 217,1 % dans les comptes 2025) sont signalés dans l'onglet. Contrôles : dette brute = court terme + moyen/long terme, dette nette = engagements bruts - patrimoine financier, taux = endettement net / revenus fiscaux, degré d'autofinancement = marge / investissements nets, somme des emprunts de l'échéancier = dette brute, remboursements de chaque emprunt = son montant, total de chaque année de l'échéancier. Le bilan complet et le compte des investissements ne sont pas repris.
+
 ## Limites
 
 - Seul le **budget de fonctionnement** est repris. Les investissements, le bilan, la dette et les comptes du CISTEP ne le sont pas.
