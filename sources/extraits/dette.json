@@ -1227,5 +1227,60 @@
     "2040": 5000000.0
    }
   }
+ },
+ "flux": {
+  "2024": {
+   "document": "comptes-2025",
+   "page": 31,
+   "marge": 2833575.54,
+   "fonctionnement": 4361883.37,
+   "depenses_invest": -15695764.53,
+   "investissements": -15534553.53,
+   "remboursements": -2166668.0,
+   "nouveaux": 7000000.0,
+   "financement": 4833332.0,
+   "variation": -6339338.16,
+   "dispo_debut": 8519604.97,
+   "dispo_fin": 2180266.81
+  },
+  "2023": {
+   "document": "comptes-2024",
+   "page": 30,
+   "marge": 4827583.34,
+   "fonctionnement": 222236.67,
+   "depenses_invest": -14379462.79,
+   "investissements": -13106910.59,
+   "remboursements": -5166668.0,
+   "nouveaux": 25000000.0,
+   "financement": 19833332.0,
+   "variation": 6948658.08,
+   "dispo_debut": 1570946.89,
+   "dispo_fin": 8519604.97
+  },
+  "2025": {
+   "document": "comptes-2025",
+   "page": 31,
+   "marge": 2359375.69,
+   "fonctionnement": -1868284.72,
+   "depenses_invest": -7033588.53,
+   "investissements": -2964655.61,
+   "remboursements": -20666668.0,
+   "nouveaux": 26500000.0,
+   "financement": 5833332.0,
+   "variation": 1000391.67,
+   "dispo_debut": 2180266.81,
+   "dispo_fin": 3180658.48
+  },
+  "2022": {
+   "document": "comptes-2022",
+   "page": 14,
+   "marge": 3976556.04,
+   "fonctionnement": 3673227.24,
+   "investissements": -16506389.71,
+   "financement": 10333332.0,
+   "variation": -2499830.47,
+   "dispo_debut": 4070777.36,
+   "dispo_fin": 1570946.89
+  }
  }
 }

@@ -128,8 +128,60 @@ def echeancier(pgs):
     return p, emprunts, total
 
 
+FLUX_LIGNES = [  # (clé, début du libellé)
+    ("marge", "Marge d'autofinancement"), ("depenses_invest", "Charges d'investissements du patrimoine administratif"),
+    ("fonctionnement", "Flux généré par le fonctionnement"), ("investissements", "Flux généré par les investissements"),
+    ("remboursements", "Remboursement des emprunts"), ("nouveaux", "Nouveaux emprunts"),
+    ("financement", "Flux généré par les activités de financement"), ("variation", "Variation nette des disponibilités"),
+    ("dispo_debut", "Disponibilités au début de l'exercice"), ("dispo_fin", "Disponibilités en fin d'exercice")]
+NB = re.compile(r"([-\u2010\u2011\u2212])?\s*(\d{1,3}(?: \d{3})*\.\d\d|\d[\d']*\.\d\d)")
+
+
+def nombres_signes(txt):
+    out = []
+    for m in NB.finditer(txt):
+        v = float(m.group(2).replace(" ", "").replace("'", ""))
+        out.append(-v if m.group(1) else v)
+    return out
+
+
+def flux():
+    """Tableaux de flux de trésorerie : 2024 et 2025 (comptes 2025), 2023 (comptes 2024), 2022 (comptes 2022)."""
+    res = {}
+    for doc, annees in (("comptes-2024", [2024, 2023]), ("comptes-2025", [2025, 2024])):
+        pgs = pages(doc)
+        p = next(i for i, t in enumerate(pgs, 1) if "Tableau des flux de trésorerie" in t and "Flux généré par le fonctionnement" in t)
+        cur = {a: {"document": doc, "page": p} for a in annees}
+        for ln in pgs[p - 1].split("\n"):
+            for cle, deb in FLUX_LIGNES:
+                if ln.strip().startswith(deb):
+                    v = nombres_signes(ln.strip()[len(deb):])
+                    if len(v) == 2:
+                        for a, x in zip(annees, v):
+                            cur[a][cle] = x
+        for a, r in cur.items():
+            res[str(a)] = r  # le document le plus récent remplace le précédent
+    pgs = pages("comptes-2022")
+    p = next(i for i, t in enumerate(pgs, 1) if "TABLEAU DE FLUX DE TRÉSORERIE" in t)
+    r = {"document": "comptes-2022", "page": p}
+    cles = {"Autofinancement": "marge", "Flux de trésorerie lié à l'activité": "fonctionnement",
+            "Flux de trésorerie lié aux opérations d'investissements": "investissements",
+            "Flux de trésorerie lié aux financements à moyen et long termes": "financement",
+            "Disponibilités au 1": "dispo_debut", "Disponibilités au 31": "dispo_fin"}
+    for ln in pgs[p - 1].split("\n"):
+        for deb, cle in cles.items():
+            if ln.strip().startswith(deb):
+                v = nombres_signes(re.sub(r"^.*?(\s{2,}[AB C]?\s{2,}|\s{3,})", " ", ln.strip(), count=1))
+                if v:
+                    r[cle] = v[-1]
+        if ln.strip().startswith("Total (A + B + C)"):
+            r["variation"] = nombres_signes(ln)[-1]
+    res["2022"] = r
+    return res
+
+
 def extraire():
-    res = {"indicateurs": {}, "emprunts_reels": {}, "interets": {}, "echeancier": None}
+    res = {"indicateurs": {}, "emprunts_reels": {}, "interets": {}, "echeancier": None, "flux": flux()}
     for doc, an in ANNEES_DOC.items():
         pgs = pages(doc)
         for cle, nom, unite, rx in INDICATEURS:
@@ -234,6 +286,27 @@ def fusionner(ctrl, docs_info):
     for s in ("C2024", "C2023", "C2022", "C2021"):
         ctrl("comptes-2025", f"{s} intérêts passifs (comptes 2025 = budget 2026)", it_b["valeurs"][s],
              it_c["valeurs"][s], bloquant=False, tol=1.0)
+    # Tableaux de flux de trésorerie : cohérence interne et avec la dette brute
+    fl = d["flux"]
+    for a in sorted(fl):
+        r, y = fl[a], int(a)
+        ctrl(r["document"], f"Flux {a} : A + B + C = variation des disponibilités", r["variation"],
+             r["fonctionnement"] + r["investissements"] + r["financement"], tol=0.01)
+        ctrl(r["document"], f"Flux {a} : disponibilités fin - début = variation", r["variation"],
+             r["dispo_fin"] - r["dispo_debut"], tol=0.01)
+        if "nouveaux" in r:
+            ctrl(r["document"], f"Flux {a} : nouveaux emprunts + remboursements = flux de financement",
+                 r["financement"], r["nouveaux"] + r["remboursements"], tol=0.01)
+        if (("dette_brute", y) in val) and (("dette_brute", y - 1) in val):
+            ctrl(r["document"], f"Flux {a} : flux de financement = variation de la dette brute", r["financement"],
+                 val[("dette_brute", y)] - val[("dette_brute", y - 1)], tol=1.0)
+        if str(y - 1) in fl:
+            ctrl(r["document"], f"Flux {a} : disponibilités au début = fin de l'année précédente", r["dispo_debut"],
+                 fl[str(y - 1)]["dispo_fin"], tol=0.01)
+        for cle in r:
+            if cle not in ("document", "page"):
+                rows.append({"indicateur": "flux_" + cle, "serie": f"C{a}", "type": "Comptes", "annee": a,
+                             "valeur": f"{r[cle]:.2f}", "unite": "CHF", "document": r["document"], "page": r["page"]})
     # Échéancier au 31.12.2025
     e = d["echeancier"]
     emp, tot = e["emprunts"], e["total"]
@@ -260,6 +333,7 @@ def fusionner(ctrl, docs_info):
                       "echeance": x["echeance"], "remboursements": x["repartition"]} for x in emp],
         "echeancier_total": tot["annees"], "taux_moyen": tot["taux"], "date_echeancier": "31.12.2025",
         "revisions": revisions,
+        "flux": {a: {k: v for k, v in r.items()} for a, r in sorted(fl.items())},
         "sources": {"echeancier": [e["document"], e["page"]], "emprunts_reels": ["budget-2026", er["total"]["page"]]},
     }
     return rows, lignes_emp, site

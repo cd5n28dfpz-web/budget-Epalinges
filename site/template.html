@@ -286,6 +286,9 @@ svg .grid line{stroke:var(--line)}
   <p class="lede">Le compte de fonctionnement (les autres onglets) ne dit pas tout : la commune emprunte pour financer ses investissements. Cet onglet reprend, tels que publiés dans les comptes et le budget, les emprunts, les intérêts, l'endettement et les ratios financiers.</p>
   <div class="kpis" id="deKpis"></div>
   <div class="sec card"><div class="sec-h"><h2>Emprunts réels</h2><p>Dette brute au 31 décembre, en millions de francs (sans les préavis non encore financés).</p></div><div class="chart" id="deChart"></div><div class="legend" id="deLeg"></div></div>
+  <div class="sec"><div class="sec-h"><h2>Pourquoi la dette augmente</h2><p>Tableau de flux de trésorerie des comptes, en francs.</p></div>
+    <p class="note" style="margin:0 0 10px">Le compte de fonctionnement (charges et revenus) ne comprend pas les investissements : routes, bâtiments et collecteurs sont payés en trésorerie, puis amortis sur plusieurs années dans les charges. Un résultat équilibré n'empêche donc pas la dette de varier. Le tableau suit l'argent réellement encaissé et dépensé : ce que l'activité dégage, ce que la commune investit, et la manière dont l'écart est financé.</p>
+    <div class="tblwrap"><table class="data" id="deFl"></table></div><div id="deFlTxt" class="prose" style="margin-top:12px"></div><p class="note" id="deFlNote"></p></div>
   <div class="sec"><div class="sec-h"><h2>Indicateurs par année</h2><p>Montants en francs. Survolez une valeur pour voir le document et la page.</p></div><div class="tblwrap"><table class="data" id="deT"></table></div><p class="note" id="deNote"></p></div>
   <div class="sec"><div class="sec-h"><h2>Échéancier des emprunts</h2><p id="deEchSub"></p></div><div class="tblwrap"><table class="data" id="deEch"></table></div></div>
   <div class="sec"><div class="sec-h"><h2>Emprunts en cours</h2><p id="deEmpSub"></p></div><div class="tblwrap"><table class="data" id="deEmp"></table></div></div>
@@ -600,6 +603,26 @@ function renderDe(){const T=D.dette;if(!T)return;
   const er=T.emprunts_reels;const pts=Object.keys(er).map(s=>[+s.slice(1),er[s].total,s[0]]);
   lineChart($("#deChart"),{C:pts.filter(p=>p[2]==="C").map(p=>[p[0],p[1]]),B:pts.filter(p=>p[2]==="B").map(p=>[p[0],p[1]])});
   $("#deLeg").innerHTML=legendHTML()+'<span>Les points « budget » sont des prévisions, y compris les emprunts à renouveler et les nouveaux emprunts envisagés.</span>';
+
+  const FL=T.flux,fy=Object.keys(FL).sort((a,b)=>b-a);
+  if(fy.length){const f0=x=>x==null?"–":chf(x).replace(" fr.","");const sg=x=>x==null?"–":(x>0?"+":"")+f0(x);
+    const row=(lib,fn,cls)=>`<tr class="${cls||""}"><td>${cls==="tot"?"<b>"+esc(lib)+"</b>":esc(lib)}</td>${fy.map(a=>`<td class="r">${cls==="tot"?"<b>"+fn(FL[a])+"</b>":fn(FL[a])}</td>`).join("")}</tr>`;
+    $("#deFl").innerHTML=`<thead><tr><th>Année</th>${fy.map(a=>`<th class="r" title="${esc((D.documents[FL[a].document]||{}).titre||"")}, page ${FL[a].page} du PDF">${a}</th>`).join("")}</tr></thead><tbody>`+
+      row("Marge d'autofinancement (ce que le fonctionnement dégage en argent)",r=>sg(r.marge))+
+      row("Variation des créances et dettes courantes (factures à encaisser ou à payer)",r=>sg(r.fonctionnement-r.marge))+
+      row("= Flux généré par l'activité",r=>sg(r.fonctionnement),"tot")+
+      row("Dépenses d'investissement",r=>sg(r.depenses_invest))+
+      row("Subventions, désinvestissements et autres",r=>r.depenses_invest==null?"–":sg(r.investissements-r.depenses_invest))+
+      row("= Investissements nets",r=>sg(r.investissements),"tot")+
+      row("Besoin de financement (activité + investissements)",r=>sg(r.fonctionnement+r.investissements))+
+      row("Nouveaux emprunts",r=>sg(r.nouveaux))+
+      row("Remboursements d'emprunts",r=>sg(r.remboursements))+
+      row("= Emprunts nets (variation de la dette brute)",r=>sg(r.financement),"tot")+
+      row("Variation des liquidités",r=>sg(r.variation))+
+      row("Liquidités en fin d'année",r=>f0(r.dispo_fin))+"</tbody>";
+    $("#deFlTxt").innerHTML=fy.slice().reverse().map(a=>{const r=FL[a],bes=r.fonctionnement+r.investissements;
+      return `<p><b>${a}.</b> ${r.fonctionnement>=0?"L'activité a dégagé "+mio(r.fonctionnement):"L'activité a consommé "+mio(-r.fonctionnement)} (marge d'autofinancement : ${mio(r.marge)}), pour ${mio(-r.investissements)} d'investissements nets : ${bes<0?"un besoin de financement de "+mio(-bes):"un excédent de "+mio(bes)}. La commune a ${r.financement>=0?"emprunté":"remboursé"} ${mio(Math.abs(r.financement))} net, et ses liquidités ${r.variation>=0?"ont augmenté":"ont diminué"} de ${mio(Math.abs(r.variation))} (${mio(r.dispo_fin)} fin ${a}).</p>`}).join("");
+    $("#deFlNote").textContent="Sources : tableaux de flux de trésorerie des comptes 2022 (pour 2022), 2024 (pour 2023) et 2025 (pour 2024 et 2025). La marge d'autofinancement est calculée par la commune ; sa définition a été ajustée entre documents (par exemple 2023 : 4,94 mio dans les comptes 2023, 4,83 mio dans les comptes 2024). Le tableau de 2022 ne détaille ni les dépenses d'investissement ni les emprunts conclus et remboursés."}
   const cols=[2025,2024,2023,2022,2021,2020];
   const rows=[["dette_court","Emprunts à court terme"],["dette_longue","Emprunts à moyen et long terme"],["dette_brute","Dette brute"],["patrimoine_financier","Patrimoine financier"],["endettement_net","Endettement net (statistiques cantonales)"],["endettement_net_mmfc","Endettement net (méthode cantonale MMFC)"],["revenus_fiscaux","Revenus fiscaux (MMFC)"],["taux_net","Taux d'endettement net"],["taux_brut","Taux d'endettement brut"],["marge_autofinancement","Marge d'autofinancement"],["investissements_nets","Dépenses nettes d'investissement"],["degre_autofinancement","Degré d'autofinancement"],["plafond","Plafond d'endettement (législature 2021-2026)"]];
   const ti=Object.fromEntries(rows.filter(r=>I[r[0]]).map(r=>[r[0],I[r[0]]]));
