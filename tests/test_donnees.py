@@ -63,6 +63,16 @@ class TestRapprochement(unittest.TestCase):
         self.assertEqual(len(emp), 25)
         self.assertEqual(sum(float(e["montant_31_12_2025"]) for e in emp), d[("dette_brute", "2025")])
 
+    def test_investissements(self):
+        inv = lire("investissements.csv")
+        par_an = {}
+        for r in inv:
+            par_an[r["annee"]] = par_an.get(r["annee"], 0) + float(r["paiement"])
+        self.assertAlmostEqual(par_an["2023"], 14379462.79, places=2)
+        self.assertAlmostEqual(par_an["2025"], 7033588.53, places=2)
+        bm = [r for r in inv if r["annee"] == "2023" and r["code"] == "9143.00.137"]
+        self.assertEqual(float(bm[0]["paiement"]), 7622193.39)
+
     def test_cles_uniques(self):
         cles = [(l["section"], l["compte"]) for l in lire("lignes_large.csv")]
         self.assertEqual(len(cles), len(set(cles)))

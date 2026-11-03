@@ -273,7 +273,9 @@ def main():
     ecrire("commentaires.csv", [{"section": x["cle"].split("|")[0], "compte": x["cle"].split("|")[1],
                                  "document": x["document"], "texte": x["texte"], "source": x["source"]}
                                 for x in commentaires], ["section", "compte", "document", "texte", "source"])
-    dette_rows, emprunts_rows, dette_site = dette_mod.fusionner(ctrl, None)
+    dette_rows, emprunts_rows, dette_site, invest_rows = dette_mod.fusionner(ctrl, None)
+    ecrire("investissements.csv", invest_rows, ["annee", "code", "categorie", "objet", "preavis", "credit", "paiement",
+                                               "cout_cumule_fin_annee", "document", "page"])
     ecrire("dette.csv", dette_rows, ["indicateur", "serie", "type", "annee", "valeur", "unite", "document", "page"])
     ecrire("emprunts.csv", emprunts_rows, ["debut", "preteur", "compte", "taux", "montant_31_12_2025", "echeance",
                                            "remboursements"])

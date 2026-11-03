@@ -180,8 +180,115 @@ def flux():
     return res
 
 
+# ---------------------------------------------------------------- investissements
+MONTANT = re.compile(r"(?<![\w.'/])[-‐−]?\s?\d[\d']*\.\d\d(?![\w'])")
+COLS_INV = ["cout", "amort", "subs", "s01", "pay", "am_an", "sub_an", "s31"]
+CAT_INV = {"9141.00": "Assainissement", "9141.10": "Génie civil", "9143": "Bâtiments", "9145": "Autres", "9146": "Véhicules et matériel"}
+
+
+def categorie_inv(code):
+    return CAT_INV.get(code[:7]) or CAT_INV.get(code[:4])
+
+
+def _nb(x):
+    neg = x[0] in "-‐−"
+    v = float(re.sub(r"[^\d.]", "", x))
+    return -v if neg else v
+
+
+def paiement_ligne(toks):
+    """Paiements de l'année d'une ligne du détail des comptes d'investissements.
+    Colonnes : coût au 31.12 précédent, amortissement, subsides, solde au 01.01, paiements, amortissement
+    de l'année, subsides de l'année, solde au 31.12. Les colonnes vides n'ont pas de texte : on cherche
+    l'affectation des nombres qui respecte les deux égalités comptables."""
+    import itertools
+    sols = []
+    for idx in itertools.combinations(range(8), len(toks)):
+        d = {COLS_INV[i]: toks[j] for j, i in enumerate(idx)}
+        g = lambda n: d.get(n, 0.0)
+        if "s31" not in d or abs(g("s01") - (g("cout") - g("amort") - g("subs"))) > 0.015 \
+                or abs(g("s31") - (g("s01") + g("pay") - g("am_an") - g("sub_an"))) > 0.015:
+            continue
+        sols.append(d)
+    pays = {round(x.get("pay", 0.0), 2) for x in sols}
+    if len(pays) == 1:
+        sol = sols[0]
+        return sol.get("pay", 0.0), sol.get("cout", 0.0), "ok"
+    if len(pays) > 1:
+        return 0.0, sols[0].get("cout", 0.0), "ambigu"  # lignes à zéro ou « pour mémoire »
+    for k in (5, 4):  # solde final absent du texte
+        if len(toks) >= k and abs(toks[0] - sum(toks[1:k - 2]) - toks[k - 2]) < 0.02:
+            return toks[k - 1], toks[0], "prefixe"
+    if toks and abs(toks[-1]) <= 1.0:  # solde « pour mémoire » à 1 franc : ouvrage entièrement amorti, pas de paiement
+        return 0.0, toks[0], "memoire"
+    return None, None, "aucun"
+
+
+def investissements():
+    """Projets d'investissement du patrimoine administratif : paiements de l'année, par document de comptes."""
+    res = {}
+    for doc, an in (("comptes-2022", 2022), ("comptes-2023", 2023), ("comptes-2024", 2024), ("comptes-2025", 2025)):
+        pgs = pages(doc)
+        rows = []
+        for p, txt in enumerate(pgs, 1):
+            if "DÉTAIL DES COMPTES D'INVESTISSEMENTS" not in txt:
+                continue
+            lg = txt.split("\n")
+            for k, ln in enumerate(lg):
+                m = re.match(r"^\s*(914\d\.\d\d\.\d{3})\s+(.*)$", ln)
+                if not m:
+                    continue
+                code, rest = m.groups()
+                toks = [_nb(x.group()) for x in MONTANT.finditer(rest)]
+                pay, cout, mode = paiement_ligne(toks)
+                if pay is None:
+                    raise SystemExit(f"{doc} p.{p} {code} : colonnes illisibles {toks}")
+                if abs(pay) <= 1.0:
+                    pay = 0.0  # « pour mémoire » à 1 franc
+                nom = re.split(r"\s{2,}|\s(?=\d{2}/\d{2}\b)", rest.strip())[0]
+                if nom and (re.match(r"^[\d'./ -]+$", nom) or MONTANT.match(nom)):
+                    nom = ""
+                if not nom:  # libellé sur deux lignes, au-dessus et en dessous du code
+                    def texte(l):
+                        l = l.strip()
+                        return l if l and not re.search(r"\d{4}\.\d\d\.\d{3}|\d[\d']*\.\d\d|À reporter|Total|Objet", l) \
+                            and len(re.split(r"\s{2,}", l)) == 1 else ""
+                    nom = f"{texte(lg[k - 1]) if k else ''} {texte(lg[k + 1]) if k + 1 < len(lg) else ''}".strip()
+                cr = re.search(r"\d{2}/\d{2}(?:\s+\d{2}/\d{2})*\s+(\d[\d']*)(?![\d'.])", rest)
+                pre = re.findall(r"\b\d{2}/\d{2}\b", rest)
+                rows.append({"code": code, "objet": re.sub(r"\s+", " ", nom), "preavis": " ".join(pre),
+                             "credit": _nb(cr.group(1)) if cr else None, "cout_precedent": cout, "paiement": pay,
+                             "page": p, "mode": mode})
+        res[str(an)] = {"document": doc, "projets": rows}
+    return res
+
+
+RECAP_LIB = [("assainissement", "Ouvrages d'assainissement"), ("genie_civil", "Ouvrages de génie civil"),
+             ("batiments", "Bâtiments et constructions"), ("vehicules", "Véhicules et matériel d'exploitation"),
+             ("autres", "Autres subventions et participations")]
+
+
+def recap_investissements():
+    """Dépenses d'investissement par type (récapitulatif des comptes 2022 et 2023)."""
+    out = {}
+    for doc, an in (("comptes-2022", 2022), ("comptes-2023", 2023)):
+        pgs = pages(doc)
+        p = next(i for i, t in enumerate(pgs, 1) if "RÉCAPITULATIF DES DÉPENSES PAR TYPES D'INVESTISSEMENTS" in t)
+        r = {"document": doc, "page": p}
+        for ln in pgs[p - 1].split("\n"):
+            for cle, lib in RECAP_LIB:
+                if ln.strip().startswith(lib):
+                    v = nombres_signes(ln.strip()[len(lib):])
+                    if cle == "autres":  # 2022 : « autres » puis total ; 2023 : le total seul
+                        r["autres"], r["total"] = (v[0], v[-1]) if len(v) > 1 else (0.0, v[0])
+                    else:
+                        r[cle] = v[0]
+        out[str(an)] = r
+    return out
+
+
 def extraire():
-    res = {"indicateurs": {}, "emprunts_reels": {}, "interets": {}, "echeancier": None, "flux": flux()}
+    res = {"indicateurs": {}, "emprunts_reels": {}, "interets": {}, "echeancier": None, "flux": flux(), "investissements": investissements(), "recap_invest": recap_investissements()}
     for doc, an in ANNEES_DOC.items():
         pgs = pages(doc)
         for cle, nom, unite, rx in INDICATEURS:
@@ -307,6 +414,43 @@ def fusionner(ctrl, docs_info):
             if cle not in ("document", "page"):
                 rows.append({"indicateur": "flux_" + cle, "serie": f"C{a}", "type": "Comptes", "annee": a,
                              "valeur": f"{r[cle]:.2f}", "unite": "CHF", "document": r["document"], "page": r["page"]})
+    # Projets d'investissement
+    inv, recap = d["investissements"], d["recap_invest"]
+    CATS = {"Assainissement": "assainissement", "Génie civil": "genie_civil", "Bâtiments": "batiments",
+            "Véhicules et matériel": "vehicules", "Autres": "autres"}
+    inv_site, lignes_inv = {}, []
+    for a in sorted(inv):
+        projets = inv[a]["projets"]
+        doc = inv[a]["document"]
+        par_cat = {}
+        for x in projets:
+            c = categorie_inv(x["code"]) or "Autres"
+            par_cat[c] = par_cat.get(c, 0.0) + x["paiement"]
+        autres = recap.get(a, {}).get("autres", 0.0)
+        total_pdf = (-fl[a]["depenses_invest"]) if "depenses_invest" in fl.get(a, {}) else recap[a]["total"]
+        ctrl(doc, f"Investissements {a} : somme des projets (+ autres participations) = dépenses d'investissement",
+             total_pdf, sum(par_cat.values()) + autres, tol=0.01)
+        if a in recap:
+            for c, cle in CATS.items():
+                if cle != "autres":
+                    ctrl(doc, f"Investissements {a} : {c} = récapitulatif des comptes", recap[a][cle], par_cat.get(c, 0.0),
+                         tol=0.01)
+        if autres:
+            par_cat["Autres subventions et participations"] = autres
+        par_cat = {k: round(v, 2) for k, v in par_cat.items() if abs(v) > 0.5}
+        pj = [[x["code"], x["objet"].replace("‐", "-"), x["preavis"], x["credit"], round(x["paiement"], 2),
+               round(x["cout_precedent"] + x["paiement"], 2), categorie_inv(x["code"])]
+              for x in projets if x["paiement"] > 0]
+        pj.sort(key=lambda z: -z[4])
+        inv_site[a] = {"total": round(total_pdf, 2), "categories": par_cat, "projets": pj,
+                       "source": [doc, min(x["page"] for x in projets)]}
+        for x in projets:
+            if x["paiement"] != 0:
+                lignes_inv.append({"annee": a, "code": x["code"], "categorie": categorie_inv(x["code"]),
+                                   "objet": x["objet"].replace("‐", "-"), "preavis": x["preavis"],
+                                   "credit": "" if x["credit"] is None else f"{x['credit']:.0f}",
+                                   "paiement": f"{x['paiement']:.2f}", "cout_cumule_fin_annee": f"{x['cout_precedent'] + x['paiement']:.2f}",
+                                   "document": doc, "page": x["page"]})
     # Échéancier au 31.12.2025
     e = d["echeancier"]
     emp, tot = e["emprunts"], e["total"]
@@ -334,9 +478,10 @@ def fusionner(ctrl, docs_info):
         "echeancier_total": tot["annees"], "taux_moyen": tot["taux"], "date_echeancier": "31.12.2025",
         "revisions": revisions,
         "flux": {a: {k: v for k, v in r.items()} for a, r in sorted(fl.items())},
+        "investissements": inv_site,
         "sources": {"echeancier": [e["document"], e["page"]], "emprunts_reels": ["budget-2026", er["total"]["page"]]},
     }
-    return rows, lignes_emp, site
+    return rows, lignes_emp, site, lignes_inv
 
 
 if __name__ == "__main__":

@@ -16,7 +16,7 @@ L'outil décrit ce que montrent les chiffres. Il ne dit pas ce qu'il faudrait en
 | Dossier | Contenu |
 |---|---|
 | `site/index.html` | Tableau de bord autonome, à ouvrir dans un navigateur (aussi publié via GitHub Pages) |
-| `data/` | Données ouvertes au format CSV (UTF-8) : `lignes_large.csv`, `lignes.csv`, `sections.csv`, `natures.csv`, `resultats.csv`, `amendements.csv`, `commentaires.csv`, `controles.csv`, `dette.csv` (emprunts, intérêts, endettement et ratios par année), `emprunts.csv` (emprunts en cours au 31.12.2025) |
+| `data/` | Données ouvertes au format CSV (UTF-8) : `lignes_large.csv`, `lignes.csv`, `sections.csv`, `natures.csv`, `resultats.csv`, `amendements.csv`, `commentaires.csv`, `controles.csv`, `dette.csv` (emprunts, intérêts, endettement et ratios par année), `emprunts.csv` (emprunts en cours au 31.12.2025), `investissements.csv` (paiements par projet d'investissement, 2022 à 2025) |
 | `pipeline/` | Scripts d'extraction et de fusion (Python ; `pdftotext` pour lire les PDF ; `tesseract` et `opencv` pour les pages-images) |
 | `sources/` | Liste des documents, extractions brutes, résultats de l'OCR, corrections manuelles |
 | `tests/` | Contrôles automatiques de cohérence |
