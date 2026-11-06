@@ -10959,3 +10959,1156 @@ comptes-2025,Échéancier : total 2037,0.00,0.00,0.00,oui,oui
 comptes-2025,Échéancier : total 2038,5000000.00,5000000.00,0.00,oui,oui
 comptes-2025,Échéancier : total 2039,0.00,0.00,0.00,oui,oui
 comptes-2025,Échéancier : total 2040,5000000.00,5000000.00,0.00,oui,oui
+budget-2027,2027 total des charges (tableau récapitulatif),57472511.14,57472511.14,0.00,oui,oui
+budget-2027,2026 total des charges (tableau récapitulatif),57345370.55,57345370.55,0.00,oui,oui
+budget-2027,2027 total des revenus (tableau récapitulatif),49452120.97,49452120.97,0.00,oui,oui
+budget-2027,2026 total des revenus (tableau récapitulatif),55345370.55,55345370.55,0.00,oui,oui
+budget-2027,direction 0 charges 2027,5336193.20,5336193.20,0.00,oui,oui
+budget-2027,direction 0 revenus 2027,477300.00,477300.00,0.00,oui,oui
+budget-2027,direction 0 charges 2026,5024270.55,5024270.55,0.00,oui,oui
+budget-2027,direction 0 revenus 2026,490340.00,490340.00,0.00,oui,oui
+budget-2027,groupe 01 charges 2027,896120.00,896120.00,0.00,oui,oui
+budget-2027,groupe 01 revenus 2027,17000.00,17000.00,0.00,oui,oui
+budget-2027,groupe 01 charges 2026,864825.55,864825.55,0.00,oui,oui
+budget-2027,groupe 01 revenus 2026,14000.00,14000.00,0.00,oui,oui
+budget-2027,fonction 011 charges 2027,243790.00,243790.00,0.00,oui,oui
+budget-2027,fonction 011 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 011 charges 2026,239590.00,239590.00,0.00,oui,oui
+budget-2027,fonction 011 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 0110.00 charges 2027,243790.00,243790.00,0.00,oui,oui
+budget-2027,section 0110.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 0110.00 charges 2026,239590.00,239590.00,0.00,oui,oui
+budget-2027,section 0110.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 012 charges 2027,652330.00,652330.00,0.00,oui,oui
+budget-2027,fonction 012 revenus 2027,17000.00,17000.00,0.00,oui,oui
+budget-2027,fonction 012 charges 2026,625235.55,625235.55,0.00,oui,oui
+budget-2027,fonction 012 revenus 2026,14000.00,14000.00,0.00,oui,oui
+budget-2027,section 0120.00 charges 2027,652330.00,652330.00,0.00,oui,oui
+budget-2027,section 0120.00 revenus 2027,17000.00,17000.00,0.00,oui,oui
+budget-2027,section 0120.00 charges 2026,625235.55,625235.55,0.00,oui,oui
+budget-2027,section 0120.00 revenus 2026,14000.00,14000.00,0.00,oui,oui
+budget-2027,groupe 02 charges 2027,4440073.20,4440073.20,0.00,oui,oui
+budget-2027,groupe 02 revenus 2027,460300.00,460300.00,0.00,oui,oui
+budget-2027,groupe 02 charges 2026,4159445.00,4159445.00,0.00,oui,oui
+budget-2027,groupe 02 revenus 2026,476340.00,476340.00,0.00,oui,oui
+budget-2027,fonction 021 charges 2027,980500.00,980500.00,0.00,oui,oui
+budget-2027,fonction 021 revenus 2027,73500.00,73500.00,0.00,oui,oui
+budget-2027,fonction 021 charges 2026,1022000.00,1022000.00,0.00,oui,oui
+budget-2027,fonction 021 revenus 2026,107700.00,107700.00,0.00,oui,oui
+budget-2027,section 0210.00 charges 2027,980500.00,980500.00,0.00,oui,oui
+budget-2027,section 0210.00 revenus 2027,73500.00,73500.00,0.00,oui,oui
+budget-2027,section 0210.00 charges 2026,1022000.00,1022000.00,0.00,oui,oui
+budget-2027,section 0210.00 revenus 2026,107700.00,107700.00,0.00,oui,oui
+budget-2027,fonction 022 charges 2027,3004153.20,3004153.20,0.00,oui,oui
+budget-2027,fonction 022 revenus 2027,203100.00,203100.00,0.00,oui,oui
+budget-2027,fonction 022 charges 2026,2689765.00,2689765.00,0.00,oui,oui
+budget-2027,fonction 022 revenus 2026,213100.00,213100.00,0.00,oui,oui
+budget-2027,section 0220.00 charges 2027,952655.00,952655.00,0.00,oui,oui
+budget-2027,section 0220.00 revenus 2027,1100.00,1100.00,0.00,oui,oui
+budget-2027,section 0220.00 charges 2026,1074890.00,1074890.00,0.00,oui,oui
+budget-2027,section 0220.00 revenus 2026,1100.00,1100.00,0.00,oui,oui
+budget-2027,section 0221.00 charges 2027,433140.00,433140.00,0.00,oui,oui
+budget-2027,section 0221.00 revenus 2027,200000.00,200000.00,0.00,oui,oui
+budget-2027,section 0221.00 charges 2026,423620.00,423620.00,0.00,oui,oui
+budget-2027,section 0221.00 revenus 2026,200000.00,200000.00,0.00,oui,oui
+budget-2027,section 0222.00 charges 2027,490040.00,490040.00,0.00,oui,oui
+budget-2027,section 0222.00 revenus 2027,2000.00,2000.00,0.00,oui,oui
+budget-2027,section 0222.00 charges 2026,547270.00,547270.00,0.00,oui,oui
+budget-2027,section 0222.00 revenus 2026,12000.00,12000.00,0.00,oui,oui
+budget-2027,section 0223.00 charges 2027,1128318.20,1128318.20,0.00,oui,oui
+budget-2027,section 0223.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 0223.00 charges 2026,643985.00,643985.00,0.00,oui,oui
+budget-2027,section 0223.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 029 charges 2027,455420.00,455420.00,0.00,oui,oui
+budget-2027,fonction 029 revenus 2027,183700.00,183700.00,0.00,oui,oui
+budget-2027,fonction 029 charges 2026,447680.00,447680.00,0.00,oui,oui
+budget-2027,fonction 029 revenus 2026,155540.00,155540.00,0.00,oui,oui
+budget-2027,section 0290.01 charges 2027,97290.00,97290.00,0.00,oui,oui
+budget-2027,section 0290.01 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 0290.01 charges 2026,101910.00,101910.00,0.00,oui,oui
+budget-2027,section 0290.01 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 0290.02 charges 2027,2000.00,2000.00,0.00,oui,oui
+budget-2027,section 0290.02 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 0290.02 charges 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 0290.02 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 0290.03 charges 2027,161950.00,161950.00,0.00,oui,oui
+budget-2027,section 0290.03 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 0290.03 charges 2026,147120.00,147120.00,0.00,oui,oui
+budget-2027,section 0290.03 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 0290.04 charges 2027,97550.00,97550.00,0.00,oui,oui
+budget-2027,section 0290.04 revenus 2027,72000.00,72000.00,0.00,oui,oui
+budget-2027,section 0290.04 charges 2026,89350.00,89350.00,0.00,oui,oui
+budget-2027,section 0290.04 revenus 2026,44000.00,44000.00,0.00,oui,oui
+budget-2027,section 0290.05 charges 2027,2000.00,2000.00,0.00,oui,oui
+budget-2027,section 0290.05 revenus 2027,21000.00,21000.00,0.00,oui,oui
+budget-2027,section 0290.05 charges 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 0290.05 revenus 2026,21000.00,21000.00,0.00,oui,oui
+budget-2027,section 0290.06 charges 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 0290.06 revenus 2027,18000.00,18000.00,0.00,oui,oui
+budget-2027,section 0290.06 charges 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 0290.06 revenus 2026,18000.00,18000.00,0.00,oui,oui
+budget-2027,section 0290.07 charges 2027,94630.00,94630.00,0.00,oui,oui
+budget-2027,section 0290.07 revenus 2027,72700.00,72700.00,0.00,oui,oui
+budget-2027,section 0290.07 charges 2026,109300.00,109300.00,0.00,oui,oui
+budget-2027,section 0290.07 revenus 2026,72540.00,72540.00,0.00,oui,oui
+budget-2027,direction 1 charges 2027,3274533.00,3274533.00,0.00,oui,oui
+budget-2027,direction 1 revenus 2027,78700.00,78700.00,0.00,oui,oui
+budget-2027,direction 1 charges 2026,3290650.00,3290650.00,0.00,oui,oui
+budget-2027,direction 1 revenus 2026,80250.00,80250.00,0.00,oui,oui
+budget-2027,groupe 11 charges 2027,2580610.00,2580610.00,0.00,oui,oui
+budget-2027,groupe 11 revenus 2027,78500.00,78500.00,0.00,oui,oui
+budget-2027,groupe 11 charges 2026,2590870.00,2590870.00,0.00,oui,oui
+budget-2027,groupe 11 revenus 2026,80000.00,80000.00,0.00,oui,oui
+budget-2027,fonction 111 charges 2027,2580610.00,2580610.00,0.00,oui,oui
+budget-2027,fonction 111 revenus 2027,78500.00,78500.00,0.00,oui,oui
+budget-2027,fonction 111 charges 2026,2590870.00,2590870.00,0.00,oui,oui
+budget-2027,fonction 111 revenus 2026,80000.00,80000.00,0.00,oui,oui
+budget-2027,section 1110.00 charges 2027,739840.00,739840.00,0.00,oui,oui
+budget-2027,section 1110.00 revenus 2027,78500.00,78500.00,0.00,oui,oui
+budget-2027,section 1110.00 charges 2026,749020.00,749020.00,0.00,oui,oui
+budget-2027,section 1110.00 revenus 2026,80000.00,80000.00,0.00,oui,oui
+budget-2027,section 1110.01 charges 2027,1840770.00,1840770.00,0.00,oui,oui
+budget-2027,section 1110.01 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 1110.01 charges 2026,1841850.00,1841850.00,0.00,oui,oui
+budget-2027,section 1110.01 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 15 charges 2027,392243.00,392243.00,0.00,oui,oui
+budget-2027,groupe 15 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 15 charges 2026,389700.00,389700.00,0.00,oui,oui
+budget-2027,groupe 15 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 150 charges 2027,392243.00,392243.00,0.00,oui,oui
+budget-2027,fonction 150 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 150 charges 2026,389700.00,389700.00,0.00,oui,oui
+budget-2027,fonction 150 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 1500.00 charges 2027,392243.00,392243.00,0.00,oui,oui
+budget-2027,section 1500.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 1500.00 charges 2026,389700.00,389700.00,0.00,oui,oui
+budget-2027,section 1500.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 16 charges 2027,301680.00,301680.00,0.00,oui,oui
+budget-2027,groupe 16 revenus 2027,200.00,200.00,0.00,oui,oui
+budget-2027,groupe 16 charges 2026,310080.00,310080.00,0.00,oui,oui
+budget-2027,groupe 16 revenus 2026,250.00,250.00,0.00,oui,oui
+budget-2027,fonction 161 charges 2027,14580.00,14580.00,0.00,oui,oui
+budget-2027,fonction 161 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 161 charges 2026,14580.00,14580.00,0.00,oui,oui
+budget-2027,fonction 161 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 1610.00 charges 2027,14580.00,14580.00,0.00,oui,oui
+budget-2027,section 1610.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 1610.00 charges 2026,14580.00,14580.00,0.00,oui,oui
+budget-2027,section 1610.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 162 charges 2027,287100.00,287100.00,0.00,oui,oui
+budget-2027,fonction 162 revenus 2027,200.00,200.00,0.00,oui,oui
+budget-2027,fonction 162 charges 2026,295500.00,295500.00,0.00,oui,oui
+budget-2027,fonction 162 revenus 2026,250.00,250.00,0.00,oui,oui
+budget-2027,section 1620.00 charges 2027,271000.00,271000.00,0.00,oui,oui
+budget-2027,section 1620.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 1620.00 charges 2026,271000.00,271000.00,0.00,oui,oui
+budget-2027,section 1620.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 1620.01 charges 2027,10250.00,10250.00,0.00,oui,oui
+budget-2027,section 1620.01 revenus 2027,50.00,50.00,0.00,oui,oui
+budget-2027,section 1620.01 charges 2026,18150.00,18150.00,0.00,oui,oui
+budget-2027,section 1620.01 revenus 2026,50.00,50.00,0.00,oui,oui
+budget-2027,section 1620.02 charges 2027,5850.00,5850.00,0.00,oui,oui
+budget-2027,section 1620.02 revenus 2027,150.00,150.00,0.00,oui,oui
+budget-2027,section 1620.02 charges 2026,6350.00,6350.00,0.00,oui,oui
+budget-2027,section 1620.02 revenus 2026,200.00,200.00,0.00,oui,oui
+budget-2027,direction 2 charges 2027,9376241.00,9376241.00,0.00,oui,oui
+budget-2027,direction 2 revenus 2027,907434.00,907434.00,0.00,oui,oui
+budget-2027,direction 2 charges 2026,9312469.00,9312469.00,0.00,oui,oui
+budget-2027,direction 2 revenus 2026,939864.00,939864.00,0.00,oui,oui
+budget-2027,groupe 21 charges 2027,9365841.00,9365841.00,0.00,oui,oui
+budget-2027,groupe 21 revenus 2027,907434.00,907434.00,0.00,oui,oui
+budget-2027,groupe 21 charges 2026,9301069.00,9301069.00,0.00,oui,oui
+budget-2027,groupe 21 revenus 2026,939864.00,939864.00,0.00,oui,oui
+budget-2027,fonction 212 charges 2027,287325.00,287325.00,0.00,oui,oui
+budget-2027,fonction 212 revenus 2027,72500.00,72500.00,0.00,oui,oui
+budget-2027,fonction 212 charges 2026,328930.00,328930.00,0.00,oui,oui
+budget-2027,fonction 212 revenus 2026,83100.00,83100.00,0.00,oui,oui
+budget-2027,section 2120.00 charges 2027,283975.00,283975.00,0.00,oui,oui
+budget-2027,section 2120.00 revenus 2027,72500.00,72500.00,0.00,oui,oui
+budget-2027,section 2120.00 charges 2026,325580.00,325580.00,0.00,oui,oui
+budget-2027,section 2120.00 revenus 2026,83100.00,83100.00,0.00,oui,oui
+budget-2027,section 2120.01 charges 2027,3350.00,3350.00,0.00,oui,oui
+budget-2027,section 2120.01 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2120.01 charges 2026,3350.00,3350.00,0.00,oui,oui
+budget-2027,section 2120.01 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 213 charges 2027,477066.00,477066.00,0.00,oui,oui
+budget-2027,fonction 213 revenus 2027,3000.00,3000.00,0.00,oui,oui
+budget-2027,fonction 213 charges 2026,509320.00,509320.00,0.00,oui,oui
+budget-2027,fonction 213 revenus 2026,29760.00,29760.00,0.00,oui,oui
+budget-2027,section 2130.00 charges 2027,477066.00,477066.00,0.00,oui,oui
+budget-2027,section 2130.00 revenus 2027,3000.00,3000.00,0.00,oui,oui
+budget-2027,section 2130.00 charges 2026,509320.00,509320.00,0.00,oui,oui
+budget-2027,section 2130.00 revenus 2026,29760.00,29760.00,0.00,oui,oui
+budget-2027,fonction 214 charges 2027,179500.00,179500.00,0.00,oui,oui
+budget-2027,fonction 214 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 214 charges 2026,179440.00,179440.00,0.00,oui,oui
+budget-2027,fonction 214 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2140.00 charges 2027,179500.00,179500.00,0.00,oui,oui
+budget-2027,section 2140.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2140.00 charges 2026,179440.00,179440.00,0.00,oui,oui
+budget-2027,section 2140.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 217 charges 2027,4542411.00,4542411.00,0.00,oui,oui
+budget-2027,fonction 217 revenus 2027,19300.00,19300.00,0.00,oui,oui
+budget-2027,fonction 217 charges 2026,4699270.00,4699270.00,0.00,oui,oui
+budget-2027,fonction 217 revenus 2026,33300.00,33300.00,0.00,oui,oui
+budget-2027,section 2170.01 charges 2027,119645.00,119645.00,0.00,oui,oui
+budget-2027,section 2170.01 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.01 charges 2026,87860.00,87860.00,0.00,oui,oui
+budget-2027,section 2170.01 revenus 2026,1000.00,1000.00,0.00,oui,oui
+budget-2027,section 2170.02 charges 2027,297950.00,297950.00,0.00,oui,oui
+budget-2027,section 2170.02 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.02 charges 2026,112150.00,112150.00,0.00,oui,oui
+budget-2027,section 2170.02 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.03 charges 2027,86780.00,86780.00,0.00,oui,oui
+budget-2027,section 2170.03 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.03 charges 2026,98860.00,98860.00,0.00,oui,oui
+budget-2027,section 2170.03 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.04 charges 2027,53100.00,53100.00,0.00,oui,oui
+budget-2027,section 2170.04 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.04 charges 2026,52750.00,52750.00,0.00,oui,oui
+budget-2027,section 2170.04 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.05 charges 2027,57100.00,57100.00,0.00,oui,oui
+budget-2027,section 2170.05 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.05 charges 2026,56600.00,56600.00,0.00,oui,oui
+budget-2027,section 2170.05 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.06 charges 2027,2335390.00,2335390.00,0.00,oui,oui
+budget-2027,section 2170.06 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.06 charges 2026,3402850.00,3402850.00,0.00,oui,oui
+budget-2027,section 2170.06 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.07 charges 2027,140226.00,140226.00,0.00,oui,oui
+budget-2027,section 2170.07 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.07 charges 2026,103700.00,103700.00,0.00,oui,oui
+budget-2027,section 2170.07 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.08 charges 2027,120180.00,120180.00,0.00,oui,oui
+budget-2027,section 2170.08 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.08 charges 2026,9500.00,9500.00,0.00,oui,oui
+budget-2027,section 2170.08 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.09 charges 2027,3400.00,3400.00,0.00,oui,oui
+budget-2027,section 2170.09 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.09 charges 2026,4400.00,4400.00,0.00,oui,oui
+budget-2027,section 2170.09 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.10 charges 2027,15600.00,15600.00,0.00,oui,oui
+budget-2027,section 2170.10 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.10 charges 2026,5100.00,5100.00,0.00,oui,oui
+budget-2027,section 2170.10 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.11 charges 2027,58140.00,58140.00,0.00,oui,oui
+budget-2027,section 2170.11 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.11 charges 2026,2600.00,2600.00,0.00,oui,oui
+budget-2027,section 2170.11 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.12 charges 2027,61600.00,61600.00,0.00,oui,oui
+budget-2027,section 2170.12 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.12 charges 2026,88700.00,88700.00,0.00,oui,oui
+budget-2027,section 2170.12 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.13 charges 2027,68000.00,68000.00,0.00,oui,oui
+budget-2027,section 2170.13 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.13 charges 2026,68000.00,68000.00,0.00,oui,oui
+budget-2027,section 2170.13 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.14 charges 2027,549857.00,549857.00,0.00,oui,oui
+budget-2027,section 2170.14 revenus 2027,19300.00,19300.00,0.00,oui,oui
+budget-2027,section 2170.14 charges 2026,265600.00,265600.00,0.00,oui,oui
+budget-2027,section 2170.14 revenus 2026,19300.00,19300.00,0.00,oui,oui
+budget-2027,section 2170.15 charges 2027,128000.00,128000.00,0.00,oui,oui
+budget-2027,section 2170.15 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.15 charges 2026,43000.00,43000.00,0.00,oui,oui
+budget-2027,section 2170.15 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.16 charges 2027,88700.00,88700.00,0.00,oui,oui
+budget-2027,section 2170.16 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.16 charges 2026,18500.00,18500.00,0.00,oui,oui
+budget-2027,section 2170.16 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.17 charges 2027,191850.00,191850.00,0.00,oui,oui
+budget-2027,section 2170.17 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.17 charges 2026,15250.00,15250.00,0.00,oui,oui
+budget-2027,section 2170.17 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.18 charges 2027,4350.00,4350.00,0.00,oui,oui
+budget-2027,section 2170.18 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.18 charges 2026,79750.00,79750.00,0.00,oui,oui
+budget-2027,section 2170.18 revenus 2026,13000.00,13000.00,0.00,oui,oui
+budget-2027,section 2170.19 charges 2027,65013.00,65013.00,0.00,oui,oui
+budget-2027,section 2170.19 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.19 charges 2026,119350.00,119350.00,0.00,oui,oui
+budget-2027,section 2170.19 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.20 charges 2027,47550.00,47550.00,0.00,oui,oui
+budget-2027,section 2170.20 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.20 charges 2026,64750.00,64750.00,0.00,oui,oui
+budget-2027,section 2170.20 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.21 charges 2027,49980.00,49980.00,0.00,oui,oui
+budget-2027,section 2170.21 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.21 charges 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2170.21 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 218 charges 2027,2737775.00,2737775.00,0.00,oui,oui
+budget-2027,fonction 218 revenus 2027,620234.00,620234.00,0.00,oui,oui
+budget-2027,fonction 218 charges 2026,2428279.00,2428279.00,0.00,oui,oui
+budget-2027,fonction 218 revenus 2026,602704.00,602704.00,0.00,oui,oui
+budget-2027,section 2180.00 charges 2027,2274115.00,2274115.00,0.00,oui,oui
+budget-2027,section 2180.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2180.00 charges 2026,1972829.00,1972829.00,0.00,oui,oui
+budget-2027,section 2180.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2180.01 charges 2027,11050.00,11050.00,0.00,oui,oui
+budget-2027,section 2180.01 revenus 2027,85094.00,85094.00,0.00,oui,oui
+budget-2027,section 2180.01 charges 2026,11050.00,11050.00,0.00,oui,oui
+budget-2027,section 2180.01 revenus 2026,85094.00,85094.00,0.00,oui,oui
+budget-2027,section 2180.02 charges 2027,23150.00,23150.00,0.00,oui,oui
+budget-2027,section 2180.02 revenus 2027,19500.00,19500.00,0.00,oui,oui
+budget-2027,section 2180.02 charges 2026,23150.00,23150.00,0.00,oui,oui
+budget-2027,section 2180.02 revenus 2026,19500.00,19500.00,0.00,oui,oui
+budget-2027,section 2180.03 charges 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2180.03 revenus 2027,190360.00,190360.00,0.00,oui,oui
+budget-2027,section 2180.03 charges 2026,5000.00,5000.00,0.00,oui,oui
+budget-2027,section 2180.03 revenus 2026,190360.00,190360.00,0.00,oui,oui
+budget-2027,section 2180.04 charges 2027,412710.00,412710.00,0.00,oui,oui
+budget-2027,section 2180.04 revenus 2027,250000.00,250000.00,0.00,oui,oui
+budget-2027,section 2180.04 charges 2026,397800.00,397800.00,0.00,oui,oui
+budget-2027,section 2180.04 revenus 2026,232000.00,232000.00,0.00,oui,oui
+budget-2027,section 2180.05 charges 2027,1000.00,1000.00,0.00,oui,oui
+budget-2027,section 2180.05 revenus 2027,8280.00,8280.00,0.00,oui,oui
+budget-2027,section 2180.05 charges 2026,2700.00,2700.00,0.00,oui,oui
+budget-2027,section 2180.05 revenus 2026,8750.00,8750.00,0.00,oui,oui
+budget-2027,section 2180.06 charges 2027,2000.00,2000.00,0.00,oui,oui
+budget-2027,section 2180.06 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2180.06 charges 2026,2000.00,2000.00,0.00,oui,oui
+budget-2027,section 2180.06 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2180.07 charges 2027,13750.00,13750.00,0.00,oui,oui
+budget-2027,section 2180.07 revenus 2027,67000.00,67000.00,0.00,oui,oui
+budget-2027,section 2180.07 charges 2026,13750.00,13750.00,0.00,oui,oui
+budget-2027,section 2180.07 revenus 2026,67000.00,67000.00,0.00,oui,oui
+budget-2027,fonction 219 charges 2027,1141764.00,1141764.00,0.00,oui,oui
+budget-2027,fonction 219 revenus 2027,192400.00,192400.00,0.00,oui,oui
+budget-2027,fonction 219 charges 2026,1155830.00,1155830.00,0.00,oui,oui
+budget-2027,fonction 219 revenus 2026,191000.00,191000.00,0.00,oui,oui
+budget-2027,section 2190.00 charges 2027,427620.00,427620.00,0.00,oui,oui
+budget-2027,section 2190.00 revenus 2027,90000.00,90000.00,0.00,oui,oui
+budget-2027,section 2190.00 charges 2026,439520.00,439520.00,0.00,oui,oui
+budget-2027,section 2190.00 revenus 2026,90000.00,90000.00,0.00,oui,oui
+budget-2027,section 2191.00 charges 2027,335754.00,335754.00,0.00,oui,oui
+budget-2027,section 2191.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2191.00 charges 2026,344600.00,344600.00,0.00,oui,oui
+budget-2027,section 2191.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2193.00 charges 2027,213600.00,213600.00,0.00,oui,oui
+budget-2027,section 2193.00 revenus 2027,73200.00,73200.00,0.00,oui,oui
+budget-2027,section 2193.00 charges 2026,200800.00,200800.00,0.00,oui,oui
+budget-2027,section 2193.00 revenus 2026,69400.00,69400.00,0.00,oui,oui
+budget-2027,section 2193.01 charges 2027,71130.00,71130.00,0.00,oui,oui
+budget-2027,section 2193.01 revenus 2027,22400.00,22400.00,0.00,oui,oui
+budget-2027,section 2193.01 charges 2026,72400.00,72400.00,0.00,oui,oui
+budget-2027,section 2193.01 revenus 2026,23500.00,23500.00,0.00,oui,oui
+budget-2027,section 2193.02 charges 2027,37770.00,37770.00,0.00,oui,oui
+budget-2027,section 2193.02 revenus 2027,6800.00,6800.00,0.00,oui,oui
+budget-2027,section 2193.02 charges 2026,42500.00,42500.00,0.00,oui,oui
+budget-2027,section 2193.02 revenus 2026,8100.00,8100.00,0.00,oui,oui
+budget-2027,section 2199.00 charges 2027,2640.00,2640.00,0.00,oui,oui
+budget-2027,section 2199.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2199.00 charges 2026,3360.00,3360.00,0.00,oui,oui
+budget-2027,section 2199.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2199.01 charges 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2199.01 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2199.01 charges 2026,5100.00,5100.00,0.00,oui,oui
+budget-2027,section 2199.01 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2199.02 charges 2027,53250.00,53250.00,0.00,oui,oui
+budget-2027,section 2199.02 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2199.02 charges 2026,47550.00,47550.00,0.00,oui,oui
+budget-2027,section 2199.02 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 29 charges 2027,10400.00,10400.00,0.00,oui,oui
+budget-2027,groupe 29 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 29 charges 2026,11400.00,11400.00,0.00,oui,oui
+budget-2027,groupe 29 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 299 charges 2027,10400.00,10400.00,0.00,oui,oui
+budget-2027,fonction 299 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 299 charges 2026,11400.00,11400.00,0.00,oui,oui
+budget-2027,fonction 299 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 2990.00 charges 2027,10400.00,10400.00,0.00,oui,oui
+budget-2027,section 2990.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 2990.00 charges 2026,11400.00,11400.00,0.00,oui,oui
+budget-2027,section 2990.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,direction 3 charges 2027,4365504.00,4365504.00,0.00,oui,oui
+budget-2027,direction 3 revenus 2027,393450.00,393450.00,0.00,oui,oui
+budget-2027,direction 3 charges 2026,4269260.00,4269260.00,0.00,oui,oui
+budget-2027,direction 3 revenus 2026,353430.00,353430.00,0.00,oui,oui
+budget-2027,groupe 32 charges 2027,1427174.00,1427174.00,0.00,oui,oui
+budget-2027,groupe 32 revenus 2027,175800.00,175800.00,0.00,oui,oui
+budget-2027,groupe 32 charges 2026,1559750.00,1559750.00,0.00,oui,oui
+budget-2027,groupe 32 revenus 2026,184230.00,184230.00,0.00,oui,oui
+budget-2027,fonction 322 charges 2027,84100.00,84100.00,0.00,oui,oui
+budget-2027,fonction 322 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 322 charges 2026,94830.00,94830.00,0.00,oui,oui
+budget-2027,fonction 322 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 3220.00 charges 2027,84100.00,84100.00,0.00,oui,oui
+budget-2027,section 3220.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 3220.00 charges 2026,94830.00,94830.00,0.00,oui,oui
+budget-2027,section 3220.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 329 charges 2027,1343074.00,1343074.00,0.00,oui,oui
+budget-2027,fonction 329 revenus 2027,175800.00,175800.00,0.00,oui,oui
+budget-2027,fonction 329 charges 2026,1464920.00,1464920.00,0.00,oui,oui
+budget-2027,fonction 329 revenus 2026,184230.00,184230.00,0.00,oui,oui
+budget-2027,section 3290.00 charges 2027,486050.00,486050.00,0.00,oui,oui
+budget-2027,section 3290.00 revenus 2027,106000.00,106000.00,0.00,oui,oui
+budget-2027,section 3290.00 charges 2026,542400.00,542400.00,0.00,oui,oui
+budget-2027,section 3290.00 revenus 2026,112000.00,112000.00,0.00,oui,oui
+budget-2027,section 3290.01 charges 2027,50000.00,50000.00,0.00,oui,oui
+budget-2027,section 3290.01 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 3290.01 charges 2026,72100.00,72100.00,0.00,oui,oui
+budget-2027,section 3290.01 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 3290.02 charges 2027,807024.00,807024.00,0.00,oui,oui
+budget-2027,section 3290.02 revenus 2027,69800.00,69800.00,0.00,oui,oui
+budget-2027,section 3290.02 charges 2026,850420.00,850420.00,0.00,oui,oui
+budget-2027,section 3290.02 revenus 2026,72230.00,72230.00,0.00,oui,oui
+budget-2027,groupe 34 charges 2027,2769613.00,2769613.00,0.00,oui,oui
+budget-2027,groupe 34 revenus 2027,216650.00,216650.00,0.00,oui,oui
+budget-2027,groupe 34 charges 2026,2532360.00,2532360.00,0.00,oui,oui
+budget-2027,groupe 34 revenus 2026,168200.00,168200.00,0.00,oui,oui
+budget-2027,fonction 341 charges 2027,1028907.00,1028907.00,0.00,oui,oui
+budget-2027,fonction 341 revenus 2027,17400.00,17400.00,0.00,oui,oui
+budget-2027,fonction 341 charges 2026,841500.00,841500.00,0.00,oui,oui
+budget-2027,fonction 341 revenus 2026,17400.00,17400.00,0.00,oui,oui
+budget-2027,section 3410.00 charges 2027,325.00,325.00,0.00,oui,oui
+budget-2027,section 3410.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 3410.00 charges 2026,97210.00,97210.00,0.00,oui,oui
+budget-2027,section 3410.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 3410.01 charges 2027,274560.00,274560.00,0.00,oui,oui
+budget-2027,section 3410.01 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 3410.01 charges 2026,126670.00,126670.00,0.00,oui,oui
+budget-2027,section 3410.01 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 3410.02 charges 2027,189117.00,189117.00,0.00,oui,oui
+budget-2027,section 3410.02 revenus 2027,16400.00,16400.00,0.00,oui,oui
+budget-2027,section 3410.02 charges 2026,85550.00,85550.00,0.00,oui,oui
+budget-2027,section 3410.02 revenus 2026,16400.00,16400.00,0.00,oui,oui
+budget-2027,section 3410.03 charges 2027,217750.00,217750.00,0.00,oui,oui
+budget-2027,section 3410.03 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 3410.03 charges 2026,219200.00,219200.00,0.00,oui,oui
+budget-2027,section 3410.03 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 3410.04 charges 2027,52000.00,52000.00,0.00,oui,oui
+budget-2027,section 3410.04 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 3410.04 charges 2026,62000.00,62000.00,0.00,oui,oui
+budget-2027,section 3410.04 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 3410.05 charges 2027,295155.00,295155.00,0.00,oui,oui
+budget-2027,section 3410.05 revenus 2027,1000.00,1000.00,0.00,oui,oui
+budget-2027,section 3410.05 charges 2026,250870.00,250870.00,0.00,oui,oui
+budget-2027,section 3410.05 revenus 2026,1000.00,1000.00,0.00,oui,oui
+budget-2027,fonction 342 charges 2027,1740706.00,1740706.00,0.00,oui,oui
+budget-2027,fonction 342 revenus 2027,199250.00,199250.00,0.00,oui,oui
+budget-2027,fonction 342 charges 2026,1690860.00,1690860.00,0.00,oui,oui
+budget-2027,fonction 342 revenus 2026,150800.00,150800.00,0.00,oui,oui
+budget-2027,section 3420.00 charges 2027,738466.00,738466.00,0.00,oui,oui
+budget-2027,section 3420.00 revenus 2027,68950.00,68950.00,0.00,oui,oui
+budget-2027,section 3420.00 charges 2026,752210.00,752210.00,0.00,oui,oui
+budget-2027,section 3420.00 revenus 2026,22500.00,22500.00,0.00,oui,oui
+budget-2027,section 3420.01 charges 2027,500.00,500.00,0.00,oui,oui
+budget-2027,section 3420.01 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 3420.01 charges 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 3420.01 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 3421.00 charges 2027,6450.00,6450.00,0.00,oui,oui
+budget-2027,section 3421.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 3421.00 charges 2026,6450.00,6450.00,0.00,oui,oui
+budget-2027,section 3421.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 3429.00 charges 2027,995290.00,995290.00,0.00,oui,oui
+budget-2027,section 3429.00 revenus 2027,130300.00,130300.00,0.00,oui,oui
+budget-2027,section 3429.00 charges 2026,932200.00,932200.00,0.00,oui,oui
+budget-2027,section 3429.00 revenus 2026,128300.00,128300.00,0.00,oui,oui
+budget-2027,groupe 35 charges 2027,168717.00,168717.00,0.00,oui,oui
+budget-2027,groupe 35 revenus 2027,1000.00,1000.00,0.00,oui,oui
+budget-2027,groupe 35 charges 2026,177150.00,177150.00,0.00,oui,oui
+budget-2027,groupe 35 revenus 2026,1000.00,1000.00,0.00,oui,oui
+budget-2027,fonction 350 charges 2027,168717.00,168717.00,0.00,oui,oui
+budget-2027,fonction 350 revenus 2027,1000.00,1000.00,0.00,oui,oui
+budget-2027,fonction 350 charges 2026,177150.00,177150.00,0.00,oui,oui
+budget-2027,fonction 350 revenus 2026,1000.00,1000.00,0.00,oui,oui
+budget-2027,section 3500.00 charges 2027,168717.00,168717.00,0.00,oui,oui
+budget-2027,section 3500.00 revenus 2027,1000.00,1000.00,0.00,oui,oui
+budget-2027,section 3500.00 charges 2026,177150.00,177150.00,0.00,oui,oui
+budget-2027,section 3500.00 revenus 2026,1000.00,1000.00,0.00,oui,oui
+budget-2027,direction 4 charges 2027,36800.00,36800.00,0.00,oui,oui
+budget-2027,direction 4 revenus 2027,4500.00,4500.00,0.00,oui,oui
+budget-2027,direction 4 charges 2026,37150.00,37150.00,0.00,oui,oui
+budget-2027,direction 4 revenus 2026,4500.00,4500.00,0.00,oui,oui
+budget-2027,groupe 42 charges 2027,4500.00,4500.00,0.00,oui,oui
+budget-2027,groupe 42 revenus 2027,4500.00,4500.00,0.00,oui,oui
+budget-2027,groupe 42 charges 2026,4500.00,4500.00,0.00,oui,oui
+budget-2027,groupe 42 revenus 2026,4500.00,4500.00,0.00,oui,oui
+budget-2027,fonction 422 charges 2027,4500.00,4500.00,0.00,oui,oui
+budget-2027,fonction 422 revenus 2027,4500.00,4500.00,0.00,oui,oui
+budget-2027,fonction 422 charges 2026,4500.00,4500.00,0.00,oui,oui
+budget-2027,fonction 422 revenus 2026,4500.00,4500.00,0.00,oui,oui
+budget-2027,section 4220.00 charges 2027,4500.00,4500.00,0.00,oui,oui
+budget-2027,section 4220.00 revenus 2027,4500.00,4500.00,0.00,oui,oui
+budget-2027,section 4220.00 charges 2026,4500.00,4500.00,0.00,oui,oui
+budget-2027,section 4220.00 revenus 2026,4500.00,4500.00,0.00,oui,oui
+budget-2027,groupe 43 charges 2027,32300.00,32300.00,0.00,oui,oui
+budget-2027,groupe 43 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 43 charges 2026,32650.00,32650.00,0.00,oui,oui
+budget-2027,groupe 43 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 433 charges 2027,32300.00,32300.00,0.00,oui,oui
+budget-2027,fonction 433 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 433 charges 2026,32650.00,32650.00,0.00,oui,oui
+budget-2027,fonction 433 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 4330.00 charges 2027,32300.00,32300.00,0.00,oui,oui
+budget-2027,section 4330.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 4330.00 charges 2026,32650.00,32650.00,0.00,oui,oui
+budget-2027,section 4330.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,direction 5 charges 2027,2855648.94,2855648.94,-0.00,oui,oui
+budget-2027,direction 5 revenus 2027,490617.97,490617.97,0.00,oui,oui
+budget-2027,direction 5 charges 2026,2364886.00,2364886.00,0.00,oui,oui
+budget-2027,direction 5 revenus 2026,303906.00,303906.00,0.00,oui,oui
+budget-2027,groupe 52 charges 2027,51250.00,51250.00,0.00,oui,oui
+budget-2027,groupe 52 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 52 charges 2026,51250.00,51250.00,0.00,oui,oui
+budget-2027,groupe 52 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 524 charges 2027,51250.00,51250.00,0.00,oui,oui
+budget-2027,fonction 524 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 524 charges 2026,51250.00,51250.00,0.00,oui,oui
+budget-2027,fonction 524 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 5240.00 charges 2027,51250.00,51250.00,0.00,oui,oui
+budget-2027,section 5240.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 5240.00 charges 2026,51250.00,51250.00,0.00,oui,oui
+budget-2027,section 5240.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 53 charges 2027,226570.00,226570.00,0.00,oui,oui
+budget-2027,groupe 53 revenus 2027,5600.00,5600.00,0.00,oui,oui
+budget-2027,groupe 53 charges 2026,217950.00,217950.00,0.00,oui,oui
+budget-2027,groupe 53 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 535 charges 2027,226570.00,226570.00,0.00,oui,oui
+budget-2027,fonction 535 revenus 2027,5600.00,5600.00,0.00,oui,oui
+budget-2027,fonction 535 charges 2026,217950.00,217950.00,0.00,oui,oui
+budget-2027,fonction 535 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 5350.00 charges 2027,52000.00,52000.00,0.00,oui,oui
+budget-2027,section 5350.00 revenus 2027,5600.00,5600.00,0.00,oui,oui
+budget-2027,section 5350.00 charges 2026,50000.00,50000.00,0.00,oui,oui
+budget-2027,section 5350.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 5350.01 charges 2027,174570.00,174570.00,0.00,oui,oui
+budget-2027,section 5350.01 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 5350.01 charges 2026,167950.00,167950.00,0.00,oui,oui
+budget-2027,section 5350.01 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 54 charges 2027,2300128.94,2300128.94,0.00,oui,oui
+budget-2027,groupe 54 revenus 2027,474317.97,474317.97,0.00,oui,oui
+budget-2027,groupe 54 charges 2026,1773136.00,1773136.00,0.00,oui,oui
+budget-2027,groupe 54 revenus 2026,293906.00,293906.00,0.00,oui,oui
+budget-2027,fonction 544 charges 2027,48830.00,48830.00,0.00,oui,oui
+budget-2027,fonction 544 revenus 2027,500.00,500.00,0.00,oui,oui
+budget-2027,fonction 544 charges 2026,7950.00,7950.00,0.00,oui,oui
+budget-2027,fonction 544 revenus 2026,500.00,500.00,0.00,oui,oui
+budget-2027,section 5440.00 charges 2027,3950.00,3950.00,0.00,oui,oui
+budget-2027,section 5440.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 5440.00 charges 2026,3950.00,3950.00,0.00,oui,oui
+budget-2027,section 5440.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 5440.01 charges 2027,24440.00,24440.00,0.00,oui,oui
+budget-2027,section 5440.01 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 5440.01 charges 2026,4000.00,4000.00,0.00,oui,oui
+budget-2027,section 5440.01 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 5440.02 charges 2027,20440.00,20440.00,0.00,oui,oui
+budget-2027,section 5440.02 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 5440.02 charges 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 5440.02 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 5440.04 charges 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 5440.04 revenus 2027,500.00,500.00,0.00,oui,oui
+budget-2027,section 5440.04 charges 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 5440.04 revenus 2026,500.00,500.00,0.00,oui,oui
+budget-2027,fonction 545 charges 2027,2251298.94,2251298.94,0.00,oui,oui
+budget-2027,fonction 545 revenus 2027,473817.97,473817.97,0.00,oui,oui
+budget-2027,fonction 545 charges 2026,1765186.00,1765186.00,0.00,oui,oui
+budget-2027,fonction 545 revenus 2026,293406.00,293406.00,0.00,oui,oui
+budget-2027,section 5450.00 charges 2027,1724276.97,1724276.97,0.00,oui,oui
+budget-2027,section 5450.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 5450.00 charges 2026,1462966.00,1462966.00,0.00,oui,oui
+budget-2027,section 5450.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 5450.01 charges 2027,82750.00,82750.00,0.00,oui,oui
+budget-2027,section 5450.01 revenus 2027,200766.00,200766.00,0.00,oui,oui
+budget-2027,section 5450.01 charges 2026,82750.00,82750.00,0.00,oui,oui
+budget-2027,section 5450.01 revenus 2026,200766.00,200766.00,0.00,oui,oui
+budget-2027,section 5450.02 charges 2027,10300.00,10300.00,0.00,oui,oui
+budget-2027,section 5450.02 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 5450.02 charges 2026,300.00,300.00,0.00,oui,oui
+budget-2027,section 5450.02 revenus 2026,44500.00,44500.00,0.00,oui,oui
+budget-2027,section 5450.03 charges 2027,1000.00,1000.00,0.00,oui,oui
+budget-2027,section 5450.03 revenus 2027,3720.00,3720.00,0.00,oui,oui
+budget-2027,section 5450.03 charges 2026,1000.00,1000.00,0.00,oui,oui
+budget-2027,section 5450.03 revenus 2026,3250.00,3250.00,0.00,oui,oui
+budget-2027,section 5450.04 charges 2027,269331.97,269331.97,0.00,oui,oui
+budget-2027,section 5450.04 revenus 2027,269331.97,269331.97,0.00,oui,oui
+budget-2027,section 5450.04 charges 2026,96430.00,96430.00,0.00,oui,oui
+budget-2027,section 5450.04 revenus 2026,44890.00,44890.00,0.00,oui,oui
+budget-2027,section 5450.05 charges 2027,163640.00,163640.00,0.00,oui,oui
+budget-2027,section 5450.05 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 5450.05 charges 2026,121740.00,121740.00,0.00,oui,oui
+budget-2027,section 5450.05 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 57 charges 2027,271700.00,271700.00,0.00,oui,oui
+budget-2027,groupe 57 revenus 2027,10700.00,10700.00,0.00,oui,oui
+budget-2027,groupe 57 charges 2026,289850.00,289850.00,0.00,oui,oui
+budget-2027,groupe 57 revenus 2026,10000.00,10000.00,0.00,oui,oui
+budget-2027,fonction 573 charges 2027,15600.00,15600.00,0.00,oui,oui
+budget-2027,fonction 573 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 573 charges 2026,20620.00,20620.00,0.00,oui,oui
+budget-2027,fonction 573 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 5730.00 charges 2027,15600.00,15600.00,0.00,oui,oui
+budget-2027,section 5730.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 5730.00 charges 2026,20620.00,20620.00,0.00,oui,oui
+budget-2027,section 5730.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 579 charges 2027,256100.00,256100.00,0.00,oui,oui
+budget-2027,fonction 579 revenus 2027,10700.00,10700.00,0.00,oui,oui
+budget-2027,fonction 579 charges 2026,269230.00,269230.00,0.00,oui,oui
+budget-2027,fonction 579 revenus 2026,10000.00,10000.00,0.00,oui,oui
+budget-2027,section 5790.00 charges 2027,256100.00,256100.00,0.00,oui,oui
+budget-2027,section 5790.00 revenus 2027,10700.00,10700.00,0.00,oui,oui
+budget-2027,section 5790.00 charges 2026,269230.00,269230.00,0.00,oui,oui
+budget-2027,section 5790.00 revenus 2026,10000.00,10000.00,0.00,oui,oui
+budget-2027,groupe 59 charges 2027,6000.00,6000.00,0.00,oui,oui
+budget-2027,groupe 59 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 59 charges 2026,32700.00,32700.00,0.00,oui,oui
+budget-2027,groupe 59 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 592 charges 2027,6000.00,6000.00,0.00,oui,oui
+budget-2027,fonction 592 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 592 charges 2026,6000.00,6000.00,0.00,oui,oui
+budget-2027,fonction 592 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 5920.00 charges 2027,6000.00,6000.00,0.00,oui,oui
+budget-2027,section 5920.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 5920.00 charges 2026,6000.00,6000.00,0.00,oui,oui
+budget-2027,section 5920.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 593 charges 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 593 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 593 charges 2026,26700.00,26700.00,0.00,oui,oui
+budget-2027,fonction 593 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 5930.00 charges 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 5930.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 5930.00 charges 2026,26700.00,26700.00,0.00,oui,oui
+budget-2027,section 5930.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,direction 6 charges 2027,11354688.00,11354688.00,0.00,oui,oui
+budget-2027,direction 6 revenus 2027,350900.00,350900.00,0.00,oui,oui
+budget-2027,direction 6 charges 2026,10795460.00,10795460.00,0.00,oui,oui
+budget-2027,direction 6 revenus 2026,355900.00,355900.00,0.00,oui,oui
+budget-2027,groupe 61 charges 2027,4621297.00,4621297.00,0.00,oui,oui
+budget-2027,groupe 61 revenus 2027,348900.00,348900.00,0.00,oui,oui
+budget-2027,groupe 61 charges 2026,4337570.00,4337570.00,0.00,oui,oui
+budget-2027,groupe 61 revenus 2026,353900.00,353900.00,0.00,oui,oui
+budget-2027,fonction 615 charges 2027,4621297.00,4621297.00,0.00,oui,oui
+budget-2027,fonction 615 revenus 2027,348900.00,348900.00,0.00,oui,oui
+budget-2027,fonction 615 charges 2026,4337570.00,4337570.00,0.00,oui,oui
+budget-2027,fonction 615 revenus 2026,353900.00,353900.00,0.00,oui,oui
+budget-2027,section 6150.00 charges 2027,3439187.00,3439187.00,0.00,oui,oui
+budget-2027,section 6150.00 revenus 2027,143600.00,143600.00,0.00,oui,oui
+budget-2027,section 6150.00 charges 2026,3048670.00,3048670.00,0.00,oui,oui
+budget-2027,section 6150.00 revenus 2026,146100.00,146100.00,0.00,oui,oui
+budget-2027,section 6150.01 charges 2027,177590.00,177590.00,0.00,oui,oui
+budget-2027,section 6150.01 revenus 2027,12000.00,12000.00,0.00,oui,oui
+budget-2027,section 6150.01 charges 2026,258600.00,258600.00,0.00,oui,oui
+budget-2027,section 6150.01 revenus 2026,12000.00,12000.00,0.00,oui,oui
+budget-2027,section 6150.02 charges 2027,634020.00,634020.00,0.00,oui,oui
+budget-2027,section 6150.02 revenus 2027,20000.00,20000.00,0.00,oui,oui
+budget-2027,section 6150.02 charges 2026,569800.00,569800.00,0.00,oui,oui
+budget-2027,section 6150.02 revenus 2026,20000.00,20000.00,0.00,oui,oui
+budget-2027,section 6150.03 charges 2027,292500.00,292500.00,0.00,oui,oui
+budget-2027,section 6150.03 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 6150.03 charges 2026,413900.00,413900.00,0.00,oui,oui
+budget-2027,section 6150.03 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 6150.04 charges 2027,76000.00,76000.00,0.00,oui,oui
+budget-2027,section 6150.04 revenus 2027,1000.00,1000.00,0.00,oui,oui
+budget-2027,section 6150.04 charges 2026,37000.00,37000.00,0.00,oui,oui
+budget-2027,section 6150.04 revenus 2026,3500.00,3500.00,0.00,oui,oui
+budget-2027,section 6151.00 charges 2027,2000.00,2000.00,0.00,oui,oui
+budget-2027,section 6151.00 revenus 2027,172300.00,172300.00,0.00,oui,oui
+budget-2027,section 6151.00 charges 2026,9600.00,9600.00,0.00,oui,oui
+budget-2027,section 6151.00 revenus 2026,172300.00,172300.00,0.00,oui,oui
+budget-2027,groupe 62 charges 2027,6698291.00,6698291.00,0.00,oui,oui
+budget-2027,groupe 62 revenus 2027,2000.00,2000.00,0.00,oui,oui
+budget-2027,groupe 62 charges 2026,6413190.00,6413190.00,0.00,oui,oui
+budget-2027,groupe 62 revenus 2026,2000.00,2000.00,0.00,oui,oui
+budget-2027,fonction 629 charges 2027,6698291.00,6698291.00,0.00,oui,oui
+budget-2027,fonction 629 revenus 2027,2000.00,2000.00,0.00,oui,oui
+budget-2027,fonction 629 charges 2026,6413190.00,6413190.00,0.00,oui,oui
+budget-2027,fonction 629 revenus 2026,2000.00,2000.00,0.00,oui,oui
+budget-2027,section 6290.00 charges 2027,1547020.00,1547020.00,0.00,oui,oui
+budget-2027,section 6290.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 6290.00 charges 2026,1557000.00,1557000.00,0.00,oui,oui
+budget-2027,section 6290.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 6291.00 charges 2027,5151271.00,5151271.00,0.00,oui,oui
+budget-2027,section 6291.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 6291.00 charges 2026,4856190.00,4856190.00,0.00,oui,oui
+budget-2027,section 6291.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 6299.00 charges 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 6299.00 revenus 2027,2000.00,2000.00,0.00,oui,oui
+budget-2027,section 6299.00 charges 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 6299.00 revenus 2026,2000.00,2000.00,0.00,oui,oui
+budget-2027,groupe 63 charges 2027,35100.00,35100.00,0.00,oui,oui
+budget-2027,groupe 63 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 63 charges 2026,44700.00,44700.00,0.00,oui,oui
+budget-2027,groupe 63 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 633 charges 2027,35100.00,35100.00,0.00,oui,oui
+budget-2027,fonction 633 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 633 charges 2026,44700.00,44700.00,0.00,oui,oui
+budget-2027,fonction 633 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 6330.01 charges 2027,35100.00,35100.00,0.00,oui,oui
+budget-2027,section 6330.01 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 6330.01 charges 2026,44700.00,44700.00,0.00,oui,oui
+budget-2027,section 6330.01 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,direction 7 charges 2027,7192581.00,7192581.00,0.00,oui,oui
+budget-2027,direction 7 revenus 2027,5123131.00,5123131.00,0.00,oui,oui
+budget-2027,direction 7 charges 2026,7837750.00,7837750.00,0.00,oui,oui
+budget-2027,direction 7 revenus 2026,5074800.00,5074800.00,0.00,oui,oui
+budget-2027,groupe 71 charges 2027,2000.00,2000.00,0.00,oui,oui
+budget-2027,groupe 71 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 71 charges 2026,3200.00,3200.00,0.00,oui,oui
+budget-2027,groupe 71 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 710 charges 2027,2000.00,2000.00,0.00,oui,oui
+budget-2027,fonction 710 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 710 charges 2026,3200.00,3200.00,0.00,oui,oui
+budget-2027,fonction 710 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 7101.00 charges 2027,2000.00,2000.00,0.00,oui,oui
+budget-2027,section 7101.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 7101.00 charges 2026,3200.00,3200.00,0.00,oui,oui
+budget-2027,section 7101.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 72 charges 2027,2232451.00,2232451.00,0.00,oui,oui
+budget-2027,groupe 72 revenus 2027,2232451.00,2232451.00,0.00,oui,oui
+budget-2027,groupe 72 charges 2026,2165000.00,2165000.00,0.00,oui,oui
+budget-2027,groupe 72 revenus 2026,2165000.00,2165000.00,0.00,oui,oui
+budget-2027,fonction 720 charges 2027,2232451.00,2232451.00,0.00,oui,oui
+budget-2027,fonction 720 revenus 2027,2232451.00,2232451.00,0.00,oui,oui
+budget-2027,fonction 720 charges 2026,2165000.00,2165000.00,0.00,oui,oui
+budget-2027,fonction 720 revenus 2026,2165000.00,2165000.00,0.00,oui,oui
+budget-2027,section 7200.00 charges 2027,2232451.00,2232451.00,0.00,oui,oui
+budget-2027,section 7200.00 revenus 2027,2232451.00,2232451.00,0.00,oui,oui
+budget-2027,section 7200.00 charges 2026,2165000.00,2165000.00,0.00,oui,oui
+budget-2027,section 7200.00 revenus 2026,2165000.00,2165000.00,0.00,oui,oui
+budget-2027,groupe 73 charges 2027,1806680.00,1806680.00,0.00,oui,oui
+budget-2027,groupe 73 revenus 2027,1703180.00,1703180.00,0.00,oui,oui
+budget-2027,groupe 73 charges 2026,1877690.00,1877690.00,0.00,oui,oui
+budget-2027,groupe 73 revenus 2026,1472700.00,1472700.00,0.00,oui,oui
+budget-2027,fonction 730 charges 2027,1806680.00,1806680.00,0.00,oui,oui
+budget-2027,fonction 730 revenus 2027,1703180.00,1703180.00,0.00,oui,oui
+budget-2027,fonction 730 charges 2026,1877690.00,1877690.00,0.00,oui,oui
+budget-2027,fonction 730 revenus 2026,1472700.00,1472700.00,0.00,oui,oui
+budget-2027,section 7300.00 charges 2027,1703180.00,1703180.00,0.00,oui,oui
+budget-2027,section 7300.00 revenus 2027,1703180.00,1703180.00,0.00,oui,oui
+budget-2027,section 7300.00 charges 2026,1769190.00,1769190.00,0.00,oui,oui
+budget-2027,section 7300.00 revenus 2026,1472700.00,1472700.00,0.00,oui,oui
+budget-2027,section 7301.00 charges 2027,103500.00,103500.00,0.00,oui,oui
+budget-2027,section 7301.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 7301.00 charges 2026,108500.00,108500.00,0.00,oui,oui
+budget-2027,section 7301.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 74 charges 2027,73300.00,73300.00,0.00,oui,oui
+budget-2027,groupe 74 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 74 charges 2026,73300.00,73300.00,0.00,oui,oui
+budget-2027,groupe 74 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 742 charges 2027,73300.00,73300.00,0.00,oui,oui
+budget-2027,fonction 742 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 742 charges 2026,73300.00,73300.00,0.00,oui,oui
+budget-2027,fonction 742 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 7420.00 charges 2027,73300.00,73300.00,0.00,oui,oui
+budget-2027,section 7420.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 7420.00 charges 2026,73300.00,73300.00,0.00,oui,oui
+budget-2027,section 7420.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 75 charges 2027,2000.00,2000.00,0.00,oui,oui
+budget-2027,groupe 75 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 75 charges 2026,27620.00,27620.00,0.00,oui,oui
+budget-2027,groupe 75 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 750 charges 2027,2000.00,2000.00,0.00,oui,oui
+budget-2027,fonction 750 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 750 charges 2026,27620.00,27620.00,0.00,oui,oui
+budget-2027,fonction 750 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 7500.00 charges 2027,2000.00,2000.00,0.00,oui,oui
+budget-2027,section 7500.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 7500.00 charges 2026,27620.00,27620.00,0.00,oui,oui
+budget-2027,section 7500.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 76 charges 2027,1244330.00,1244330.00,0.00,oui,oui
+budget-2027,groupe 76 revenus 2027,1088000.00,1088000.00,0.00,oui,oui
+budget-2027,groupe 76 charges 2026,1399350.00,1399350.00,0.00,oui,oui
+budget-2027,groupe 76 revenus 2026,1347000.00,1347000.00,0.00,oui,oui
+budget-2027,fonction 761 charges 2027,1244330.00,1244330.00,0.00,oui,oui
+budget-2027,fonction 761 revenus 2027,1088000.00,1088000.00,0.00,oui,oui
+budget-2027,fonction 761 charges 2026,1399350.00,1399350.00,0.00,oui,oui
+budget-2027,fonction 761 revenus 2026,1347000.00,1347000.00,0.00,oui,oui
+budget-2027,section 7610.00 charges 2027,1244330.00,1244330.00,0.00,oui,oui
+budget-2027,section 7610.00 revenus 2027,1088000.00,1088000.00,0.00,oui,oui
+budget-2027,section 7610.00 charges 2026,1399350.00,1399350.00,0.00,oui,oui
+budget-2027,section 7610.00 revenus 2026,1347000.00,1347000.00,0.00,oui,oui
+budget-2027,groupe 77 charges 2027,227190.00,227190.00,0.00,oui,oui
+budget-2027,groupe 77 revenus 2027,32000.00,32000.00,0.00,oui,oui
+budget-2027,groupe 77 charges 2026,203500.00,203500.00,0.00,oui,oui
+budget-2027,groupe 77 revenus 2026,23600.00,23600.00,0.00,oui,oui
+budget-2027,fonction 771 charges 2027,222890.00,222890.00,0.00,oui,oui
+budget-2027,fonction 771 revenus 2027,32000.00,32000.00,0.00,oui,oui
+budget-2027,fonction 771 charges 2026,198600.00,198600.00,0.00,oui,oui
+budget-2027,fonction 771 revenus 2026,23600.00,23600.00,0.00,oui,oui
+budget-2027,section 7710.00 charges 2027,206390.00,206390.00,0.00,oui,oui
+budget-2027,section 7710.00 revenus 2027,29000.00,29000.00,0.00,oui,oui
+budget-2027,section 7710.00 charges 2026,189100.00,189100.00,0.00,oui,oui
+budget-2027,section 7710.00 revenus 2026,16000.00,16000.00,0.00,oui,oui
+budget-2027,section 7710.01 charges 2027,16500.00,16500.00,0.00,oui,oui
+budget-2027,section 7710.01 revenus 2027,3000.00,3000.00,0.00,oui,oui
+budget-2027,section 7710.01 charges 2026,9500.00,9500.00,0.00,oui,oui
+budget-2027,section 7710.01 revenus 2026,7600.00,7600.00,0.00,oui,oui
+budget-2027,fonction 779 charges 2027,4300.00,4300.00,0.00,oui,oui
+budget-2027,fonction 779 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 779 charges 2026,4900.00,4900.00,0.00,oui,oui
+budget-2027,fonction 779 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 7790.00 charges 2027,4300.00,4300.00,0.00,oui,oui
+budget-2027,section 7790.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 7790.00 charges 2026,4900.00,4900.00,0.00,oui,oui
+budget-2027,section 7790.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 79 charges 2027,1604630.00,1604630.00,0.00,oui,oui
+budget-2027,groupe 79 revenus 2027,67500.00,67500.00,0.00,oui,oui
+budget-2027,groupe 79 charges 2026,2088090.00,2088090.00,0.00,oui,oui
+budget-2027,groupe 79 revenus 2026,66500.00,66500.00,0.00,oui,oui
+budget-2027,fonction 790 charges 2027,1604630.00,1604630.00,0.00,oui,oui
+budget-2027,fonction 790 revenus 2027,67500.00,67500.00,0.00,oui,oui
+budget-2027,fonction 790 charges 2026,2088090.00,2088090.00,0.00,oui,oui
+budget-2027,fonction 790 revenus 2026,66500.00,66500.00,0.00,oui,oui
+budget-2027,section 7900.00 charges 2027,1522630.00,1522630.00,0.00,oui,oui
+budget-2027,section 7900.00 revenus 2027,67500.00,67500.00,0.00,oui,oui
+budget-2027,section 7900.00 charges 2026,2011090.00,2011090.00,0.00,oui,oui
+budget-2027,section 7900.00 revenus 2026,66500.00,66500.00,0.00,oui,oui
+budget-2027,section 7907.00 charges 2027,82000.00,82000.00,0.00,oui,oui
+budget-2027,section 7907.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 7907.00 charges 2026,77000.00,77000.00,0.00,oui,oui
+budget-2027,section 7907.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,direction 8 charges 2027,788543.00,788543.00,0.00,oui,oui
+budget-2027,direction 8 revenus 2027,175900.00,175900.00,0.00,oui,oui
+budget-2027,direction 8 charges 2026,746270.00,746270.00,0.00,oui,oui
+budget-2027,direction 8 revenus 2026,167700.00,167700.00,0.00,oui,oui
+budget-2027,groupe 82 charges 2027,627943.00,627943.00,0.00,oui,oui
+budget-2027,groupe 82 revenus 2027,94900.00,94900.00,0.00,oui,oui
+budget-2027,groupe 82 charges 2026,601470.00,601470.00,0.00,oui,oui
+budget-2027,groupe 82 revenus 2026,94200.00,94200.00,0.00,oui,oui
+budget-2027,fonction 820 charges 2027,627943.00,627943.00,0.00,oui,oui
+budget-2027,fonction 820 revenus 2027,94900.00,94900.00,0.00,oui,oui
+budget-2027,fonction 820 charges 2026,601470.00,601470.00,0.00,oui,oui
+budget-2027,fonction 820 revenus 2026,94200.00,94200.00,0.00,oui,oui
+budget-2027,section 8200.00 charges 2027,430040.00,430040.00,0.00,oui,oui
+budget-2027,section 8200.00 revenus 2027,94900.00,94900.00,0.00,oui,oui
+budget-2027,section 8200.00 charges 2026,418020.00,418020.00,0.00,oui,oui
+budget-2027,section 8200.00 revenus 2026,94200.00,94200.00,0.00,oui,oui
+budget-2027,section 8200.01 charges 2027,197903.00,197903.00,0.00,oui,oui
+budget-2027,section 8200.01 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 8200.01 charges 2026,183450.00,183450.00,0.00,oui,oui
+budget-2027,section 8200.01 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 84 charges 2027,11000.00,11000.00,0.00,oui,oui
+budget-2027,groupe 84 revenus 2027,11000.00,11000.00,0.00,oui,oui
+budget-2027,groupe 84 charges 2026,9400.00,9400.00,0.00,oui,oui
+budget-2027,groupe 84 revenus 2026,12500.00,12500.00,0.00,oui,oui
+budget-2027,fonction 840 charges 2027,11000.00,11000.00,0.00,oui,oui
+budget-2027,fonction 840 revenus 2027,11000.00,11000.00,0.00,oui,oui
+budget-2027,fonction 840 charges 2026,9400.00,9400.00,0.00,oui,oui
+budget-2027,fonction 840 revenus 2026,12500.00,12500.00,0.00,oui,oui
+budget-2027,section 8400.00 charges 2027,11000.00,11000.00,0.00,oui,oui
+budget-2027,section 8400.00 revenus 2027,11000.00,11000.00,0.00,oui,oui
+budget-2027,section 8400.00 charges 2026,9400.00,9400.00,0.00,oui,oui
+budget-2027,section 8400.00 revenus 2026,12500.00,12500.00,0.00,oui,oui
+budget-2027,groupe 85 charges 2027,92400.00,92400.00,0.00,oui,oui
+budget-2027,groupe 85 revenus 2027,45000.00,45000.00,0.00,oui,oui
+budget-2027,groupe 85 charges 2026,92700.00,92700.00,0.00,oui,oui
+budget-2027,groupe 85 revenus 2026,36000.00,36000.00,0.00,oui,oui
+budget-2027,fonction 850 charges 2027,92400.00,92400.00,0.00,oui,oui
+budget-2027,fonction 850 revenus 2027,45000.00,45000.00,0.00,oui,oui
+budget-2027,fonction 850 charges 2026,92700.00,92700.00,0.00,oui,oui
+budget-2027,fonction 850 revenus 2026,36000.00,36000.00,0.00,oui,oui
+budget-2027,section 8500.00 charges 2027,52400.00,52400.00,0.00,oui,oui
+budget-2027,section 8500.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 8500.00 charges 2026,55400.00,55400.00,0.00,oui,oui
+budget-2027,section 8500.00 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 8501.00 charges 2027,40000.00,40000.00,0.00,oui,oui
+budget-2027,section 8501.00 revenus 2027,45000.00,45000.00,0.00,oui,oui
+budget-2027,section 8501.00 charges 2026,37300.00,37300.00,0.00,oui,oui
+budget-2027,section 8501.00 revenus 2026,36000.00,36000.00,0.00,oui,oui
+budget-2027,groupe 87 charges 2027,57200.00,57200.00,0.00,oui,oui
+budget-2027,groupe 87 revenus 2027,25000.00,25000.00,0.00,oui,oui
+budget-2027,groupe 87 charges 2026,42700.00,42700.00,0.00,oui,oui
+budget-2027,groupe 87 revenus 2026,25000.00,25000.00,0.00,oui,oui
+budget-2027,fonction 871 charges 2027,57200.00,57200.00,0.00,oui,oui
+budget-2027,fonction 871 revenus 2027,25000.00,25000.00,0.00,oui,oui
+budget-2027,fonction 871 charges 2026,42700.00,42700.00,0.00,oui,oui
+budget-2027,fonction 871 revenus 2026,25000.00,25000.00,0.00,oui,oui
+budget-2027,section 8710.00 charges 2027,57200.00,57200.00,0.00,oui,oui
+budget-2027,section 8710.00 revenus 2027,25000.00,25000.00,0.00,oui,oui
+budget-2027,section 8710.00 charges 2026,42700.00,42700.00,0.00,oui,oui
+budget-2027,section 8710.00 revenus 2026,25000.00,25000.00,0.00,oui,oui
+budget-2027,direction 9 charges 2027,12891779.00,12891779.00,0.00,oui,oui
+budget-2027,direction 9 revenus 2027,41450188.00,41450188.00,0.00,oui,oui
+budget-2027,direction 9 charges 2026,13667205.00,13667205.00,0.00,oui,oui
+budget-2027,direction 9 revenus 2026,47574680.55,47574680.55,0.00,oui,oui
+budget-2027,groupe 91 charges 2027,345000.00,345000.00,0.00,oui,oui
+budget-2027,groupe 91 revenus 2027,37026000.00,37026000.00,0.00,oui,oui
+budget-2027,groupe 91 charges 2026,431700.00,431700.00,0.00,oui,oui
+budget-2027,groupe 91 revenus 2026,36530100.00,36530100.00,0.00,oui,oui
+budget-2027,fonction 910 charges 2027,345000.00,345000.00,0.00,oui,oui
+budget-2027,fonction 910 revenus 2027,37026000.00,37026000.00,0.00,oui,oui
+budget-2027,fonction 910 charges 2026,431700.00,431700.00,0.00,oui,oui
+budget-2027,fonction 910 revenus 2026,36530100.00,36530100.00,0.00,oui,oui
+budget-2027,section 9100.00 charges 2027,345000.00,345000.00,0.00,oui,oui
+budget-2027,section 9100.00 revenus 2027,37026000.00,37026000.00,0.00,oui,oui
+budget-2027,section 9100.00 charges 2026,431700.00,431700.00,0.00,oui,oui
+budget-2027,section 9100.00 revenus 2026,36530100.00,36530100.00,0.00,oui,oui
+budget-2027,groupe 93 charges 2027,10873649.00,10873649.00,0.00,oui,oui
+budget-2027,groupe 93 revenus 2027,2823438.00,2823438.00,0.00,oui,oui
+budget-2027,groupe 93 charges 2026,11572200.00,11572200.00,0.00,oui,oui
+budget-2027,groupe 93 revenus 2026,2341970.00,2341970.00,0.00,oui,oui
+budget-2027,fonction 930 charges 2027,10873649.00,10873649.00,0.00,oui,oui
+budget-2027,fonction 930 revenus 2027,2823438.00,2823438.00,0.00,oui,oui
+budget-2027,fonction 930 charges 2026,11572200.00,11572200.00,0.00,oui,oui
+budget-2027,fonction 930 revenus 2026,2341970.00,2341970.00,0.00,oui,oui
+budget-2027,section 9300.00 charges 2027,1035317.00,1035317.00,0.00,oui,oui
+budget-2027,section 9300.00 revenus 2027,2823438.00,2823438.00,0.00,oui,oui
+budget-2027,section 9300.00 charges 2026,1826100.00,1826100.00,0.00,oui,oui
+budget-2027,section 9300.00 revenus 2026,2341970.00,2341970.00,0.00,oui,oui
+budget-2027,section 9300.01 charges 2027,9838332.00,9838332.00,0.00,oui,oui
+budget-2027,section 9300.01 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 9300.01 charges 2026,9746100.00,9746100.00,0.00,oui,oui
+budget-2027,section 9300.01 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 95 charges 2027,31500.00,31500.00,0.00,oui,oui
+budget-2027,groupe 95 revenus 2027,1234700.00,1234700.00,0.00,oui,oui
+budget-2027,groupe 95 charges 2026,33000.00,33000.00,0.00,oui,oui
+budget-2027,groupe 95 revenus 2026,1615800.00,1615800.00,0.00,oui,oui
+budget-2027,fonction 950 charges 2027,31500.00,31500.00,0.00,oui,oui
+budget-2027,fonction 950 revenus 2027,1234700.00,1234700.00,0.00,oui,oui
+budget-2027,fonction 950 charges 2026,33000.00,33000.00,0.00,oui,oui
+budget-2027,fonction 950 revenus 2026,1615800.00,1615800.00,0.00,oui,oui
+budget-2027,section 9500.00 charges 2027,31500.00,31500.00,0.00,oui,oui
+budget-2027,section 9500.00 revenus 2027,1234700.00,1234700.00,0.00,oui,oui
+budget-2027,section 9500.00 charges 2026,33000.00,33000.00,0.00,oui,oui
+budget-2027,section 9500.00 revenus 2026,1615800.00,1615800.00,0.00,oui,oui
+budget-2027,groupe 96 charges 2027,1389630.00,1389630.00,0.00,oui,oui
+budget-2027,groupe 96 revenus 2027,361050.00,361050.00,0.00,oui,oui
+budget-2027,groupe 96 charges 2026,1618805.00,1618805.00,0.00,oui,oui
+budget-2027,groupe 96 revenus 2026,416110.00,416110.00,0.00,oui,oui
+budget-2027,fonction 961 charges 2027,1148940.00,1148940.00,0.00,oui,oui
+budget-2027,fonction 961 revenus 2027,175700.00,175700.00,0.00,oui,oui
+budget-2027,fonction 961 charges 2026,1159230.00,1159230.00,0.00,oui,oui
+budget-2027,fonction 961 revenus 2026,168500.00,168500.00,0.00,oui,oui
+budget-2027,section 9610.00 charges 2027,1148940.00,1148940.00,0.00,oui,oui
+budget-2027,section 9610.00 revenus 2027,175700.00,175700.00,0.00,oui,oui
+budget-2027,section 9610.00 charges 2026,1159230.00,1159230.00,0.00,oui,oui
+budget-2027,section 9610.00 revenus 2026,168500.00,168500.00,0.00,oui,oui
+budget-2027,fonction 963 charges 2027,223690.00,223690.00,0.00,oui,oui
+budget-2027,fonction 963 revenus 2027,185350.00,185350.00,0.00,oui,oui
+budget-2027,fonction 963 charges 2026,446375.00,446375.00,0.00,oui,oui
+budget-2027,fonction 963 revenus 2026,247610.00,247610.00,0.00,oui,oui
+budget-2027,section 9630.00 charges 2027,28600.00,28600.00,0.00,oui,oui
+budget-2027,section 9630.00 revenus 2027,30240.00,30240.00,0.00,oui,oui
+budget-2027,section 9630.00 charges 2026,27550.00,27550.00,0.00,oui,oui
+budget-2027,section 9630.00 revenus 2026,52000.00,52000.00,0.00,oui,oui
+budget-2027,section 9630.01 charges 2027,30750.00,30750.00,0.00,oui,oui
+budget-2027,section 9630.01 revenus 2027,42360.00,42360.00,0.00,oui,oui
+budget-2027,section 9630.01 charges 2026,29550.00,29550.00,0.00,oui,oui
+budget-2027,section 9630.01 revenus 2026,42360.00,42360.00,0.00,oui,oui
+budget-2027,section 9630.02 charges 2027,34750.00,34750.00,0.00,oui,oui
+budget-2027,section 9630.02 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 9630.02 charges 2026,222700.00,222700.00,0.00,oui,oui
+budget-2027,section 9630.02 revenus 2026,40500.00,40500.00,0.00,oui,oui
+budget-2027,section 9630.04 charges 2027,14800.00,14800.00,0.00,oui,oui
+budget-2027,section 9630.04 revenus 2027,21600.00,21600.00,0.00,oui,oui
+budget-2027,section 9630.04 charges 2026,14800.00,14800.00,0.00,oui,oui
+budget-2027,section 9630.04 revenus 2026,21600.00,21600.00,0.00,oui,oui
+budget-2027,section 9630.05 charges 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 9630.05 revenus 2027,47200.00,47200.00,0.00,oui,oui
+budget-2027,section 9630.05 charges 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 9630.05 revenus 2026,47200.00,47200.00,0.00,oui,oui
+budget-2027,section 9630.06 charges 2027,16700.00,16700.00,0.00,oui,oui
+budget-2027,section 9630.06 revenus 2027,21500.00,21500.00,0.00,oui,oui
+budget-2027,section 9630.06 charges 2026,17495.00,17495.00,0.00,oui,oui
+budget-2027,section 9630.06 revenus 2026,21500.00,21500.00,0.00,oui,oui
+budget-2027,section 9630.07 charges 2027,13010.00,13010.00,0.00,oui,oui
+budget-2027,section 9630.07 revenus 2027,13500.00,13500.00,0.00,oui,oui
+budget-2027,section 9630.07 charges 2026,12095.00,12095.00,0.00,oui,oui
+budget-2027,section 9630.07 revenus 2026,13500.00,13500.00,0.00,oui,oui
+budget-2027,section 9630.08 charges 2027,24250.00,24250.00,0.00,oui,oui
+budget-2027,section 9630.08 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 9630.08 charges 2026,61250.00,61250.00,0.00,oui,oui
+budget-2027,section 9630.08 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 9630.09 charges 2027,60830.00,60830.00,0.00,oui,oui
+budget-2027,section 9630.09 revenus 2027,8950.00,8950.00,0.00,oui,oui
+budget-2027,section 9630.09 charges 2026,60935.00,60935.00,0.00,oui,oui
+budget-2027,section 9630.09 revenus 2026,8950.00,8950.00,0.00,oui,oui
+budget-2027,fonction 969 charges 2027,17000.00,17000.00,0.00,oui,oui
+budget-2027,fonction 969 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 969 charges 2026,13200.00,13200.00,0.00,oui,oui
+budget-2027,fonction 969 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,section 9690.01 charges 2027,17000.00,17000.00,0.00,oui,oui
+budget-2027,section 9690.01 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 9690.01 charges 2026,13200.00,13200.00,0.00,oui,oui
+budget-2027,section 9690.01 revenus 2026,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 97 charges 2027,5000.00,5000.00,0.00,oui,oui
+budget-2027,groupe 97 revenus 2027,5000.00,5000.00,0.00,oui,oui
+budget-2027,groupe 97 charges 2026,5000.00,5000.00,0.00,oui,oui
+budget-2027,groupe 97 revenus 2026,5000.00,5000.00,0.00,oui,oui
+budget-2027,fonction 971 charges 2027,5000.00,5000.00,0.00,oui,oui
+budget-2027,fonction 971 revenus 2027,5000.00,5000.00,0.00,oui,oui
+budget-2027,fonction 971 charges 2026,5000.00,5000.00,0.00,oui,oui
+budget-2027,fonction 971 revenus 2026,5000.00,5000.00,0.00,oui,oui
+budget-2027,section 9710.00 charges 2027,5000.00,5000.00,0.00,oui,oui
+budget-2027,section 9710.00 revenus 2027,5000.00,5000.00,0.00,oui,oui
+budget-2027,section 9710.00 charges 2026,5000.00,5000.00,0.00,oui,oui
+budget-2027,section 9710.00 revenus 2026,5000.00,5000.00,0.00,oui,oui
+budget-2027,groupe 99 charges 2027,247000.00,247000.00,0.00,oui,oui
+budget-2027,groupe 99 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,groupe 99 charges 2026,6500.00,6500.00,0.00,oui,oui
+budget-2027,groupe 99 revenus 2026,6665700.55,6665700.55,0.00,oui,oui
+budget-2027,fonction 990 charges 2027,247000.00,247000.00,0.00,oui,oui
+budget-2027,fonction 990 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,fonction 990 charges 2026,6500.00,6500.00,0.00,oui,oui
+budget-2027,fonction 990 revenus 2026,6665700.55,6665700.55,0.00,oui,oui
+budget-2027,section 9900.00 charges 2027,247000.00,247000.00,0.00,oui,oui
+budget-2027,section 9900.00 revenus 2027,0.00,0.00,0.00,oui,oui
+budget-2027,section 9900.00 charges 2026,6500.00,6500.00,0.00,oui,oui
+budget-2027,section 9900.00 revenus 2026,6665700.55,6665700.55,0.00,oui,oui
+budget-2027,nature 30 2027 (tableau par nature),13122529.00,13122529.00,0.00,oui,oui
+budget-2027,nature 30 2026 (tableau par nature),13487420.55,13487420.55,0.00,oui,oui
+budget-2027,nature 300 2027 (tableau par nature),554410.00,554410.00,0.00,oui,oui
+budget-2027,nature 300 2026 (tableau par nature),524075.25,524075.25,0.00,oui,oui
+budget-2027,nature 301 2027 (tableau par nature),9230880.00,9230880.00,0.00,oui,oui
+budget-2027,nature 301 2026 (tableau par nature),9573000.00,9573000.00,0.00,oui,oui
+budget-2027,nature 304 2027 (tableau par nature),156279.00,156279.00,0.00,oui,oui
+budget-2027,nature 304 2026 (tableau par nature),156015.00,156015.00,0.00,oui,oui
+budget-2027,nature 305 2027 (tableau par nature),3037900.00,3037900.00,0.00,oui,oui
+budget-2027,nature 305 2026 (tableau par nature),3048100.30,3048100.30,0.00,oui,oui
+budget-2027,nature 309 2027 (tableau par nature),143060.00,143060.00,0.00,oui,oui
+budget-2027,nature 309 2026 (tableau par nature),186230.00,186230.00,0.00,oui,oui
+budget-2027,nature 31 2027 (tableau par nature),9195302.50,9195302.50,0.00,oui,oui
+budget-2027,nature 31 2026 (tableau par nature),9383275.00,9383275.00,0.00,oui,oui
+budget-2027,nature 310 2027 (tableau par nature),984689.00,984689.00,0.00,oui,oui
+budget-2027,nature 310 2026 (tableau par nature),1051320.00,1051320.00,0.00,oui,oui
+budget-2027,nature 311 2027 (tableau par nature),482779.20,482779.20,0.00,oui,oui
+budget-2027,nature 311 2026 (tableau par nature),500385.00,500385.00,0.00,oui,oui
+budget-2027,nature 312 2027 (tableau par nature),1101150.00,1101150.00,0.00,oui,oui
+budget-2027,nature 312 2026 (tableau par nature),1138750.00,1138750.00,0.00,oui,oui
+budget-2027,nature 313 2027 (tableau par nature),3010305.00,3010305.00,0.00,oui,oui
+budget-2027,nature 313 2026 (tableau par nature),3303920.00,3303920.00,0.00,oui,oui
+budget-2027,nature 314 2027 (tableau par nature),1841850.00,1841850.00,0.00,oui,oui
+budget-2027,nature 314 2026 (tableau par nature),2049400.00,2049400.00,0.00,oui,oui
+budget-2027,nature 315 2027 (tableau par nature),914014.00,914014.00,0.00,oui,oui
+budget-2027,nature 315 2026 (tableau par nature),552700.00,552700.00,0.00,oui,oui
+budget-2027,nature 316 2027 (tableau par nature),498615.30,498615.30,0.00,oui,oui
+budget-2027,nature 316 2026 (tableau par nature),330450.00,330450.00,0.00,oui,oui
+budget-2027,nature 317 2027 (tableau par nature),18900.00,18900.00,0.00,oui,oui
+budget-2027,nature 317 2026 (tableau par nature),21150.00,21150.00,0.00,oui,oui
+budget-2027,nature 318 2027 (tableau par nature),337000.00,337000.00,0.00,oui,oui
+budget-2027,nature 318 2026 (tableau par nature),430200.00,430200.00,0.00,oui,oui
+budget-2027,nature 319 2027 (tableau par nature),6000.00,6000.00,0.00,oui,oui
+budget-2027,nature 319 2026 (tableau par nature),5000.00,5000.00,0.00,oui,oui
+budget-2027,nature 33 2027 (tableau par nature),5496681.67,5496681.67,0.00,oui,oui
+budget-2027,nature 33 2026 (tableau par nature),4497190.00,4497190.00,0.00,oui,oui
+budget-2027,nature 330 2027 (tableau par nature),5131381.67,5131381.67,0.00,oui,oui
+budget-2027,nature 330 2026 (tableau par nature),4066550.00,4066550.00,0.00,oui,oui
+budget-2027,nature 332 2027 (tableau par nature),365300.00,365300.00,0.00,oui,oui
+budget-2027,nature 332 2026 (tableau par nature),430640.00,430640.00,0.00,oui,oui
+budget-2027,nature 34 2027 (tableau par nature),1357590.00,1357590.00,0.00,oui,oui
+budget-2027,nature 34 2026 (tableau par nature),1451280.00,1451280.00,0.00,oui,oui
+budget-2027,nature 340 2027 (tableau par nature),1158940.00,1158940.00,0.00,oui,oui
+budget-2027,nature 340 2026 (tableau par nature),1169230.00,1169230.00,0.00,oui,oui
+budget-2027,nature 342 2027 (tableau par nature),23000.00,23000.00,0.00,oui,oui
+budget-2027,nature 342 2026 (tableau par nature),19200.00,19200.00,0.00,oui,oui
+budget-2027,nature 343 2027 (tableau par nature),175650.00,175650.00,0.00,oui,oui
+budget-2027,nature 343 2026 (tableau par nature),262850.00,262850.00,0.00,oui,oui
+budget-2027,nature 35 2027 (tableau par nature),459250.00,459250.00,0.00,oui,oui
+budget-2027,nature 35 2026 (tableau par nature),722620.00,722620.00,0.00,oui,oui
+budget-2027,nature 351 2027 (tableau par nature),459250.00,459250.00,0.00,oui,oui
+budget-2027,nature 351 2026 (tableau par nature),722620.00,722620.00,0.00,oui,oui
+budget-2027,nature 36 2027 (tableau par nature),25947556.00,25947556.00,0.00,oui,oui
+budget-2027,nature 36 2026 (tableau par nature),26344935.00,26344935.00,0.00,oui,oui
+budget-2027,nature 360 2027 (tableau par nature),105250.00,105250.00,0.00,oui,oui
+budget-2027,nature 360 2026 (tableau par nature),106400.00,106400.00,0.00,oui,oui
+budget-2027,nature 361 2027 (tableau par nature),4106302.00,4106302.00,0.00,oui,oui
+budget-2027,nature 361 2026 (tableau par nature),4068400.00,4068400.00,0.00,oui,oui
+budget-2027,nature 362 2027 (tableau par nature),12420569.00,12420569.00,0.00,oui,oui
+budget-2027,nature 362 2026 (tableau par nature),13129100.00,13129100.00,0.00,oui,oui
+budget-2027,nature 363 2027 (tableau par nature),9276035.00,9276035.00,0.00,oui,oui
+budget-2027,nature 363 2026 (tableau par nature),8991035.00,8991035.00,0.00,oui,oui
+budget-2027,nature 366 2027 (tableau par nature),39400.00,39400.00,0.00,oui,oui
+budget-2027,nature 366 2026 (tableau par nature),50000.00,50000.00,0.00,oui,oui
+budget-2027,nature 38 2027 (tableau par nature),247000.00,247000.00,0.00,oui,oui
+budget-2027,nature 38 2026 (tableau par nature),0.00,0.00,0.00,oui,oui
+budget-2027,nature 389 2027 (tableau par nature),247000.00,247000.00,0.00,oui,oui
+budget-2027,nature 389 2026 (tableau par nature),0.00,0.00,0.00,oui,oui
+budget-2027,nature 39 2027 (tableau par nature),1646601.97,1646601.97,0.00,oui,oui
+budget-2027,nature 39 2026 (tableau par nature),1458650.00,1458650.00,0.00,oui,oui
+budget-2027,nature 390 2027 (tableau par nature),15200.00,15200.00,0.00,oui,oui
+budget-2027,nature 390 2026 (tableau par nature),21500.00,21500.00,0.00,oui,oui
+budget-2027,nature 391 2027 (tableau par nature),279950.00,279950.00,0.00,oui,oui
+budget-2027,nature 391 2026 (tableau par nature),255000.00,255000.00,0.00,oui,oui
+budget-2027,nature 392 2027 (tableau par nature),884885.30,884885.30,0.00,oui,oui
+budget-2027,nature 392 2026 (tableau par nature),796420.00,796420.00,0.00,oui,oui
+budget-2027,nature 393 2027 (tableau par nature),245200.00,245200.00,0.00,oui,oui
+budget-2027,nature 393 2026 (tableau par nature),224200.00,224200.00,0.00,oui,oui
+budget-2027,nature 394 2027 (tableau par nature),158200.00,158200.00,0.00,oui,oui
+budget-2027,nature 394 2026 (tableau par nature),151000.00,151000.00,0.00,oui,oui
+budget-2027,nature 395 2027 (tableau par nature),63166.67,63166.67,0.00,oui,oui
+budget-2027,nature 395 2026 (tableau par nature),10530.00,10530.00,0.00,oui,oui
+budget-2027,nature 40 2027 (tableau par nature),36786000.00,36786000.00,0.00,oui,oui
+budget-2027,nature 40 2026 (tableau par nature),36340100.00,36340100.00,0.00,oui,oui
+budget-2027,nature 400 2027 (tableau par nature),31770000.00,31770000.00,0.00,oui,oui
+budget-2027,nature 400 2026 (tableau par nature),30560900.00,30560900.00,0.00,oui,oui
+budget-2027,nature 401 2027 (tableau par nature),1026000.00,1026000.00,0.00,oui,oui
+budget-2027,nature 401 2026 (tableau par nature),1170200.00,1170200.00,0.00,oui,oui
+budget-2027,nature 402 2027 (tableau par nature),3954000.00,3954000.00,0.00,oui,oui
+budget-2027,nature 402 2026 (tableau par nature),4575000.00,4575000.00,0.00,oui,oui
+budget-2027,nature 403 2027 (tableau par nature),36000.00,36000.00,0.00,oui,oui
+budget-2027,nature 403 2026 (tableau par nature),34000.00,34000.00,0.00,oui,oui
+budget-2027,nature 41 2027 (tableau par nature),44500.00,44500.00,0.00,oui,oui
+budget-2027,nature 41 2026 (tableau par nature),40000.00,40000.00,0.00,oui,oui
+budget-2027,nature 412 2027 (tableau par nature),44500.00,44500.00,0.00,oui,oui
+budget-2027,nature 412 2026 (tableau par nature),40000.00,40000.00,0.00,oui,oui
+budget-2027,nature 42 2027 (tableau par nature),5453620.00,5453620.00,0.00,oui,oui
+budget-2027,nature 42 2026 (tableau par nature),5455710.00,5455710.00,0.00,oui,oui
+budget-2027,nature 421 2027 (tableau par nature),304500.00,304500.00,0.00,oui,oui
+budget-2027,nature 421 2026 (tableau par nature),305500.00,305500.00,0.00,oui,oui
+budget-2027,nature 424 2027 (tableau par nature),4142620.00,4142620.00,0.00,oui,oui
+budget-2027,nature 424 2026 (tableau par nature),4143000.00,4143000.00,0.00,oui,oui
+budget-2027,nature 425 2027 (tableau par nature),341800.00,341800.00,0.00,oui,oui
+budget-2027,nature 425 2026 (tableau par nature),315300.00,315300.00,0.00,oui,oui
+budget-2027,nature 426 2027 (tableau par nature),476700.00,476700.00,0.00,oui,oui
+budget-2027,nature 426 2026 (tableau par nature),503910.00,503910.00,0.00,oui,oui
+budget-2027,nature 427 2027 (tableau par nature),188000.00,188000.00,0.00,oui,oui
+budget-2027,nature 427 2026 (tableau par nature),188000.00,188000.00,0.00,oui,oui
+budget-2027,nature 44 2027 (tableau par nature),597230.00,597230.00,0.00,oui,oui
+budget-2027,nature 44 2026 (tableau par nature),557440.00,557440.00,0.00,oui,oui
+budget-2027,nature 440 2027 (tableau par nature),240000.00,240000.00,0.00,oui,oui
+budget-2027,nature 440 2026 (tableau par nature),190000.00,190000.00,0.00,oui,oui
+budget-2027,nature 443 2027 (tableau par nature),185350.00,185350.00,0.00,oui,oui
+budget-2027,nature 443 2026 (tableau par nature),208610.00,208610.00,0.00,oui,oui
+budget-2027,nature 445 2027 (tableau par nature),17500.00,17500.00,0.00,oui,oui
+budget-2027,nature 445 2026 (tableau par nature),17500.00,17500.00,0.00,oui,oui
+budget-2027,nature 447 2027 (tableau par nature),154380.00,154380.00,0.00,oui,oui
+budget-2027,nature 447 2026 (tableau par nature),141330.00,141330.00,0.00,oui,oui
+budget-2027,nature 45 2027 (tableau par nature),698431.00,698431.00,0.00,oui,oui
+budget-2027,nature 45 2026 (tableau par nature),680000.00,680000.00,0.00,oui,oui
+budget-2027,nature 451 2027 (tableau par nature),698431.00,698431.00,0.00,oui,oui
+budget-2027,nature 451 2026 (tableau par nature),680000.00,680000.00,0.00,oui,oui
+budget-2027,nature 46 2027 (tableau par nature),4225738.00,4225738.00,0.00,oui,oui
+budget-2027,nature 46 2026 (tableau par nature),4147770.00,4147770.00,0.00,oui,oui
+budget-2027,nature 460 2027 (tableau par nature),1193200.00,1193200.00,0.00,oui,oui
+budget-2027,nature 460 2026 (tableau par nature),1572800.00,1572800.00,0.00,oui,oui
+budget-2027,nature 461 2027 (tableau par nature),186000.00,186000.00,0.00,oui,oui
+budget-2027,nature 461 2026 (tableau par nature),211600.00,211600.00,0.00,oui,oui
+budget-2027,nature 462 2027 (tableau par nature),2823438.00,2823438.00,0.00,oui,oui
+budget-2027,nature 462 2026 (tableau par nature),2341970.00,2341970.00,0.00,oui,oui
+budget-2027,nature 463 2027 (tableau par nature),18100.00,18100.00,0.00,oui,oui
+budget-2027,nature 463 2026 (tableau par nature),16400.00,16400.00,0.00,oui,oui
+budget-2027,nature 469 2027 (tableau par nature),5000.00,5000.00,0.00,oui,oui
+budget-2027,nature 469 2026 (tableau par nature),5000.00,5000.00,0.00,oui,oui
+budget-2027,nature 48 2027 (tableau par nature),0.00,0.00,0.00,oui,oui
+budget-2027,nature 48 2026 (tableau par nature),6665700.55,6665700.55,0.00,oui,oui
+budget-2027,nature 489 2027 (tableau par nature),0.00,0.00,0.00,oui,oui
+budget-2027,nature 489 2026 (tableau par nature),6665700.55,6665700.55,0.00,oui,oui
+budget-2027,nature 49 2027 (tableau par nature),1646601.97,1646601.97,0.00,oui,oui
+budget-2027,nature 49 2026 (tableau par nature),1458650.00,1458650.00,0.00,oui,oui
+budget-2027,nature 490 2027 (tableau par nature),15200.00,15200.00,0.00,oui,oui
+budget-2027,nature 490 2026 (tableau par nature),21500.00,21500.00,0.00,oui,oui
+budget-2027,nature 491 2027 (tableau par nature),279950.00,279950.00,0.00,oui,oui
+budget-2027,nature 491 2026 (tableau par nature),255000.00,255000.00,0.00,oui,oui
+budget-2027,nature 492 2027 (tableau par nature),884885.30,884885.30,0.00,oui,oui
+budget-2027,nature 492 2026 (tableau par nature),796420.00,796420.00,0.00,oui,oui
+budget-2027,nature 493 2027 (tableau par nature),245200.00,245200.00,0.00,oui,oui
+budget-2027,nature 493 2026 (tableau par nature),224200.00,224200.00,0.00,oui,oui
+budget-2027,nature 494 2027 (tableau par nature),158200.00,158200.00,0.00,oui,oui
+budget-2027,nature 494 2026 (tableau par nature),151000.00,151000.00,0.00,oui,oui
+budget-2027,nature 495 2027 (tableau par nature),63166.67,63166.67,0.00,oui,oui
+budget-2027,nature 495 2026 (tableau par nature),10530.00,10530.00,0.00,oui,oui
+budget-2027,endettement brut 2026 : base + investissements - marge,115989364.00,115989364.00,0.00,oui,oui
+budget-2027,endettement brut prévisionnel 2026 = total + cautionnements,116139364.00,116139364.00,0.00,oui,oui
+budget-2027,endettement brut prévisionnel 2027,127126028.00,127126028.00,0.00,oui,oui
+budget-2027,endettement net 2026 : base + investissements PA - marge,87140037.00,87140037.00,0.00,oui,oui
+budget-2027,endettement net prévisionnel 2026 = total + cautionnements,87290037.00,87290037.00,0.00,oui,oui
+budget-2027,endettement net prévisionnel 2027,97551701.00,97551701.00,0.00,oui,oui
+budget-2027,marge d'autofinancement Budget 2027 = revenus épurés - charges épurées,-2376490.00,-2376490.00,0.00,oui,oui
+budget-2027,marge d'autofinancement Budget 2026 = revenus épurés - charges épurées,-3872691.00,-3872691.00,0.00,oui,oui
+budget-2027,marge d'autofinancement Comptes 2025 = revenus épurés - charges épurées,2359376.00,2359376.00,0.00,oui,oui
+budget-2027,marge d'autofinancement Comptes 2024 = revenus épurés - charges épurées,2833576.00,2833576.00,0.00,oui,oui
+budget-2027,marge d'autofinancement Comptes 2023 = revenus épurés - charges épurées,4827583.00,4827584.00,1.00,oui,oui
+budget-2027,marge d'autofinancement Comptes 2022 = revenus épurés - charges épurées,3514026.00,3514026.00,0.00,oui,oui
+budget-2027,total des charges 2027 (marge) = tableau récapitulatif,57472511.00,57472511.14,0.14,oui,oui
+budget-2027,total des revenus 2027 (marge) = tableau récapitulatif,49452121.00,49452120.97,-0.03,oui,oui
+budget-2027,marge 2027 reprise dans l'endettement,2376490.00,2376490.00,0.00,oui,oui
+budget-2027,marge 2026 reprise dans l'endettement,3872691.00,3872691.00,0.00,oui,oui
+budget-2027,emprunts 2027 : somme du tableau,97458325.00,97458325.00,0.00,oui,oui

@@ -1,0 +1,706 @@
+{
+ "natures": {
+  "30": [
+   "Charges de personnel",
+   13122529.0,
+   13487420.55
+  ],
+  "300": [
+   "Autorités et commissions",
+   554410.0,
+   524075.25
+  ],
+  "301": [
+   "Salaires du personnel administratif et d'exploitation",
+   9230880.0,
+   9573000.0
+  ],
+  "304": [
+   "Allocations",
+   156279.0,
+   156015.0
+  ],
+  "305": [
+   "Cotisations patronales",
+   3037900.0,
+   3048100.3
+  ],
+  "309": [
+   "Autres charges de personnel",
+   143060.0,
+   186230.0
+  ],
+  "31": [
+   "Charges de biens et services et autres charges d'exploitation",
+   9195302.5,
+   9383275.0
+  ],
+  "310": [
+   "Charges de matériel et de marchandises",
+   984689.0,
+   1051320.0
+  ],
+  "311": [
+   "Immobilisations ne pouvant être portées à l'actif",
+   482779.2,
+   500385.0
+  ],
+  "312": [
+   "Alimentation et élimination",
+   1101150.0,
+   1138750.0
+  ],
+  "313": [
+   "Prestations de services et honoraires",
+   3010305.0,
+   3303920.0
+  ],
+  "314": [
+   "Gros entretien et entretien courant",
+   1841850.0,
+   2049400.0
+  ],
+  "315": [
+   "Entretien des biens meubles et immobilisations incorporelles",
+   914014.0,
+   552700.0
+  ],
+  "316": [
+   "Loyers et baux à ferme des biens-fonds",
+   498615.3,
+   330450.0
+  ],
+  "317": [
+   "Remboursements de frais",
+   18900.0,
+   21150.0
+  ],
+  "318": [
+   "Réévaluations sur créances",
+   337000.0,
+   430200.0
+  ],
+  "319": [
+   "Diverses charges d'exploitation",
+   6000.0,
+   5000.0
+  ],
+  "33": [
+   "Amortissements du patrimoine administratif",
+   5496681.67,
+   4497190.0
+  ],
+  "330": [
+   "Amortissements des immobilisations corporelles PA",
+   5131381.67,
+   4066550.0
+  ],
+  "332": [
+   "Amortissements des immobilisations incorporelles PA",
+   365300.0,
+   430640.0
+  ],
+  "34": [
+   "Charges financières",
+   1357590.0,
+   1451280.0
+  ],
+  "340": [
+   "Charges d’intérêts",
+   1158940.0,
+   1169230.0
+  ],
+  "342": [
+   "Frais d'approvisionnement en capitaux et frais administratifs",
+   23000.0,
+   19200.0
+  ],
+  "343": [
+   "Charges pour biens-fonds PF",
+   175650.0,
+   262850.0
+  ],
+  "35": [
+   "Attributions aux fonds et financements spéciaux",
+   459250.0,
+   722620.0
+  ],
+  "351": [
+   "Attributions aux fonds et financements spéciaux",
+   459250.0,
+   722620.0
+  ],
+  "36": [
+   "Charges de transfert",
+   25947556.0,
+   26344935.0
+  ],
+  "360": [
+   "Parts des revenus destinés à des tiers",
+   105250.0,
+   106400.0
+  ],
+  "361": [
+   "Parts à des collectivités publiques",
+   4106302.0,
+   4068400.0
+  ],
+  "362": [
+   "Péréquation financière et compensation des charges",
+   12420569.0,
+   13129100.0
+  ],
+  "363": [
+   "Subventions à des collectivités et à des tiers",
+   9276035.0,
+   8991035.0
+  ],
+  "366": [
+   "Amortissements des subventions d’investissement",
+   39400.0,
+   50000.0
+  ],
+  "38": [
+   "Charges extraordinaires",
+   247000.0,
+   null
+  ],
+  "389": [
+   "Attributions au capital propre",
+   247000.0,
+   null
+  ],
+  "39": [
+   "Imputations internes",
+   1646601.97,
+   1458650.0
+  ],
+  "390": [
+   "Imputations internes pour l'approvisionnement en matériel et en marchandises",
+   15200.0,
+   21500.0
+  ],
+  "391": [
+   "Imputations internes pour prestations de service",
+   279950.0,
+   255000.0
+  ],
+  "392": [
+   "Imputations internes pour bail à ferme, loyers, frais d'utilisation",
+   884885.3,
+   796420.0
+  ],
+  "393": [
+   "Imputations internes pour frais administratifs et d'exploitation",
+   245200.0,
+   224200.0
+  ],
+  "394": [
+   "Imputations internes pour intérêts et charges financières théoriques",
+   158200.0,
+   151000.0
+  ],
+  "395": [
+   "Imputations internes pour amortissements",
+   63166.67,
+   10530.0
+  ],
+  "40": [
+   "Revenus fiscaux",
+   36786000.0,
+   36340100.0
+  ],
+  "400": [
+   "Impôts directs, personnes physiques",
+   31770000.0,
+   30560900.0
+  ],
+  "401": [
+   "Impôts directs, personnes morales",
+   1026000.0,
+   1170200.0
+  ],
+  "402": [
+   "Autres impôts directs",
+   3954000.0,
+   4575000.0
+  ],
+  "403": [
+   "Impôts sur la propriété et sur les charges",
+   36000.0,
+   34000.0
+  ],
+  "41": [
+   "Patentes et concessions",
+   44500.0,
+   40000.0
+  ],
+  "412": [
+   "Patentes et concessions",
+   44500.0,
+   40000.0
+  ],
+  "42": [
+   "Taxes et redevances",
+   5453620.0,
+   5455710.0
+  ],
+  "421": [
+   "Emoluments administratifs",
+   304500.0,
+   305500.0
+  ],
+  "424": [
+   "Taxes d'utilisation et prestations de services",
+   4142620.0,
+   4143000.0
+  ],
+  "425": [
+   "Recettes sur ventes",
+   341800.0,
+   315300.0
+  ],
+  "426": [
+   "Remboursements et prestations de services",
+   476700.0,
+   503910.0
+  ],
+  "427": [
+   "Amendes",
+   188000.0,
+   188000.0
+  ],
+  "44": [
+   "Revenus financiers",
+   597230.0,
+   557440.0
+  ],
+  "440": [
+   "Revenus des intérêts",
+   240000.0,
+   190000.0
+  ],
+  "443": [
+   "Produit des biens-fonds PF",
+   185350.0,
+   208610.0
+  ],
+  "445": [
+   "Revenus financiers de prêts et de participations du PA",
+   17500.0,
+   17500.0
+  ],
+  "447": [
+   "Produit des biens-fonds PA",
+   154380.0,
+   141330.0
+  ],
+  "45": [
+   "Prélèvements sur les fonds et financements spéciaux",
+   698431.0,
+   680000.0
+  ],
+  "451": [
+   "Prélèvements sur les fonds et financements spéciaux enregistrés sous capital propre",
+   698431.0,
+   680000.0
+  ],
+  "46": [
+   "Revenus de transfert",
+   4225738.0,
+   4147770.0
+  ],
+  "460": [
+   "Part de revenus",
+   1193200.0,
+   1572800.0
+  ],
+  "461": [
+   "Dédommagements de collectivités publiques",
+   186000.0,
+   211600.0
+  ],
+  "462": [
+   "Péréquation financière et compensation des charges",
+   2823438.0,
+   2341970.0
+  ],
+  "463": [
+   "Subventions de collectivités et de tiers",
+   18100.0,
+   16400.0
+  ],
+  "469": [
+   "Autres revenus de transferts",
+   5000.0,
+   5000.0
+  ],
+  "48": [
+   "Revenus extraordinaires",
+   0.0,
+   6665700.55
+  ],
+  "489": [
+   "Prélèvements sur le capital propre",
+   0.0,
+   6665700.55
+  ],
+  "49": [
+   "Imputations internes",
+   1646601.97,
+   1458650.0
+  ],
+  "490": [
+   "Imputations internes pour l'approvisionnement en matériel et en marchandises",
+   15200.0,
+   21500.0
+  ],
+  "491": [
+   "Imputations internes pour prestations de service",
+   279950.0,
+   255000.0
+  ],
+  "492": [
+   "Imputations internes pour bail à ferme, loyers, frais d'utilisation",
+   884885.3,
+   796420.0
+  ],
+  "493": [
+   "Imputations internes pour frais administratifs et d'exploitation",
+   245200.0,
+   224200.0
+  ],
+  "494": [
+   "Imputations internes pour intérêts et charges financières théoriques",
+   158200.0,
+   151000.0
+  ],
+  "495": [
+   "Imputations internes pour amortissements",
+   63166.67,
+   10530.0
+  ]
+ },
+ "marge": {
+  "colonnes": [
+   "Budget 2027",
+   "Budget 2026",
+   "Comptes 2025",
+   "Comptes 2024",
+   "Comptes 2023",
+   "Comptes 2022"
+  ],
+  "revenus": [
+   49452121.0,
+   55345371.0,
+   54643801.0,
+   62792730.0,
+   60753114.0,
+   58237669.0
+  ],
+  "revenus_epures": [
+   47107088.0,
+   46541020.0,
+   47005821.0,
+   58641593.0,
+   58175316.0,
+   54493503.0
+  ],
+  "charges": [
+   57472511.0,
+   57345371.0,
+   55135163.0,
+   63443406.0,
+   60704571.0,
+   58228732.0
+  ],
+  "charges_epurees": [
+   49483578.0,
+   50413711.0,
+   44646445.0,
+   55808017.0,
+   53347732.0,
+   50979477.0
+  ],
+  "marge": [
+   -2376490.0,
+   -3872691.0,
+   2359376.0,
+   2833576.0,
+   4827583.0,
+   3514026.0
+  ]
+ },
+ "endettement": [
+  [
+   "Endettement brut au 31.12.2025",
+   97610869.0
+  ],
+  [
+   "Investissements au PA selon plan des investissements : 2026",
+   9866776.0
+  ],
+  [
+   "Investissements au PF selon plan des investissements : 2026",
+   4639028.0
+  ],
+  [
+   "(-) Marge d'autofinancement positive ou (+) Marge d'autofinancement négative : 2026",
+   3872691.0
+  ],
+  [
+   "Total",
+   115989364.0
+  ],
+  [
+   "Cautionnements consentis non garantis",
+   150000.0
+  ],
+  [
+   "Endettement brut prévisionnel 2026",
+   116139364.0
+  ],
+  [
+   "Investissements au PA selon plan des investissements : 2027",
+   7885174.0
+  ],
+  [
+   "Investissements au PF selon plan des investissements : 2027",
+   725000.0
+  ],
+  [
+   "(-) Marge d'autofinancement positive ou (+) Marge d'autofinancement négative : 2027",
+   2376490.0
+  ],
+  [
+   "Endettement brut prévisionnel 2027",
+   127126028.0
+  ],
+  [
+   "Endettement net au 31.12.2025",
+   73400570.0
+  ],
+  [
+   "Investissements au PA selon plan des investissements : 2026",
+   9866776.0
+  ],
+  [
+   "(-) Marge d'autofinancement positive ou (+) Marge d'autofinancement négative : 2026",
+   3872691.0
+  ],
+  [
+   "Total",
+   87140037.0
+  ],
+  [
+   "Cautionnements consentis non garantis",
+   150000.0
+  ],
+  [
+   "Endettement net prévisionnel 2026",
+   87290037.0
+  ],
+  [
+   "Investissements au PA selon plan des investissements : 2027",
+   7885174.0
+  ],
+  [
+   "(-) Marge d'autofinancement positive ou (+) Marge d'autofinancement négative : 2027",
+   2376490.0
+  ],
+  [
+   "Endettement net prévisionnel 2027",
+   97551701.0
+  ]
+ ],
+ "emprunts": [
+  [
+   "AXA Leben",
+   1.75,
+   2500000.0,
+   "10.02.2012",
+   "10.02.2027"
+  ],
+  [
+   "Vaudoise Vie",
+   1.9,
+   2500000.0,
+   "28.03.2013",
+   "28.03.2028"
+  ],
+  [
+   "POSTFINANCE",
+   1.69,
+   2500000.0,
+   "01.10.2014",
+   "01.10.2029"
+  ],
+  [
+   "Pensionskasse Post",
+   0.98,
+   5000000.0,
+   "05.06.2015",
+   "05.06.2030"
+  ],
+  [
+   "AXA Vie SA",
+   0.9,
+   5000000.0,
+   "20.06.2017",
+   "20.06.2034"
+  ],
+  [
+   "MIGROS-Pensionskasse",
+   1.25,
+   5000000.0,
+   "03.05.2018",
+   "03.05.2033"
+  ],
+  [
+   "C.I.P. - Caisse intercommunale de pensions",
+   0.45,
+   5000000.0,
+   "19.06.2020",
+   "19.06.2030"
+  ],
+  [
+   "POSTFINANCE",
+   0.74,
+   5000000.0,
+   "10.02.2021",
+   "10.02.2040"
+  ],
+  [
+   "B.C.V.",
+   0.62,
+   3958325.0,
+   "15.06.2021",
+   "15.06.2032"
+  ],
+  [
+   "SUVA",
+   0.89,
+   5000000.0,
+   "18.02.2022",
+   "18.02.2036"
+  ],
+  [
+   "SUVA",
+   0.98,
+   5000000.0,
+   "11.04.2022",
+   "11.04.2029"
+  ],
+  [
+   "SUVA",
+   1.88,
+   2500000.0,
+   "20.01.2023",
+   "20.01.2027"
+  ],
+  [
+   "SUVA",
+   1.89,
+   2500000.0,
+   "20.01.2023",
+   "20.01.2028"
+  ],
+  [
+   "POSTFINANCE",
+   2.5,
+   5000000.0,
+   "08.05.2023",
+   "08.05.2038"
+  ],
+  [
+   "FOND. INSTITUTION SUPPPLÉTIVE LPP",
+   1.27,
+   5000000.0,
+   "20.10.2026",
+   "22.10.2029"
+  ],
+  [
+   "SUVA",
+   2.02,
+   5000000.0,
+   "20.10.2023",
+   "20.10.2031"
+  ],
+  [
+   "FOND. INSTITUTION SUPPPLÉTIVE LPP",
+   1.05,
+   2000000.0,
+   "28.11.2024",
+   "29.11.2027"
+  ],
+  [
+   "Swissquote Bank SA",
+   0.95,
+   2000000.0,
+   "28.11.2024",
+   "29.11.2027"
+  ],
+  [
+   "Swissquote Bank SA",
+   0.95,
+   3000000.0,
+   "18.11.2024",
+   "18.11.2027"
+  ],
+  [
+   "FOND. INSTITUTION SUPPPLÉTIVE LPP",
+   0.62,
+   1500000.0,
+   "03.09.2025",
+   "04.09.2028"
+  ],
+  [
+   "FOND. INSTITUTION SUPPPLÉTIVE LPP",
+   0.58,
+   6000000.0,
+   "01.10.2025",
+   "01.10.2027"
+  ],
+  [
+   "FOND. INSTITUTION SUPPPLÉTIVE LPP",
+   0.58,
+   3000000.0,
+   "04.05.2026",
+   "04.05.2027"
+  ],
+  [
+   "Pensionskasse Post",
+   1.71,
+   4000000.0,
+   "17.07.2026",
+   "17.07.2035"
+  ],
+  [
+   "Swissquote Bank SA",
+   1.23,
+   2000000.0,
+   "20.10.2026",
+   "22.10.2029"
+  ],
+  [
+   "Banque Cantonale Neuchâteloise",
+   0.56,
+   2500000.0,
+   "07.10.2026",
+   "07.10.2027"
+  ],
+  [
+   "Rentes Genevoises",
+   0.45,
+   5000000.0,
+   "20.10.2026",
+   "20.01.2027"
+  ]
+ ],
+ "emprunts_total": 97458325.0,
+ "texte_municipalite": [
+  "Le budget 2027 est le premier établi selon le plan comptable MCH2 ; le budget 2026 a été reclassé dans ce plan par la Municipalité.",
+  "La comparaison des lignes budgétaires des exercices 2025 et antérieurs (MCH1) et celles des budgets 2027 et 2026 (MCH2) n'est pas toujours pertinente, à cause des reclassements et réaffectations exigés par MCH2 et de la création de plusieurs nouveaux comptes.",
+  "Le budget 2026 inclut 6,6 millions de prélèvements sur les fonds de réserve ; MCH2 interdit cette pratique au niveau du budget."
+ ]
+}

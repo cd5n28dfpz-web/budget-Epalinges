@@ -71,6 +71,8 @@ select,input[type=search]{background:var(--surface);border:1px solid var(--axis)
 input[type=search]{min-width:0;width:min(360px,100%)}
 label.ctl{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--fg-2);max-width:100%;min-width:0}
 label.ctl select{min-width:0;flex:1 1 auto;width:100%}
+.banner{border:1px solid var(--axis);border-left:5px solid var(--accent);background:var(--surface);border-radius:var(--r);padding:12px 16px;margin-bottom:14px;font-size:14px}
+.banner b{font-family:var(--f-display);letter-spacing:.04em;text-transform:uppercase}
 .note{font-size:12.5px;color:var(--muted);margin-top:8px}
 .crumbs{display:flex;flex-wrap:wrap;gap:4px;align-items:center;font-size:14px;margin-bottom:10px;min-height:30px}
 .crumbs button{background:none;border:0;padding:3px 4px;cursor:pointer;color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:3px}
@@ -197,6 +199,7 @@ svg .grid line{stroke:var(--line)}
   <button class="tab" role="tab" id="t-ov" aria-controls="p-ov">Vue d'ensemble</button>
   <button class="tab" role="tab" id="t-ev" aria-controls="p-ev">Évolutions</button>
   <button class="tab" role="tab" id="t-bc" aria-controls="p-bc">Budget et comptes</button>
+  <button class="tab" role="tab" id="t-p7" aria-controls="p-p7">Projet 2027</button>
   <button class="tab" role="tab" id="t-de" aria-controls="p-de">Dette</button>
   <button class="tab" role="tab" id="t-am" aria-controls="p-am">Amendements</button>
   <button class="tab" role="tab" id="t-fs" aria-controls="p-fs">Fiche service</button>
@@ -282,6 +285,22 @@ svg .grid line{stroke:var(--line)}
 </section>
 
 <!-- DETTE -->
+<section class="panel" id="p-p7" role="tabpanel" hidden>
+  <div class="banner" id="p7Ban"></div>
+  <div class="kpis" id="p7Kpis"></div>
+  <div class="sec"><div class="sec-h"><h2>Par dicastère</h2><p>Projet 2027 comparé au budget 2026 reclassé dans le plan MCH2 par la Municipalité. Charges et revenus en francs.</p></div><div class="tblwrap"><table class="data" id="p7Dir"></table></div><p class="note" id="p7DirNote"></p></div>
+  <div class="sec"><div class="sec-h"><h2>Par nature</h2><p>Charges et revenus par nature comptable (plan MCH2).</p></div>
+    <div class="controls"><label class="ctl">Afficher <select id="p7NatSens"><option value="3">Charges</option><option value="4">Revenus</option></select></label><label class="ctl"><input type="checkbox" id="p7NatDet"> détail à 3 chiffres</label></div>
+    <div class="tblwrap" style="margin-top:10px"><table class="data" id="p7Nat"></table></div></div>
+  <div class="sec"><div class="sec-h"><h2>Marge d'autofinancement</h2><p>Revenus et charges avec effets sur les liquidités, tels que présentés par la Municipalité.</p></div><div class="tblwrap"><table class="data" id="p7Marge"></table></div><p class="note" id="p7MargeNote"></p></div>
+  <div class="sec"><div class="sec-h"><h2>Endettement prévisionnel 2026-2027</h2><p>Calcul de la Municipalité, en francs.</p></div><div class="tblwrap"><table class="data" id="p7End"></table></div></div>
+  <div class="sec"><div class="sec-h"><h2>Emprunts prévus en 2027</h2><p id="p7EmpSub"></p></div><div class="tblwrap"><table class="data" id="p7Emp"></table></div></div>
+  <div class="sec"><div class="sec-h"><h2>Tous les comptes du projet</h2><p id="p7CSub"></p></div>
+    <div class="controls"><label class="ctl">Dicastère <select id="p7CDir"></select></label><label class="ctl">Recherche <input type="search" id="p7CQ" placeholder="libellé ou numéro"></label></div>
+    <div class="tblwrap" style="margin-top:10px"><table class="data" id="p7C"></table></div><p class="note" id="p7CNote"></p></div>
+  <p class="note" id="p7Src"></p>
+</section>
+
 <section class="panel" id="p-de" role="tabpanel" hidden>
   <p class="lede">Le compte de fonctionnement (les autres onglets) ne dit pas tout : la commune emprunte pour financer ses investissements. Cet onglet reprend, tels que publiés dans les comptes et le budget, les emprunts, les intérêts, l'endettement et les ratios financiers.</p>
   <div class="kpis" id="deKpis"></div>
@@ -441,7 +460,7 @@ function divbars(el,items,onClick){const max=d3.max(items,d=>Math.abs(d.d))||1;
 function renderAccueil(){if(drawn.ac)return;drawn.ac=1;
   const yC=S[SI[LC]].annee;const r=RES[LC], rb=RES[LB];
   $("#acLead").innerHTML=`En ${yC}, la commune a dépensé <b>${mio(+r.charges)}</b> de francs et encaissé <b>${mio(+r.revenus)}</b> (${g("comptes","comptes")} ${yC}). Ce site permet de retrouver chaque ligne des ${g("budget","budgets")} et des comptes publiés depuis ${ofType("C")[0].annee}, et de les comparer d'une année à l'autre.`;
-  $("#stamp").textContent=`Comptes ${ofType("C")[0].annee}–${yC} · budgets ${ofType("B")[0].annee}–${S[SI[LB]].annee}`;
+  $("#stamp").textContent=`Comptes ${ofType("C")[0].annee}–${yC} · budgets ${ofType("B")[0].annee}–${S[SI[LB]].annee}${D.projet27?" · projet 2027":""}`;
   const kp=[["Charges "+yC,mio(+r.charges),"comptes, total officiel"],["Revenus "+yC,mio(+r.revenus),"comptes, total officiel"],
     ["Résultat "+yC,sgn(+r.resultat),(+r.resultat>=0?"excédent de revenus":"excédent de charges")],["Résultat prévu "+rb.annee,sgn(+rb.resultat),"budget voté"]];
   $("#acKpis").innerHTML=kp.map(k=>`<div class="kpi"><div class="k">${k[0]}</div><div class="v num">${k[1]}</div><div class="s">${k[2]}</div></div>`).join("");
@@ -599,6 +618,51 @@ function renderGu(){if(drawn.gu)return;drawn.gu=1;const docs=Object.entries(D.do
   <p>Page des documents officiels : <a href="${esc(D.page_source)}" target="_blank" rel="noopener">epalinges.ch, budgets et comptes</a>.</p>`;}
 
 
+// ---------- PROJET 2027 ----------
+function renderP7(){const P=D.projet27;if(!P)return;
+  const num=v=>v==null?"–":chf(v).replace(" fr.","");
+  const [c27,c26]=P.totaux.charges,[r27,r26]=P.totaux.revenus;
+  $("#p7Ban").innerHTML=`<b>Projet de budget, pas encore voté</b><br>Ces chiffres sont ceux proposés par la Municipalité au Conseil communal. Ils n'ont été ni votés ni amendés ; ils peuvent encore changer. Ce budget est le premier établi selon le plan comptable <b>MCH2</b> : il ne se compare pas ligne à ligne avec les budgets et comptes des années précédentes, présentés dans les autres onglets selon l'ancien plan.`;
+  const mg=P.marge;
+  const kp=[["Charges 2027",mio(c27),"2026 reclassé : "+mio(c26)],["Revenus 2027",mio(r27),"2026 reclassé : "+mio(r26)],
+    ["Résultat 2027",mio(r27-c27),"2026 reclassé : "+mio(r26-c26)],["Marge d'autofinancement",mio(mg.marge[0]),"2026 : "+mio(mg.marge[1])+" · comptes 2025 : "+mio(mg.marge[2])],
+    ["Endettement brut fin 2027",mio(P.endettement.find(x=>x[0].startsWith("Endettement brut prévisionnel 2027"))[1]),"fin 2025 : "+mio(P.endettement[0][1])]];
+  $("#p7Kpis").innerHTML=kp.map(k=>`<div class="kpi"><div class="k">${k[0]}</div><div class="v num">${k[1]}</div><div class="s">${k[2]}</div></div>`).join("");
+  // dicastères
+  const dir={};P.comptes.forEach(c=>{const d=c[0][0];const a=dir[d]||(dir[d]=[0,0,0,0]);for(let j=0;j<4;j++)a[j]+=c[3+j]});
+  const th=h=>`<th class="r">${h}</th>`;
+  let t27=[0,0,0,0];
+  $("#p7Dir").innerHTML=`<thead><tr><th>Dicastère</th>${th("Charges 2027")}${th("Revenus 2027")}${th("Net 2027")}${th("Net 2026")}${th("Écart du net")}</tr></thead><tbody>`+
+    Object.keys(dir).sort().map(d=>{const a=dir[d];for(let j=0;j<4;j++)t27[j]+=a[j];const n7=a[0]-a[1],n6=a[2]-a[3];return `<tr><td>${esc(d)} · ${esc(P.noms.direction[d]||"")}</td><td class="r">${num(a[0])}</td><td class="r">${num(a[1])}</td><td class="r">${num(n7)}</td><td class="r">${num(n6)}</td><td class="r">${num(n7-n6)}</td></tr>`}).join("")+
+    `</tbody><tfoot><tr><td><b>Total</b></td><td class="r">${num(t27[0])}</td><td class="r">${num(t27[1])}</td><td class="r">${num(t27[0]-t27[1])}</td><td class="r">${num(t27[2]-t27[3])}</td><td class="r">${num((t27[0]-t27[1])-(t27[2]-t27[3]))}</td></tr></tfoot>`;
+  $("#p7DirNote").textContent="Net = charges moins revenus : un montant positif est un coût net pour la commune, un montant négatif un excédent de revenus. Les impôts figurent dans le dicastère des finances.";
+  // natures
+  const ns=$("#p7NatSens").value,det=$("#p7NatDet").checked;
+  const rowsN=Object.entries(P.natures).filter(([k])=>k[0]===ns&&(det||k.length===2)).sort((a,b)=>a[0].localeCompare(b[0]));
+  $("#p7Nat").innerHTML=`<thead><tr><th>Nature</th>${th("2027")}${th("2026 (MCH2)")}${th("Écart")}${th("Écart %")}</tr></thead><tbody>`+
+    rowsN.map(([k,v])=>`<tr${k.length===2?' style="font-weight:600"':""}><td>${k} · ${esc(v[0])}</td><td class="r">${num(v[1])}</td><td class="r">${num(v[2])}</td><td class="r">${num(v[1]-v[2])}</td><td class="r">${fpct(pct(v[1],v[2]))}</td></tr>`).join("")+"</tbody>";
+  // marge
+  const lb=[["revenus","Total des revenus"],["revenus_epures","Revenus épurés (avec effets sur les liquidités)"],["charges","Total des charges"],["charges_epurees","Charges épurées (avec effets sur les liquidités)"],["marge","Marge d'autofinancement"]];
+  $("#p7Marge").innerHTML=`<thead><tr><th></th>${mg.colonnes.map(th).join("")}</tr></thead><tbody>`+lb.map(([k,n])=>`<tr${k==="marge"?' style="font-weight:600"':""}><td>${n}</td>${mg[k].map(v=>`<td class="r">${num(v)}</td>`).join("")}</tr>`).join("")+"</tbody>";
+  $("#p7MargeNote").textContent="Une marge négative signifie que les revenus encaissés ne couvrent pas les charges décaissées : la commune emprunte alors pour une partie de son fonctionnement. Les colonnes 2027 et 2026 sont des budgets, les autres des comptes.";
+  // endettement
+  $("#p7End").innerHTML=`<tbody>`+P.endettement.map(([k,v])=>`<tr${/^Endettement/.test(k)?' style="font-weight:600"':""}><td>${esc(k)}</td><td class="r">${num(v)}</td></tr>`).join("")+"</tbody>";
+  // emprunts
+  $("#p7EmpSub").textContent=`Total ${chf(P.emprunts_total)} · ${P.emprunts.length} emprunts (existants et prévus)`;
+  $("#p7Emp").innerHTML=`<thead><tr><th>Prêteur</th>${th("Taux")}${th("Montant")}<th>Début</th><th>Échéance</th></tr></thead><tbody>`+P.emprunts.map(e=>`<tr><td>${esc(e[0])}</td><td class="r">${e[1].toLocaleString("fr-CH",{minimumFractionDigits:2})} %</td><td class="r">${num(e[2])}</td><td>${e[3]}</td><td>${e[4]}</td></tr>`).join("")+"</tbody>";
+  // comptes
+  const sel=$("#p7CDir");if(!sel.options.length){fillSel(sel,[["","Tous les dicastères"],...Object.keys(dir).sort().map(d=>[d,d+" · "+(P.noms.direction[d]||"")])]);sel.onchange=renderP7;$("#p7CQ").oninput=renderP7;$("#p7NatSens").onchange=renderP7;$("#p7NatDet").onchange=renderP7}
+  const q=$("#p7CQ").value.trim().toLowerCase();
+  const cs=P.comptes.filter(c=>(!sel.value||c[0][0]===sel.value)&&(!q||(c[2]+" "+c[1]+" "+c[0]+" "+(P.noms.section[c[0]]||"")).toLowerCase().includes(q)));
+  $("#p7CSub").textContent=`${cs.length} comptes sur ${P.comptes.length}`;
+  $("#p7C").innerHTML=`<thead><tr><th>Service</th><th>Compte</th><th>Libellé</th>${th("Charges 2027")}${th("Revenus 2027")}${th("Charges 2026")}${th("Revenus 2026")}</tr></thead><tbody>`+
+    cs.slice(0,250).map(c=>`<tr><td>${esc(c[0])} ${esc(P.noms.section[c[0]]||"")}</td><td>${esc(c[1])}</td><td>${esc(c[2])}</td>${[3,4,5,6].map(j=>`<td class="r">${c[j]?num(c[j]):"–"}</td>`).join("")}</tr>`).join("")+"</tbody>";
+  $("#p7CNote").textContent=cs.length>250?"Les 250 premiers comptes sont affichés ; affinez avec la recherche ou le dicastère.":"";
+  const d=D.documents["budget-2027"];
+  $("#p7Src").innerHTML=P.texte.map(esc).join(" ")+" Source : "+esc((d&&d.titre)||"Projet de budget 2027")+", Municipalité d'Épalinges.";
+}
+function initP7(){if(!D.projet27){$("#t-p7").hidden=true;$("#p-p7").hidden=true}}
+
 // ---------- DETTE ----------
 function renderDe(){const T=D.dette;if(!T)return;
   const I={};T.indicateurs.forEach(x=>I[x.cle]=x);
@@ -667,8 +731,8 @@ function renderDe(){const T=D.dette;if(!T)return;
   $("#deEmp").innerHTML=`<thead><tr><th>Prêteur</th><th>Conclu le</th><th>Échéance</th><th class="r">Taux</th><th class="r">Montant</th></tr></thead><tbody>`+em.map(e=>`<tr><td>${esc(e.preteur)}</td><td>${esc(e.debut)}</td><td>${esc(e.echeance||"échelonné jusqu'en 2032")}</td><td class="r">${e.taux.toLocaleString("fr-CH",{minimumFractionDigits:2})} %</td><td class="r">${chf(e.montant).replace(" fr.","")}</td></tr>`).join("")+"</tbody>";}
 function initDe(){if(!D.dette){$("#t-de").hidden=true;$("#p-de").hidden=true}}
 
-const RENDER={"t-de":renderDe,"t-ac":renderAccueil,"t-ex":()=>renderEx(),"t-re":()=>renderRe(),"t-gu":renderGu,"t-ov":renderOv,"t-ev":renderEv,"t-bc":renderBc,"t-am":renderAm,"t-fs":renderFs};
-initEx();initRe();initEv();initBc();initAm();initDe();initFs();ovWhatV=seg("#ovWhat",renderOv);
+const RENDER={"t-p7":renderP7,"t-de":renderDe,"t-ac":renderAccueil,"t-ex":()=>renderEx(),"t-re":()=>renderRe(),"t-gu":renderGu,"t-ov":renderOv,"t-ev":renderEv,"t-bc":renderBc,"t-am":renderAm,"t-fs":renderFs};
+initEx();initRe();initEv();initBc();initAm();initDe();initP7();initFs();ovWhatV=seg("#ovWhat",renderOv);
 $("#foot").innerHTML=`Source : Commune d'Épalinges, budgets et comptes (<a href="${esc(D.page_source)}" target="_blank" rel="noopener">epalinges.ch</a>). Mise en forme : projet indépendant « Budget d'Épalinges en données ouvertes ». Données et code : licence ouverte. En cas de doute, le document officiel fait foi.`;
 openTab(load("bp-tab")&&$("#"+load("bp-tab"))?load("bp-tab"):"t-ac");
 </script>

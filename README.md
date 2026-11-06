@@ -2,7 +2,7 @@
 
 Les budgets et les comptes de la Commune d'Épalinges, ligne par ligne, extraits des documents officiels de la commune et rendus lisibles : un tableau de bord interactif et des fichiers CSV réutilisables.
 
-**Couverture actuelle** : comptes 2018 à 2025, budgets votés 2019 à 2026, projets de budget 2020 à 2022 et 2024, soit plus de 2'000 lignes du budget de fonctionnement dans 7 dicastères, plus un onglet « Dette » (emprunts, intérêts, endettement, ratios financiers et échéancier des emprunts, 2018 à 2026).
+**Couverture actuelle** : comptes 2018 à 2025, budgets votés 2019 à 2026, projets de budget 2020 à 2022 et 2024, le projet de budget 2027 (non voté, plan MCH2, onglet séparé), soit plus de 2'000 lignes du budget de fonctionnement dans 7 dicastères, plus un onglet « Dette » (emprunts, intérêts, endettement, ratios financiers et échéancier des emprunts, 2018 à 2026).
 
 > Projet indépendant, sans lien avec l'administration communale. Les chiffres proviennent des documents publiés par la Commune d'Épalinges ; en cas de doute, le document officiel fait foi.
 > Ce projet est une adaptation pour Épalinges du projet [Budget de Prilly en données ouvertes](https://github.com/andant89/budget-Prilly) (licence MIT).

@@ -44,7 +44,13 @@ def mots_pdf(chemin):
         mots = [{"x0": float(a), "top": float(b), "x1": float(c), "bottom": float(d),
                  "text": re.sub(r"^[\u2010-\u2015\u2212](?=\d)", "-", html.unescape(t))}  # tirets typographiques
                 for a, b, c, d, t in WORD.findall(corps)]
-        pages.append((float(w), float(h), mots))
+        w, h = float(w), float(h)
+        # page paysage enregistrée avec une rotation (/Rotate 270) : pdftotext donne les mots dans le repère non tourné,
+        # donc à la verticale. On les remet à l'endroit : x' = largeur - bas, y' = x.
+        vert = sum(1 for m in mots if (m["bottom"] - m["top"]) > 2.2 * (m["x1"] - m["x0"]) and len(m["text"]) > 3)
+        if w > h and mots and vert > 0.4 * len(mots):
+            mots = [dict(m, x0=w - m["bottom"], x1=w - m["top"], top=m["x0"], bottom=m["x1"]) for m in mots]
+        pages.append((w, h, mots))
     return pages
 
 
@@ -277,7 +283,9 @@ def extraire(doc, chemin):
                     and ws[1]["x1"] < pics[0] - 100:
                 ws[1] = dict(ws[1], text=ws[1]["text"] + "0")
                 corriges.append((i + 1, ws[0]["text"], ws[1]["text"]))
-            nums = [x for x in ws if MONTANT.match(x["text"])]
+            mch2 = doc.get("format") == "mch2"   # plan comptable MCH2 (dès le budget 2027) : « 0110.00 », « 1011000 3000.000 »
+            etiq = ws[0] if mch2 and re.fullmatch(r"\d{4}\.\d\d", ws[0]["text"]) and ws[0]["x1"] < pics[0] - 100 else None
+            nums = [x for x in ws if MONTANT.match(x["text"]) and x is not etiq]
             vals = [""] * (2 * n)
             for x in nums:
                 j = min(range(2 * n), key=lambda k: abs(pics[k] - x["x1"]))
@@ -286,7 +294,17 @@ def extraire(doc, chemin):
                 vals[j] = f"{montant(x['text']):.2f}"
             mots_txt = [x["text"] for x in ws if x not in nums]
             premier = mots_txt[0] if mots_txt else ""
-            if len(mots_txt) > 1 and re.fullmatch(r"\d{4}", premier) and CODE.match(mots_txt[1]):
+            if mch2 and re.fullmatch(r"\d{7}", premier) and len(mots_txt) > 1 and CODE.match(mots_txt[1]):
+                # « 1011000 3000.000 » : 1 + fonction (4 chiffres) + service (2 chiffres), puis le compte
+                typ, code, section_ligne, reste = "compte", mots_txt[1], premier[1:5] + "." + premier[5:], mots_txt[2:]
+            elif mch2 and etiq is not None:
+                typ, code, section_ligne, reste = "section", premier, "", mots_txt[1:]
+                section_cour = code
+            elif mch2 and re.fullmatch(r"\d{4}", premier):
+                continue                         # niveau « fonction à 4 chiffres » : sans équivalent dans l'ancien plan, non repris
+            elif mch2 and premier == "10" and "Fonctionnelle" in mots_txt:
+                continue                         # ligne du total général
+            elif len(mots_txt) > 1 and re.fullmatch(r"\d{4}", premier) and CODE.match(mots_txt[1]):
                 typ, code, section_ligne, reste = "compte", mots_txt[1], premier, mots_txt[2:]
             elif CODE.match(premier):
                 typ, code, section_ligne, reste = "compte", premier, section_cour, mots_txt[1:]
@@ -328,7 +346,7 @@ def totaux_document(chemin, n):
     txt = subprocess.run(["pdftotext", "-layout", chemin, "-"], capture_output=True, text=True, check=True).stdout
     precis, arrondis = None, None
     for ln in txt.split("\n"):
-        m = re.match(r"^\s*(?:0\s+)?(?:TOTAUX|TOTAL|Fonctionnement)\s{2,}(.*)$", ln)
+        m = re.match(r"^\s*(?:\d{1,2}\s+)?(?:TOTAUX|TOTAL|Fonctionnement|Fonctionnelle)\s{2,}(.*)$", ln)
         if not m:
             continue
         dec = [t.replace("\u2010", "-") for t in re.findall(r"[-\u2010]?\d{1,3}(?:['’]\d{3})*\.\d\d", m.group(1))]

@@ -48,3 +48,14 @@ Pour chaque année, la valeur du document le plus récent est retenue ; les éca
 - Les **attributions et prélèvements aux fonds** (natures 38 et 48) peuvent faire varier fortement une ligne d'une année à l'autre.
 - Les services sont parfois **réorganisés** : une ligne est identifiée par son service et son compte, un changement de service crée une nouvelle ligne.
 - Les montants sont en **francs courants**, non corrigés de l'inflation ni de la population.
+
+## Projet de budget 2027 (non voté, plan MCH2)
+
+Le projet de budget 2027 de la Municipalité (`sources/pdf/budget-2027.pdf`) est le premier établi selon le plan comptable MCH2. Il est marqué `"projet": true` dans `sources/documents.json` et **n'entre pas** dans la fusion des séries (C/B/P) : les numéros de services, de comptes et de natures ont changé, aucune correspondance fiable avec l'ancien plan n'existe au niveau du compte.
+
+- `pipeline/extract.py` (format `mch2`) lit les pages de détail par compte (2027 et budget 2026 reclassé par la Municipalité) ;
+- `pipeline/projet2027.py` lit les tableaux par nature, la marge d'autofinancement, l'endettement prévisionnel et les emprunts ;
+- contrôles (tous bloquants) : totaux officiels à la centime, chaque service/fonction/groupe/dicastère = somme de ses comptes, chaque nature = somme de ses comptes, arithmétique de l'endettement, marge = revenus épurés − charges épurées, somme des emprunts ;
+- le site l'affiche dans l'onglet « Projet 2027 », avec un bandeau « pas encore voté ni amendé » et le rappel de la Municipalité : le budget 2026 inclut 6,6 mio de prélèvements sur réserves et la comparaison MCH1/MCH2 n'est pas toujours pertinente.
+
+Quand le Conseil communal aura voté le budget, le document voté remplacera le projet.

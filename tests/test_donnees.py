@@ -86,3 +86,25 @@ class TestRapprochement(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestProjet2027(unittest.TestCase):
+    """Projet de budget 2027 (MCH2, non voté) : onglet séparé, jamais mélangé aux séries MCH1."""
+
+    @classmethod
+    def setUpClass(cls):
+        import json as _j
+        cls.D = _j.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "site", "data.json"), encoding="utf-8"))
+
+    def test_totaux_officiels(self):
+        P = self.D["projet27"]
+        self.assertAlmostEqual(P["totaux"]["charges"][0], 57472511.14, places=2)
+        self.assertAlmostEqual(P["totaux"]["revenus"][0], 49452120.97, places=2)
+
+    def test_pas_de_serie_2027_dans_le_modele_principal(self):
+        self.assertNotIn("P2027", [s["id"] for s in self.D["series"]])
+
+    def test_emprunts_et_endettement(self):
+        P = self.D["projet27"]
+        self.assertAlmostEqual(P["emprunts_total"], 97458325.0)
+        self.assertEqual(dict(P["endettement"])["Endettement brut prévisionnel 2027"], 127126028.0)

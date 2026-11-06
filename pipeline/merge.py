@@ -19,6 +19,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from libelles import lisible  # noqa: E402
 import dette as dette_mod  # noqa: E402
+import projet2027 as projet_mod  # noqa: E402
 import numerotation as num  # noqa: E402
 from collections import defaultdict
 
@@ -62,6 +63,8 @@ def charger():
     cfg = json.load(open(os.path.join(SRC, "documents.json"), encoding="utf-8"))
     docs = []
     for d in cfg["documents"]:
+        if d.get("projet"):      # projet non voté, plan MCH2 : traité à part (projet2027.py)
+            continue
         p = os.path.join(SRC, "extraits", d["id"] + ".csv")
         if not os.path.exists(p):
             continue
@@ -279,6 +282,7 @@ def main():
     ecrire("dette.csv", dette_rows, ["indicateur", "serie", "type", "annee", "valeur", "unite", "document", "page"])
     ecrire("emprunts.csv", emprunts_rows, ["debut", "preteur", "compte", "taux", "montant_31_12_2025", "echeance",
                                            "remboursements"])
+    projet_site = projet_mod.fusionner(ctrl)
     ecrire("controles.csv", controles, ["document", "controle", "attendu", "obtenu", "ecart", "ok", "bloquant"])
 
     # Données du site
@@ -298,7 +302,7 @@ def main():
         "resultats": resultats, "amendements": amendements, "documents": docs_info,
         "controles": {"total": len(controles), "ok": sum(1 for c in controles if c["ok"] == "oui"),
                       "bloquants_ko": sum(1 for c in controles if c["ok"] == "non" and c["bloquant"] == "oui")},
-        "page_source": cfg["page_source"], "dette": dette_site,
+        "page_source": cfg["page_source"], "dette": dette_site, "projet27": projet_site,
     }
     with open(os.path.join(RACINE, "site", "data.json"), "w", encoding="utf-8") as fh:
         json.dump(site, fh, ensure_ascii=False, separators=(",", ":"))

@@ -88,6 +88,25 @@
       "note": "Projet de budget de la Municipalité."
     },
     {
+      "id": "budget-2027",
+      "fichier": "budget-2027.pdf",
+      "type": "budget",
+      "annee": 2027,
+      "titre": "Projet de budget 2027",
+      "url": "",
+      "colonnes": [
+        "projet:2027",
+        "budget:2026"
+      ],
+      "note": "Projet de budget de la Municipalité, non encore voté ni amendé par le Conseil communal.",
+      "pages_detail": [
+        31,
+        99
+      ],
+      "format": "mch2",
+      "projet": true
+    },
+    {
       "id": "comptes-2022",
       "fichier": "comptes-2022.pdf",
       "type": "comptes",

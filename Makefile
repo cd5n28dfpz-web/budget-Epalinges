@@ -8,6 +8,7 @@ all: extraction rebuild
 extraction:
 	$(PY) pipeline/extract.py
 	$(PY) pipeline/dette.py
+	$(PY) pipeline/projet2027.py
 
 fusion:
 	$(PY) pipeline/merge.py
