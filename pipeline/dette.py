@@ -287,8 +287,50 @@ def recap_investissements():
     return out
 
 
+PREVU_NB = r"(-|\u2010)?\s*(\d{1,3}(?:['\u2019 ]\d{3})*)"
+
+
+def _prevu_nb(txt):
+    m = re.search(PREVU_NB, txt)
+    v = float(re.sub(r"['\u2019 ]", "", m.group(2)))
+    return -v if m.group(1) else v
+
+
+def prevus():
+    """Prévisions de chaque budget (2020 à 2026) : marge d'autofinancement, dépenses d'investissements,
+    endettement brut prévisible au 31 décembre de l'exercice budgété."""
+    res = {}
+    for an in range(2020, 2027):
+        doc = f"budget-{an}"
+        pgs = pages(doc)
+        r = {"document": doc}
+        for cle, rx in (("marge", r"^\s*(?:AUTOFINANCEMENT|Marge d.autofinancement)\s{2,}(.*)$"),
+                        ("invest", r"^\s*(?:Dépenses nettes d.investissements|Dépenses d.investissements \d{4}.*?)\s{2,}(.*)$"),
+                        ("sortie", r"^\s*(?:SORTIE DE FONDS PRÉVISIBLE|Sortie de fonds prévisible)\s{2,}(.*)$")):
+            for i, pg in enumerate(pgs):
+                m = next((re.match(rx, ln) for ln in pg.split("\n") if re.match(rx, ln)), None)
+                if m:
+                    r[cle] = _prevu_nb(m.group(1))
+                    r[cle + "_page"] = i + 1
+                    break
+        for i, pg in enumerate(pgs):
+            m = re.search(r"endettement brut prévisible de CHF\s+([\d'\u2019]+)", re.sub(r"\s+", " ", pg))
+            if m:
+                r["brut"] = float(re.sub(r"['\u2019]", "", m.group(1)))
+                r["brut_page"] = i + 1
+                break
+        if an == 2026:      # texte : « dépenses d'investissements prévues en 2026 ... s'élèvent à CHF 19'405'330 »
+            for i, pg in enumerate(pgs):
+                m = re.search(r"prévues en 2026.*?s.élèvent à CHF ([\d'\u2019]+)", re.sub(r"\s+", " ", pg))
+                if m:
+                    r["invest"] = -float(re.sub(r"['\u2019]", "", m.group(1)))
+                    r["invest_page"] = i + 1
+        res[an] = r
+    return res
+
+
 def extraire():
-    res = {"indicateurs": {}, "emprunts_reels": {}, "interets": {}, "echeancier": None, "flux": flux(), "investissements": investissements(), "recap_invest": recap_investissements()}
+    res = {"indicateurs": {}, "emprunts_reels": {}, "interets": {}, "echeancier": None, "flux": flux(), "investissements": investissements(), "recap_invest": recap_investissements(), "prevus": prevus()}
     for doc, an in ANNEES_DOC.items():
         pgs = pages(doc)
         for cle, nom, unite, rx in INDICATEURS:
@@ -466,6 +508,27 @@ def fusionner(ctrl, docs_info):
                    "montant_31_12_2025": f"{x['montant']:.0f}", "echeance": x["echeance"],
                    "remboursements": ";".join(f"{a}:{v:.0f}" for a, v in sorted(x["repartition"].items()))}
                   for x in emp]
+    # Prévu (budgets) et réalisé (comptes)
+    pv = d["prevus"]
+    for sr, an in (("B2025", "2025"), ("B2026", "2026")):
+        ctrl(pv[an]["document"], f"{sr} endettement brut prévisible = emprunts réels du tableau", er["total"]["valeurs"][sr],
+             pv[an]["brut"])
+    prevu_realise = []
+    for an in range(2020, 2027):
+        pr = pv[str(an)]
+        reel = {}
+        if an <= 2025:
+            reel["brut"] = val.get(("dette_brute", an))
+            if an <= 2024:
+                ctrl("budget-2026", f"C{an} dette brute (comptes) = emprunts réels du tableau", er["total"]["valeurs"][f"C{an}"],
+                     reel["brut"], bloquant=False)
+            reel["invest"] = val.get(("investissements_nets", an))
+            reel["marge"] = val.get(("marge_autofinancement", an))
+        prevu_realise.append({"annee": an, "document": pr["document"],
+                              "prevu": {"brut": pr.get("brut"), "invest": -pr["invest"] if pr.get("invest") is not None else None,
+                                        "marge": pr.get("marge")},
+                              "reel": reel,
+                              "pages": {k[:-5]: pr[k] for k in pr if k.endswith("_page")}})
     site = {
         "indicateurs": [{"cle": k, "nom": n, "unite": u,
                          "valeurs": {str(a): v for (c, a), v in sorted(val.items()) if c == k},
@@ -479,6 +542,7 @@ def fusionner(ctrl, docs_info):
         "revisions": revisions,
         "flux": {a: {k: v for k, v in r.items()} for a, r in sorted(fl.items())},
         "investissements": inv_site,
+        "prevu_realise": prevu_realise,
         "sources": {"echeancier": [e["document"], e["page"]], "emprunts_reels": ["budget-2026", er["total"]["page"]]},
     }
     return rows, lignes_emp, site, lignes_inv

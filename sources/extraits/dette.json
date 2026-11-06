@@ -11296,5 +11296,82 @@
    "autres": 0.0,
    "total": 14379462.79
   }
+ },
+ "prevus": {
+  "2020": {
+   "document": "budget-2020",
+   "marge": -513300.0,
+   "marge_page": 7,
+   "invest": -15920000.0,
+   "invest_page": 11,
+   "sortie": -16433300.0,
+   "sortie_page": 11,
+   "brut": 55000000.0,
+   "brut_page": 11
+  },
+  "2021": {
+   "document": "budget-2021",
+   "marge": -1079700.0,
+   "marge_page": 6,
+   "invest": -20015000.0,
+   "invest_page": 11,
+   "sortie": -23094700.0,
+   "sortie_page": 11,
+   "brut": 60000000.0,
+   "brut_page": 11
+  },
+  "2022": {
+   "document": "budget-2022",
+   "marge": -1111600.0,
+   "marge_page": 6,
+   "invest": -20065000.0,
+   "invest_page": 11,
+   "sortie": -23843268.0,
+   "sortie_page": 11,
+   "brut": 71291665.0,
+   "brut_page": 11
+  },
+  "2023": {
+   "document": "budget-2023",
+   "marge": -1149900.0,
+   "marge_page": 6,
+   "invest": -19921000.0,
+   "invest_page": 11,
+   "sortie": -23237568.0,
+   "sortie_page": 11,
+   "brut": 75124997.0,
+   "brut_page": 11
+  },
+  "2024": {
+   "document": "budget-2024",
+   "marge": -1213900.0,
+   "marge_page": 6,
+   "invest": -30081000.0,
+   "invest_page": 11,
+   "sortie": -33461568.0,
+   "sortie_page": 11,
+   "brut": 87958329.0,
+   "brut_page": 11
+  },
+  "2025": {
+   "document": "budget-2025",
+   "marge": -4012860.0,
+   "marge_page": 12,
+   "invest": -31385000.0,
+   "invest_page": 12,
+   "sortie": -42064528.0,
+   "sortie_page": 12,
+   "brut": 99791661.0,
+   "brut_page": 13
+  },
+  "2026": {
+   "document": "budget-2026",
+   "marge": -3872691.0,
+   "marge_page": 16,
+   "brut": 101890323.0,
+   "brut_page": 17,
+   "invest": -19405330.0,
+   "invest_page": 15
+  }
  }
 }

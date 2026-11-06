@@ -41,6 +41,19 @@
       ]
     },
     {
+      "id": "budget-2023",
+      "fichier": "budget-2023.pdf",
+      "type": "budget",
+      "annee": 2023,
+      "titre": "Budget 2023",
+      "url": "",
+      "colonnes": [
+        "projet:2023",
+        "budget:2022",
+        "comptes:2021"
+      ]
+    },
+    {
       "id": "budget-2024",
       "fichier": "budget-2024.pdf",
       "type": "budget",

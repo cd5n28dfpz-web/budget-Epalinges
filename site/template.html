@@ -305,6 +305,8 @@ svg .grid line{stroke:var(--line)}
   <p class="lede">Le compte de fonctionnement (les autres onglets) ne dit pas tout : la commune emprunte pour financer ses investissements. Cet onglet reprend, tels que publiés dans les comptes et le budget, les emprunts, les intérêts, l'endettement et les ratios financiers.</p>
   <div class="kpis" id="deKpis"></div>
   <div class="sec card"><div class="sec-h"><h2>Emprunts réels</h2><p>Dette brute au 31 décembre, en millions de francs (sans les préavis non encore financés).</p></div><div class="chart" id="deChart"></div><div class="legend" id="deLeg"></div></div>
+  <div class="sec"><div class="sec-h"><h2>Prévu et réalisé</h2><p>Ce que chaque budget annonçait, comparé aux comptes de l'année. En francs.</p></div>
+    <div class="tblwrap"><table class="data" id="dePR"></table></div><div id="dePRTxt" class="prose" style="margin-top:12px"></div><p class="note" id="dePRNote"></p></div>
   <div class="sec"><div class="sec-h"><h2>Pourquoi la dette augmente</h2><p>Tableau de flux de trésorerie des comptes, en francs.</p></div>
     <p class="note" style="margin:0 0 10px">Le compte de fonctionnement (charges et revenus) ne comprend pas les investissements : routes, bâtiments et collecteurs sont payés en trésorerie, puis amortis sur plusieurs années dans les charges. Un résultat équilibré n'empêche donc pas la dette de varier. Le tableau suit l'argent réellement encaissé et dépensé : ce que l'activité dégage, ce que la commune investit, et la manière dont l'écart est financé.</p>
     <div class="tblwrap"><table class="data" id="deFl"></table></div><div id="deFlTxt" class="prose" style="margin-top:12px"></div><p class="note" id="deFlNote"></p></div>
@@ -664,7 +666,16 @@ function renderP7(){const P=D.projet27;if(!P)return;
 function initP7(){if(!D.projet27){$("#t-p7").hidden=true;$("#p-p7").hidden=true}}
 
 // ---------- DETTE ----------
-function renderDe(){const T=D.dette;if(!T)return;
+function dePR(T){const R=T.prevu_realise;if(!R||!R.length){const e=$("#dePR");if(e)e.closest(".sec").hidden=true;return}
+  const num=v=>v==null?"–":chf(v).replace(" fr.",""),th=h=>`<th class="r">${h}</th>`;
+  const ec=(a,b)=>a==null||b==null?"–":(b-a>0?"+":"")+num(b-a);
+  $("#dePR").innerHTML=`<thead><tr><th rowspan="2">Année</th><th colspan="3" class="r">Dette brute au 31 décembre</th><th colspan="3" class="r">Investissements nets</th><th colspan="2" class="r">Marge d'autofinancement</th></tr><tr>${["Prévue","Réalisée","Écart","Prévus","Réalisés","Écart","Prévue","Réalisée"].map(th).join("")}</tr></thead><tbody>`+
+    R.map(r=>{const p=r.prevu,x=r.reel;const f=r.annee===2026;const hl=!f&&x.brut!=null&&p.brut!=null&&x.brut>p.brut;
+      return `<tr${hl?' style="font-weight:600"':""}><td>${r.annee}${f?" (budget)":""}</td><td class="r" data-tip="${esc(r.document+", p. "+(r.pages.brut||"?"))}">${num(p.brut)}</td><td class="r">${num(x.brut)}</td><td class="r">${ec(p.brut,x.brut)}</td><td class="r">${num(p.invest)}</td><td class="r">${num(x.invest)}</td><td class="r">${ec(p.invest,x.invest)}</td><td class="r">${num(p.marge)}</td><td class="r">${num(x.marge)}</td></tr>`}).join("")+"</tbody>";
+  const r23=R.find(r=>r.annee===2023);
+  $("#dePRTxt").innerHTML=r23&&r23.reel.brut?`<p>La dette brute réalisée est inférieure à la prévision en ${R.filter(r=>r.reel.brut!=null&&r.reel.brut<r.prevu.brut).map(r=>r.annee).join(", ")}${R.some(r=>r.reel.brut!=null&&r.reel.brut===r.prevu.brut)?" et égale à elle en "+R.filter(r=>r.reel.brut!=null&&r.reel.brut===r.prevu.brut).map(r=>r.annee).join(", "):""}. <b>2023 est la seule année où elle la dépasse</b> : ${mio(r23.reel.brut)} au lieu de ${mio(r23.prevu.brut)} prévus (${sgn(r23.reel.brut-r23.prevu.brut)}), alors que les investissements ont été moins élevés que prévu (${mio(r23.reel.invest)} au lieu de ${mio(r23.prevu.invest)}) et l'autofinancement meilleur. Voir « Pourquoi la dette augmente » ci-dessous : en 2023, la commune a emprunté 25 mio et sa trésorerie a augmenté de 6,9 mio.</p>`:"";
+  $("#dePRNote").textContent="Le prévu est celui du budget de l'année : l'« endettement brut prévisible » publié dans la brochure, les dépenses nettes d'investissements et la marge d'autofinancement budgétées, établis à l'automne précédent. Le budget est volontairement prudent : il prévoit une marge négative, alors que les comptes ont toujours dégagé une marge positive. Pour 2025, la marge est celle de la brochure du budget 2025 (-4,0 mio) ; la brochure 2026 indique -4,3 mio pour le budget 2025 voté. Investissements nets 2025 réalisés : 2,1 mio, après déduction de recettes d'investissement (dépenses brutes : 7,0 mio). Les définitions de la marge peuvent varier légèrement d'une brochure à l'autre.";}
+function renderDe(){const T=D.dette;if(!T)return;dePR(T);
   const I={};T.indicateurs.forEach(x=>I[x.cle]=x);
   const yrs=Object.keys(I.dette_brute.valeurs).map(Number).sort((a,b)=>a-b);const Y=String(yrs[yrs.length-1]);
   const fm=(x,v)=>v==null?"–":x.unite==="%"?v.toLocaleString("fr-CH",{minimumFractionDigits:1,maximumFractionDigits:1})+" %":chf(v).replace(" fr.","");

@@ -108,3 +108,12 @@ class TestProjet2027(unittest.TestCase):
         P = self.D["projet27"]
         self.assertAlmostEqual(P["emprunts_total"], 97458325.0)
         self.assertEqual(dict(P["endettement"])["Endettement brut prévisionnel 2027"], 127126028.0)
+
+
+class TestPrevuRealise(unittest.TestCase):
+    def test_2023_dette_prevue_et_realisee(self):
+        D = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "site", "data.json"), encoding="utf-8"))
+        r = {x["annee"]: x for x in D["dette"]["prevu_realise"]}
+        self.assertEqual(r[2023]["prevu"]["brut"], 75124997.0)
+        self.assertEqual(r[2023]["reel"]["brut"], 83124997.0)
+        self.assertEqual(r[2023]["prevu"]["invest"], 19921000.0)

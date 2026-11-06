@@ -59,3 +59,7 @@ Le projet de budget 2027 de la Municipalité (`sources/pdf/budget-2027.pdf`) est
 - le site l'affiche dans l'onglet « Projet 2027 », avec un bandeau « pas encore voté ni amendé » et le rappel de la Municipalité : le budget 2026 inclut 6,6 mio de prélèvements sur réserves et la comparaison MCH1/MCH2 n'est pas toujours pertinente.
 
 Quand le Conseil communal aura voté le budget, le document voté remplacera le projet.
+
+## Prévu et réalisé (onglet Dette)
+
+`pipeline/dette.py` (`prevus()`) lit dans chaque brochure de budget 2020 à 2026 la marge d'autofinancement, les dépenses nettes d'investissements et l'« endettement brut prévisible » au 31 décembre. Ces prévisions sont comparées à la dette brute, aux investissements nets et à la marge des comptes. Contrôles : la prévision des budgets 2025 et 2026 est recoupée avec le tableau des emprunts du budget 2026, la dette brute réalisée avec ce même tableau (2020 à 2024).
